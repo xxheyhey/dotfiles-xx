@@ -1,0 +1,21 @@
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
+alias python="python3"
+alias fa="fd --type f --hidden --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm --base-directory $HOME --search-path $HOME | fzf --print0 | xargs -0 -o nvim"
+alias f="fd --type f --hidden --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm | fzf --print0 | xargs -0 -o nvim"
+alias goto="source"
+alias prime-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
+alias night="gammastep -m randr -P -O"
+alias nighty="gammastep -m randr -P -O 2800"
+alias nightoff="gammastep -m randr -P -O 6500"
+alias shutdown="sudo shutdown"
+alias poweroff="sudo shutdown now"
+alias off="sudo shutdown now"
+alias reboot="sudo reboot"
+alias sync="onedrive --synchronize"
+alias syncoff="onedrive --synchronize && poweroff"
+alias syncreboot="onedrive --synchronize && reboot"
+alias nvidiaoff="sudo envycontrol -s integrated"
+alias nvidiahybrid="sudo envycontrol -s hybrid"
+alias dotgit="/usr/bin/git --git-dir=$HOME/Github/dotfiles/ --work-tree=$HOME"

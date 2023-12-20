@@ -1,0 +1,27 @@
+# Increase volume
+"pactl set-sink-volume @DEFAULT_SINK@ +2%"
+   XF86AudioRaiseVolume
+
+# Decrease volume
+"pactl set-sink-volume @DEFAULT_SINK@ -2%"
+   XF86AudioLowerVolume
+
+# Mute volume
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+   XF86AudioMute
+
+# Mute microphone
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+   XF86AudioMicMute
+
+# Increase brightness
+"brightnessctl s 400+"
+   XF86MonBrightnessUp
+
+# Decrease brightness
+"brightnessctl s 400-"
+   XF86MonBrightnessDown
+
+# Open Flameshot screenshot utility
+"flameshot gui"
+   Mod2 + Print

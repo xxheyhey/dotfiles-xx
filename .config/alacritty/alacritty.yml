@@ -1,0 +1,13 @@
+import:
+  - ~/.config/alacritty/monokai_charcoal.yaml
+
+window:
+  opacity: 1
+  dimensions:
+     columns: 90
+     lines: 30
+
+font:
+  size: 15
+
+tabspaces: 4
