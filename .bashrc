@@ -121,8 +121,13 @@ fi
 # add directories to path
 export PATH=$PATH:$HOME/ncbi-blast-2.14.1+/bin
 export PATH=$PATH:$HOME/iqtree-2.2.5-linux/bin
-# BLAST database
+
+# Variables
 export BLASTDB=$HOME/personal/blastdb
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # keybinds
 bind '"\C-f":"tmux-sessionizer\n"'
+bind '"\C-n":"alacritty -e less ~/personal/Documents/NeovimCheatsheet\n"'
+bind '"\C-t":"tmux a\n"'
