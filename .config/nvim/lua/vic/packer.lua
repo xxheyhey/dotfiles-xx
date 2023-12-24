@@ -21,7 +21,6 @@ return require('packer').startup(function(use)
 
     })
 
-
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
     use('ThePrimeagen/harpoon')
@@ -42,11 +41,18 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-nvim-lsp'},
             {'L3MON4D3/LuaSnip'},
         }
-    }use {
+    }
+
+    use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
+
     use('ThePrimeagen/vim-be-good')
     use('jamespeapen/Nvim-R')
+    use {
+        "rcarriga/nvim-dap-ui",
+        requires = {"mfussenegger/nvim-dap"}
+    }
 end)
