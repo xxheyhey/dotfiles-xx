@@ -55,4 +55,5 @@ return require('packer').startup(function(use)
         "rcarriga/nvim-dap-ui",
         requires = {"mfussenegger/nvim-dap"}
     }
+    use('OmniSharp/omnisharp-vim')
 end)
