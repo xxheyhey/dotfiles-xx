@@ -1,21 +1,19 @@
-#xrandr --newmode "2560x1440_165.00"  938.50  2560 2792 3072 3584  1440 1443 1448 1588 -hsync +vsync
-#xrandr --addmode Virtual-1 2560x1440_165.00
-#xrandr --output Virtual-1 --mode 2560x1440_165.00
+# X related starup tasks
 xrandr --dpi 144
 xset r rate 240 30
 xset b off
+xrdb ~/.Xresources
+xautolock -time 5 -locker slock -corners 000- -detectsleep &
+setxkbmap -option "compose:ralt"
+xbindkeys
 
+# Other startup apps/services
 ~/.fehbg &
-picom &
 slstatus &
 nm-applet &
 dunst &
 numlockx &
 flameshot &
-xautolock -time 5 -locker slock -corners 000- -detectsleep &
 
-xrdb ~/.Xresources
-setxkbmap -option "compose:ralt"
-
-xbindkeys
+# Launch window manager
 exec dwm
