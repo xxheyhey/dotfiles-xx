@@ -131,3 +131,9 @@ export LC_ALL=en_US.UTF-8
 bind '"\C-f":"tmux-sessionizer\n"'
 bind '"\C-n":"alacritty -e less ~/personal/Documents/NeovimCheatsheet\n"'
 bind '"\C-t":"tmux a\n"'
+
+# For some reason since an upgrade I have to launch picom (for transparancy) after dwm starts and not before
+if ! pgrep -x "picom" > /dev/null
+then
+	nohup picom >/dev/null 2>&1 & # No output will be shown when running the command this way
+fi
