@@ -28,7 +28,7 @@ vim.defer_fn(function()
       keymaps = {
         init_selection = '<c-space>',
         node_incremental = '<c-space>',
-        scope_incremental = '<c-s>',
+        scope_incremental = '<leader>cs',
         node_decremental = '<c-backspace>',
       },
     },
