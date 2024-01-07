@@ -35,3 +35,6 @@ vim.g.R_tsv_app = 'terminal:vd'
 vim.keymap.set('v', '<C-\\>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
 vim.keymap.set('n', '<C-\\>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
 vim.keymap.set('n', '<leader>R>', ':RSend ')
+
+-- Disable automatic replacement of '_' by '<-'
+vim.g.R_assign = 0
