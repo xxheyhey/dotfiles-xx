@@ -77,5 +77,3 @@ vim.keymap.set('n', '<leader>pg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>pG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>pd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>pr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-
--- vim: ts=2 sts=2 sw=2 et
