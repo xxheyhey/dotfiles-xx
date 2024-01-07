@@ -47,7 +47,6 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'path' },
+    { name = 'cmp_nvim_r' },
   },
 }
-
--- vim: ts=2 sts=2 sw=2 et

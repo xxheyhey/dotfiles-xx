@@ -26,6 +26,7 @@ vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 250
+vim.opt.timeoutlen = 500
 
 -- Set completeopt to have a better completion experience
 vim.opt.completeopt = 'menuone,noselect'
@@ -58,6 +59,7 @@ vim.opt.colorcolumn = "80"
 vim.diagnostic.config({
   virtual_text = true
 })
+vim.opt.shortmess:append({ I = true }) -- Remove intro screen because of flicker bug
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
@@ -69,5 +71,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
-
--- vim: ts=2 sts=2 sw=2 et

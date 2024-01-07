@@ -7,7 +7,33 @@ window:
      columns: 90
      lines: 30
 
-font:
-  size: 15
-
 tabspaces: 4
+
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  normal:
+    family: UbuntuMono Nerd Font
+    style: Regular
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: Retina
+
+  # The bold font face
+  bold:
+    family: UbuntuMono Nerd Font
+    style: Bold
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+
+  # The italic font face
+  italic:
+    family: UbuntuMono Nerd Font
+    style: Italic
+    # style: "Light Oblique"
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: "Medium Italic"
+
+  # Point size of the font
+  size: 15
