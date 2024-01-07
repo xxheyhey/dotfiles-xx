@@ -1,4 +1,6 @@
 -- theme customization
+
+-- Onedark
 -- require('onedark').setup {
 --   transparent = true,
 --   code_style = { comments = 'none' },
@@ -6,11 +8,13 @@
 --   diagnostics = { background = false },
 -- }
 
-require('rose-pine').setup {
-    disable_background = true,
-    disable_float_background = true,
-    disable_italics = true
-}
+-- Rose-pine
+-- require('rose-pine').setup {
+--     variant = "main",
+--     disable_background = true,
+--     disable_float_background = true,
+--     disable_italics = true
+-- }
 
 require("tokyonight").setup({
     -- your configuration comes here
@@ -20,14 +24,15 @@ require("tokyonight").setup({
     styles = {
         -- Style to be applied to different syntax groups
         -- Value is any valid attr-list value for `:help nvim_set_hl`
-        comments = {},
-        keywords = {},
+        comments = { italic = false },
+        keywords = { italic = false },
         sidebars = "transparent", -- style for sidebars, see below
         floats = "transparent", -- style for floating windows
     },
     lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
-    -- on_highlight = function(higlights, colors)
-    --     -- NOG STRINGS VAN KLEUR VERANDEREN
+    -- Changing some colors
+    -- on_colors = function(colors)
+    --     colors.green = "#b4f56e"
     -- end
 })
 

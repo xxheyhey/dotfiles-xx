@@ -28,7 +28,15 @@ require('lazy').setup({
 
             -- Useful status updates for LSP
             -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-            { 'j-hui/fidget.nvim', opts = {} },
+            { 'j-hui/fidget.nvim', opts = {
+                notification = {
+                    -- Options related to the notification window and buffer
+                    window = {
+                        winblend = 0,             -- Background color opacity in the notification window
+                    },
+                },
+            }
+            },
 
             -- Additional lua configuration, makes nvim stuff amazing!
             'folke/neodev.nvim',
@@ -155,9 +163,10 @@ require('lazy').setup({
         -- Set lualine as statusline
         'nvim-lualine/lualine.nvim',
         -- See `:help lualine.txt`
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
         opts = {
             options = {
-                icons_enabled = false,
+                icons_enabled = true,
                 theme = 'tokyonight',
                 component_separators = '|',
                 section_separators = '',
