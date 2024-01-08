@@ -15,7 +15,6 @@ require('lazy').setup({
     'jamespeapen/Nvim-R',
     'ThePrimeagen/vim-be-good',
     'mbbill/undotree',
-    'OmniSharp/omnisharp-vim',
 
     -- Plugins with (some) configuration done here
     {
@@ -302,6 +301,5 @@ require('lazy').setup({
 
     -- Plugins with dependencies that are already being installed above
     'ThePrimeagen/harpoon',
-    'nvim-treesitter/playground',
 
 }, {})
