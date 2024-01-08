@@ -1,5 +1,13 @@
 -- theme customization
 
+function Color(color)
+    color = color or "tokyonight"
+    vim.cmd.colorscheme(color)
+
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
 -- Onedark
 -- require('onedark').setup {
 --   transparent = true,
@@ -9,12 +17,13 @@
 -- }
 
 -- Rose-pine
--- require('rose-pine').setup {
---     variant = "main",
---     disable_background = true,
---     disable_float_background = true,
---     disable_italics = true
--- }
+require('rose-pine').setup {
+    styles = {
+        transparency = true,
+        italic = false,
+    },
+
+}
 
 require("tokyonight").setup({
     -- your configuration comes here
@@ -34,14 +43,8 @@ require("tokyonight").setup({
     -- on_colors = function(colors)
     --     colors.green = "#b4f56e"
     -- end
+
 })
 
-function Color(color)
-    color = color or "tokyonight"
-    vim.cmd.colorscheme(color)
-
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
-
 Color()
+
