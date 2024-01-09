@@ -37,3 +37,10 @@ font:
 
   # Point size of the font
   size: 15
+
+colors:
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    custom_colors: true
+    text: '0x000000'
+    cursor: '0xFFFFFF'

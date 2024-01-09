@@ -45,6 +45,9 @@ vim.opt.smartindent = true
 -- Disable line wrap
 vim.opt.wrap = false
 
+-- Enable break indent for wrap mode
+vim.o.breakindent = true
+
 -- Undo history settings
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -61,7 +64,7 @@ vim.diagnostic.config({
 })
 vim.opt.shortmess:append({ I = true }) -- Remove intro screen because of flicker bug
 
--- [[ Highlight on yank ]]
+-- Highlight on yank
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {

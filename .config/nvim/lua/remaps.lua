@@ -28,9 +28,11 @@ vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- Make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-
 -- tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+-- Format file (remove white spaces and such)
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Quickfix list
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -40,6 +42,9 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Switch to next window
 vim.keymap.set("n", "<tab>", ":winc w<CR>", { silent = true })
+
+-- Toggle wrap
+vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>", { silent = true })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
