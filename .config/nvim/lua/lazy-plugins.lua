@@ -27,14 +27,16 @@ require('lazy').setup({
 
             -- Useful status updates for LSP
             -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-            { 'j-hui/fidget.nvim', opts = {
-                notification = {
-                    -- Options related to the notification window and buffer
-                    window = {
-                        winblend = 0,             -- Background color opacity in the notification window
+            {
+                'j-hui/fidget.nvim',
+                opts = {
+                    notification = {
+                        -- Options related to the notification window and buffer
+                        window = {
+                            winblend = 0, -- Background color opacity in the notification window
+                        },
                     },
-                },
-            }
+                }
             },
 
             -- Additional lua configuration, makes nvim stuff amazing!
@@ -60,7 +62,7 @@ require('lazy').setup({
     },
 
     -- Useful plugin to show you pending keybinds.
-    { 'folke/which-key.nvim', opts = {} },
+    { 'folke/which-key.nvim',  opts = {} },
     {
         -- Adds git related signs to the gutter, as well as utilities for managing changes
         'lewis6991/gitsigns.nvim',
@@ -147,7 +149,8 @@ require('lazy').setup({
 
     {
         -- another nice theme
-        'rose-pine/neovim', name = 'rose-pine'
+        'rose-pine/neovim',
+        name = 'rose-pine'
     },
 
     {
@@ -297,6 +300,19 @@ require('lazy').setup({
     {
         'jalvesaq/cmp-nvim-r',
         opts = {}
+    },
+
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {},
+        config = function()
+            local trouble = require("trouble")
+
+            vim.keymap.set("n", "<leader>tt", trouble.toggle)
+            vim.keymap.set("n", "<leader>tn", function() trouble.next({ skip_goups = true, jump = true }) end)
+            vim.keymap.set("n", "<leader>tp", function() trouble.previous({ skip_goups = true, jump = true }) end)
+        end
     },
 
     -- Plugins with dependencies that are already being installed above

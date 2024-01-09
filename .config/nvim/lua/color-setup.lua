@@ -17,13 +17,12 @@ end
 -- }
 
 -- Rose-pine
-require('rose-pine').setup {
-    styles = {
-        transparency = true,
-        italic = false,
-    },
-
-}
+-- require('rose-pine').setup {
+--     styles = {
+--         transparency = true,
+--         italic = false,
+--     },
+-- }
 
 require("tokyonight").setup({
     -- your configuration comes here
