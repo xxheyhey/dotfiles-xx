@@ -8,7 +8,7 @@ vim.g.R_objbr_openlist = 0  -- Show lists elements
 vim.g.R_objbr_allnames = 0  -- Show hidden objects
 
 -- ` or > won't result in R chunk in .Rmd and .Rnoweb files
-vim.g.R_rmdchunk = 0
+vim.g.R_rmdchunk = '```' -- '```' inserts R chunk
 vim.g.R_rnowebchunk = 0
 
 vim.g.R_args =  { '--no-save', '--no-restore' } -- R Startup flags
@@ -34,7 +34,7 @@ vim.g.R_tsv_app = 'terminal:vd'
 -- Keymaps
 vim.keymap.set('v', '<C-\\>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
 vim.keymap.set('n', '<C-\\>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
-vim.keymap.set('n', '<leader>R>', ':RSend ')
+vim.keymap.set('n', '<leader>R', ':RSend ')
 
 -- Disable automatic replacement of '_' by '<-'
 vim.g.R_assign = 0
