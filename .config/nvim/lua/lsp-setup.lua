@@ -86,6 +86,12 @@ local servers = {
     },
     marksman = {},
     bashls = {},
+    r_language_server = {
+        R = {
+            flags = { debounce_text_changes = 150 },
+            diagnostics = { disable = { 'information' } },
+        }
+    },
 }
 
 -- Setup neovim lua configuration
