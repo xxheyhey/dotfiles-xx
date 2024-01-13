@@ -39,9 +39,10 @@ require("tokyonight").setup({
     },
     lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
     -- Changing some colors
-    -- on_colors = function(colors)
-    --     colors.green = "#b4f56e"
-    -- end
+    on_colors = function(colors)
+        --colors.green = "#b4f56e"
+        colors.comment = "#7d86ad"
+    end
 
 })
 

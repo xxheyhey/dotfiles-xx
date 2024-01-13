@@ -35,6 +35,26 @@ vim.g.R_tsv_app = 'terminal:vd'
 vim.keymap.set('v', '<C-\\>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
 vim.keymap.set('n', '<C-\\>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
 vim.keymap.set('n', '<leader>R', ':RSend ')
+vim.keymap.set('n', '<LocalLeader>q', ':RStop<CR>')
 
 -- Disable automatic replacement of '_' by '<-'
 vim.g.R_assign = 0
+
+-- Enable the ability to add '#' to the beginning of lines
+vim.g.R_enable_comment = 1
+vim.g.R_rcomment_string = '#'
+
+-- Disable the need to have function arguments aligned
+vim.g.r_indent_align_args = 0
+
+-- Unfortunately, I will be using 2 space indenting in r and Rmd files because
+-- the diagnostics won't stop complaining and I don't know how to turn just the
+-- informative diagnostics off...
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "r", "Rmd" },
+	callback = function()
+		vim.opt_local.shiftwidth = 2
+		vim.opt_local.tabstop = 2
+        vim.opt_local.softtabstop = 2
+	end
+})
