@@ -34,3 +34,6 @@ fi
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
 	exec startx
 fi
+
+# opam configuration
+test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

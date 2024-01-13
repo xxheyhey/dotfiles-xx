@@ -88,10 +88,12 @@ local servers = {
     bashls = {},
     r_language_server = {
         R = {
-            flags = { debounce_text_changes = 150 },
-            diagnostics = { disable = { 'information' } },
+            diagnostics = { disable = { 'commented_code_linter' } },
         }
     },
+    ocamllsp = {
+        filetypes = { "ocaml", "ocaml.menhir", "ocaml.interface", "ocaml.ocamllex", "reason", "dune" },
+    }
 }
 
 -- Setup neovim lua configuration

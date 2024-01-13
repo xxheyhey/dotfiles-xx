@@ -44,3 +44,6 @@ colors:
     custom_colors: true
     text: '0x000000'
     cursor: '0xFFFFFF'
+
+key_bindings:
+  - { key: Return,         mods: Control, chars: "\x1b[13;5u"                            }

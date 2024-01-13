@@ -31,12 +31,6 @@ vim.g.R_fun_data_1 = { 't.test' }
 vim.g.R_csv_app = 'terminal:vd'
 vim.g.R_tsv_app = 'terminal:vd'
 
--- Keymaps
-vim.keymap.set('v', '<C-\\>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
-vim.keymap.set('n', '<C-\\>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
-vim.keymap.set('n', '<leader>R', ':RSend ')
-vim.keymap.set('n', '<LocalLeader>q', ':RStop<CR>')
-
 -- Disable automatic replacement of '_' by '<-'
 vim.g.R_assign = 0
 
@@ -44,17 +38,22 @@ vim.g.R_assign = 0
 vim.g.R_enable_comment = 1
 vim.g.R_rcomment_string = '#'
 
--- Disable the need to have function arguments aligned
-vim.g.r_indent_align_args = 0
+-- Disable automatic opening of data frames in the object browser
+vim.g.R_objbr_opendf = 0
 
--- Unfortunately, I will be using 2 space indenting in r and Rmd files because
--- the diagnostics won't stop complaining and I don't know how to turn just the
--- informative diagnostics off...
+-- All the settings that will just be applied to a local buffer when opening a
+-- .R or .Rmd file
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "r", "Rmd" },
 	callback = function()
-		vim.opt_local.shiftwidth = 2
-		vim.opt_local.tabstop = 2
-        vim.opt_local.softtabstop = 2
+        vim.keymap.set('n', '<C-l>', ':call RClearConsole()<CR>', { silent = true })
 	end
 })
+
+-- Keymaps
+vim.keymap.set('v', '<C-CR>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
+vim.keymap.set('n', '<C-CR>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
+vim.keymap.set('n', '<leader>R', ':RSend ')
+vim.keymap.set('n', '<LocalLeader>q', ':RStop<CR>')
+vim.keymap.set('n', 'gcr', ':call RSimpleCommentLine("selection", "c")<CR>', { silent = true })
+vim.keymap.set('v', 'gcr', ':call RSimpleCommentLine("normal", "c")<CR>', { silent = true })

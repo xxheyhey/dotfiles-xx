@@ -315,7 +315,12 @@ require('lazy').setup({
         end
     },
 
-    -- Plugins with dependencies that are already being installed above
-    'ThePrimeagen/harpoon',
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    }
+
+    -- Plugins with dependencies that are already being installed above come here
 
 }, {})

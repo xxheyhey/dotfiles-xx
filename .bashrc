@@ -137,3 +137,6 @@ if ! pgrep -x "picom" > /dev/null
 then
 	nohup picom >/dev/null 2>&1 & # No output will be shown when running the command this way
 fi
+
+# opam
+eval $(opam env)
