@@ -37,3 +37,6 @@ fi
 
 # opam configuration
 test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+# Rust configuration
+. "$HOME/.cargo/env"

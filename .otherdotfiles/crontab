@@ -6,6 +6,7 @@
 
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
 
 # Example of job definition:
 # .---------------- minute (0 - 59)

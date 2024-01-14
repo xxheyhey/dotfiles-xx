@@ -140,3 +140,4 @@ fi
 
 # opam
 eval $(opam env)
+. "$HOME/.cargo/env"

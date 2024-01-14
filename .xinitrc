@@ -3,7 +3,7 @@ xrandr --dpi 144
 xset r rate 240 30
 xset b off
 xrdb ~/.Xresources
-xautolock -time 5 -locker slock -corners 000- -detectsleep &
+xautolock -time 5 -locker slock -corners ---- -detectsleep &
 setxkbmap -option "compose:ralt"
 xbindkeys
 
