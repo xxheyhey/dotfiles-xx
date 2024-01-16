@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/monokai_charcoal.yaml
+  - ~/.config/alacritty/monokai_charcoal_custom.yaml
 
 window:
   opacity: 1
