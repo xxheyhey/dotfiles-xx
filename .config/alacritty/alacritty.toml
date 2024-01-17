@@ -1,0 +1,42 @@
+import = ["/home/vic/.config/alacritty/monokai_charcoal_custom.toml"]
+
+[colors.cursor]
+cursor = "0xFFFFFF"
+text = "0x000000"
+
+[font]
+size = 15
+
+[font.bold]
+family = "UbuntuMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "UbuntuMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = "\u001B[13;5u"
+key = "Return"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001B[9;5u"
+key = "Tab"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001B[13;2u"
+key = "Return"
+mods = "Shift"
+
+[window]
+opacity = 1
+
+[window.dimensions]
+columns = 90
+lines = 30

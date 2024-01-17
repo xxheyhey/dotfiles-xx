@@ -141,3 +141,6 @@ fi
 # opam
 eval $(opam env)
 . "$HOME/.cargo/env"
+
+# Alacritty shell completions
+source /home/vic/Github/alacritty/extra/completions/alacritty.bash
