@@ -38,22 +38,21 @@ vim.g.R_assign = 0
 vim.g.R_enable_comment = 1
 vim.g.R_rcomment_string = '#'
 
--- Disable automatic opening of data frames in the object browser
-vim.g.R_objbr_opendf = 0
-
 -- All the settings that will just be applied to a local buffer when opening a
 -- .R or .Rmd file
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "r", "Rmd" },
+	pattern = { "r", "rmd" },
 	callback = function()
+        -- Keymaps
+        vim.keymap.set('v', '<C-CR>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
+        vim.keymap.set('n', '<C-CR>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
+        vim.keymap.set('n', '<leader>R', ':RSend ')
+        vim.keymap.set('n', '<LocalLeader>q', ':RStop<CR>')
+        vim.keymap.set('n', 'gcr', ':call RSimpleCommentLine("selection", "c")<CR>', { silent = true })
+        vim.keymap.set('v', 'gcr', ':call RSimpleCommentLine("normal", "c")<CR>', { silent = true })
         vim.keymap.set('n', '<C-l>', ':call RClearConsole()<CR>', { silent = true })
+        vim.keymap.set('n', '<C-q>', ':call RQuit("nosave")<CR>', { silent = true })
+        vim.keymap.set('n', '<C-s>', ':call StartR("R")<CR>', { silent = true })
 	end
 })
 
--- Keymaps
-vim.keymap.set('v', '<C-CR>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
-vim.keymap.set('n', '<C-CR>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
-vim.keymap.set('n', '<leader>R', ':RSend ')
-vim.keymap.set('n', '<LocalLeader>q', ':RStop<CR>')
-vim.keymap.set('n', 'gcr', ':call RSimpleCommentLine("selection", "c")<CR>', { silent = true })
-vim.keymap.set('v', 'gcr', ':call RSimpleCommentLine("normal", "c")<CR>', { silent = true })
