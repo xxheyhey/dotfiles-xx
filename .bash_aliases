@@ -47,3 +47,8 @@ alias dc="dotgit commit"
 alias dgc="dotgit commit"
 alias dp="dotgit push"
 alias dgp="dotgit push"
+# Tmux
+alias t="tmux"
+alias ta="tmux attach"
+alias tl="tmux ls"
+alias tk="tmux kill-server"
