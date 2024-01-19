@@ -34,6 +34,11 @@ chars = "\u001B[13;2u"
 key = "Return"
 mods = "Shift"
 
+[[keyboard.bindings]]
+chars = "\u001B[13;6u"
+key = "Return"
+mods = "Control|Shift"
+
 [window]
 opacity = 1
 

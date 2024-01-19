@@ -4,9 +4,7 @@ vim.g.R_auto_start = 2 -- Autostart R
 vim.g.R_objbr_auto_start = 1 -- Autostart object window
 vim.g.R_objbr_place = 'console,above' -- Location of the object window
 vim.g.R_objbr_opendf = 1    -- Show data.frames elements
-vim.g.R_objbr_openlist = 0  -- Show lists elements
-vim.g.R_objbr_allnames = 0  -- Show hidden objects
-
+vim.g.R_objbr_openlist = 0  -- Show lists elements vim.g.R_objbr_allnames = 0  -- Show hidden objects
 -- ` or > won't result in R chunk in .Rmd and .Rnoweb files
 vim.g.R_rmdchunk = '```' -- '```' inserts R chunk
 vim.g.R_rnowebchunk = 0
@@ -46,6 +44,7 @@ vim.api.nvim_create_autocmd("FileType", {
         -- Keymaps
         vim.keymap.set('v', '<C-CR>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
         vim.keymap.set('n', '<C-CR>', ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
+        vim.keymap.set('n', '<C-S-CR>', ':call b:SendChunkToR("echo", "down")<CR>', { silent = true }) -- Run selected R chunk
         vim.keymap.set('n', '<leader>R', ':RSend ')
         vim.keymap.set('n', '<LocalLeader>q', ':RStop<CR>')
         vim.keymap.set('n', 'gcr', ':call RSimpleCommentLine("selection", "c")<CR>', { silent = true })
@@ -53,6 +52,8 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.keymap.set('n', '<C-l>', ':call RClearConsole()<CR>', { silent = true })
         vim.keymap.set('n', '<C-q>', ':call RQuit("nosave")<CR>', { silent = true })
         vim.keymap.set('n', '<C-s>', ':call StartR("R")<CR>', { silent = true })
+        vim.keymap.set('n', '<leader>cn', ':call b:NextRChunk()<CR>', { silent = true })
+        vim.keymap.set('n', '<leader>cp', ':call b:PreviousRChunk()<CR>', { silent = true })
 	end
 })
 

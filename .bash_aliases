@@ -29,6 +29,9 @@ alias rn="bin/Debug/net8.0/$(basename "$PWD")"
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
+alias sv='sudo nvim'
+alias svi='sudo nvim'
+alias svim='sudo nvim'
 # Git
 alias g="git"
 alias gs="git status"

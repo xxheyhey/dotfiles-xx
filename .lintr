@@ -6,6 +6,7 @@ linters: linters_with_defaults(
                  trailing_blank_lines_linter = NULL,
                  trailing_whitespace_linter = NULL,
                  whitespace_linter = NULL,
-                 object_name_linter = NULL
+                 object_name_linter = NULL,
+                 commas_linter = NULL
                  )
 
