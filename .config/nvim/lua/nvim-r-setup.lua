@@ -52,8 +52,8 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.keymap.set('n', '<C-l>', ':call RClearConsole()<CR>', { silent = true })
         vim.keymap.set('n', '<C-q>', ':call RQuit("nosave")<CR>', { silent = true })
         vim.keymap.set('n', '<C-s>', ':call StartR("R")<CR>', { silent = true })
-        vim.keymap.set('n', '<leader>cn', ':call b:NextRChunk()<CR>', { silent = true })
-        vim.keymap.set('n', '<leader>cp', ':call b:PreviousRChunk()<CR>', { silent = true })
+        vim.keymap.set('n', '<leader>gn', ':call b:NextRChunk()<CR>', { silent = true })
+        vim.keymap.set('n', '<leader>gp', ':call b:PreviousRChunk()<CR>', { silent = true })
 	end
 })
 

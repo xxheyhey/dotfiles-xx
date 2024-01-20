@@ -5,8 +5,8 @@ alias ..="cd .."
 alias monitor="mons"
 alias s="sudo"
 # Finding files
-alias fa="fd --type f --hidden --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm --base-directory $HOME --search-path $HOME | fzf --print0 | xargs -0 -o nvim"
-alias f="fd --type f --hidden --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm | fzf --print0 | xargs -0 -o nvim"
+alias fa="fd --type f --hidden --exclude R --exclude go --exclude .TinyTex --exclude .local --exclude .config/google-chrome --exclude .opam --exclude .cargo --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm --base-directory $HOME --search-path $HOME | fzf --print0 | xargs -0 -o nvim"
+alias f="fd --type f --hidden --exclude R --exclude go --exclude .TinyTex --exclude .local --exclude .config/google-chrome --exclude .opam --exclude .cargo --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm | fzf --print0 | xargs -0 -o nvim"
 # GPU
 alias prime-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias nvidiaoff="sudo envycontrol -s integrated"
