@@ -37,6 +37,7 @@ alias svim='sudo nvim'
 alias g="git"
 alias gs="git status"
 alias gp="git push"
+alias gpom="git push origin master"
 alias ga="git add"
 alias gc="git commit"
 # Git for my dotfiles
@@ -51,6 +52,8 @@ alias dc="dotgit commit"
 alias dgc="dotgit commit"
 alias dp="dotgit push"
 alias dgp="dotgit push"
+alias dpom="dotgit push origin master"
+alias dgpom="dotgit push origin master"
 # Tmux
 alias t="tmux"
 alias ta="tmux attach"

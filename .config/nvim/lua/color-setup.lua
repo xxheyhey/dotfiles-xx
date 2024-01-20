@@ -38,7 +38,9 @@ require("tokyonight").setup({
         floats = "transparent", -- style for floating windows
     },
     lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
+
     -- Changing some colors
+    ---@param colors ColorScheme
     on_colors = function(colors)
         --colors.green = "#b4f56e"
         colors.comment = "#7d86ad"

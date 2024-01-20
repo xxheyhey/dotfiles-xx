@@ -39,7 +39,7 @@ vim.g.R_rcomment_string = '#'
 -- All the settings that will just be applied to a local buffer when opening a
 -- .R or .Rmd file
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "r", "rmd" },
+	pattern = { "r", "rmd", "rprofile" },
 	callback = function()
         -- Keymaps
         vim.keymap.set('v', '<C-CR>', ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
