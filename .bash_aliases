@@ -3,6 +3,7 @@ alias python="python3"
 alias goto="source"
 alias ..="cd .."
 alias monitor="mons"
+alias s="sudo"
 # Finding files
 alias fa="fd --type f --hidden --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm --base-directory $HOME --search-path $HOME | fzf --print0 | xargs -0 -o nvim"
 alias f="fd --type f --hidden --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm | fzf --print0 | xargs -0 -o nvim"

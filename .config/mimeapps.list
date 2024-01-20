@@ -1,5 +1,5 @@
 [Default Applications]
-image/png=feh.desktop
+image/png=qimgv.desktop
 application/pdf=org.gnome.Evince.desktop
 x-scheme-handler/mailto=google-chrome.desktop
 text/html=google-chrome.desktop
@@ -9,6 +9,6 @@ x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 
 [Added Associations]
-image/png=google-chrome.desktop;display-im6.q16.desktop;feh.desktop;
+image/png=google-chrome.desktop;display-im6.q16.desktop;feh.desktop;qimgv.desktop;
 application/pdf=google-chrome.desktop;org.gnome.Evince.desktop;
 text/x-r-source=org.gnome.gedit.desktop;R.desktop;nvim.desktop;
