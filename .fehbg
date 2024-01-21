@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill $HOME/Pictures/wallpapers/berserk.jpg
+feh --no-fehbg --bg-fill "$HOME"/personal/Pictures/wallpapers/berserk.jpg
