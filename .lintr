@@ -7,6 +7,8 @@ linters: linters_with_defaults(
                  trailing_whitespace_linter = NULL,
                  whitespace_linter = NULL,
                  object_name_linter = NULL,
-                 commas_linter = NULL
+                 commas_linter = NULL,
+                 spaces_left_parentheses_linter	= NULL,
+                 spaces_inside_linter = NULL
                  )
 

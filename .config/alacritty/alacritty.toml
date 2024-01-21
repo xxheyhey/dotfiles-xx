@@ -43,5 +43,5 @@ mods = "Control|Shift"
 opacity = 1
 
 [window.dimensions]
-columns = 90
-lines = 30
+columns = 110
+lines = 40
