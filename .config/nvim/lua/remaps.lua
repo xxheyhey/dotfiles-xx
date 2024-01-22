@@ -56,3 +56,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
+
+-- Functions
+vim.cmd [[command! -nargs=0 W :w]]
+vim.cmd [[command! -nargs=0 WQ :wq]]
+vim.cmd [[command! -nargs=0 Wq :wq]]
+vim.cmd [[command! -nargs=0 Q :q]]

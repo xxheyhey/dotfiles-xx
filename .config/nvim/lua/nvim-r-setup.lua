@@ -57,6 +57,7 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.keymap.set('n', 'mm', ':call RMakeRmd("default")<CR>', { silent = true })
         vim.keymap.set('n', 'mp', ':call RMakeRmd("pdf_document")<CR>', { silent = true })
         vim.keymap.set('n', 'mh', ':call RMakeRmd("html_document")<CR>', { silent = true })
+        vim.keymap.set('n', 'mw', ':call RMakeRmd("word_document")<CR>', { silent = true })
         vim.keymap.set('n', '<leader>o', ':call SendLineToRAndInsertOutput()<CR>', { silent = true })
 	end
 })
