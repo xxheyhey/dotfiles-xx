@@ -8,14 +8,6 @@ function Color(color)
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
--- Onedark
--- require('onedark').setup {
---   transparent = true,
---   code_style = { comments = 'none' },
---   lualine = { transparent = true },
---   diagnostics = { background = false },
--- }
-
 -- Rose-pine
 -- require('rose-pine').setup {
 --     styles = {

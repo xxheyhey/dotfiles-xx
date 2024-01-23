@@ -1,6 +1,6 @@
 # X related starup tasks
 xrandr --dpi 144
-xset r rate 330 30
+xset r rate 300 30
 xset b off
 xrdb ~/.Xresources
 xautolock -time 5 -locker slock -corners ---- -detectsleep &
