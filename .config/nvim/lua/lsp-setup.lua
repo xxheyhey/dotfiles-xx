@@ -86,14 +86,7 @@ local servers = {
     },
     marksman = {},
     bashls = {},
-    r_language_server = {
-        R = {
-            diagnostics = { disable = { 'commented_code_linter' } },
-        }
-    },
-    ocamllsp = {
-        filetypes = { "ocaml", "ocaml.menhir", "ocaml.interface", "ocaml.ocamllex", "reason", "dune" },
-    }
+    ocamllsp = {},
 }
 
 -- Setup neovim lua configuration
