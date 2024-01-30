@@ -62,3 +62,5 @@ alias ta="tmux attach"
 alias tl="tmux ls"
 alias tls="tmux ls"
 alias tk="tmux kill-server"
+# Bluetooth
+alias bluebuds="sudo bluetoothctl connect 40:5E:F6:6D:CE:9E"
