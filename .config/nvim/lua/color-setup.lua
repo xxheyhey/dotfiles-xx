@@ -1,25 +1,20 @@
 -- theme customization
 
-function Color(color)
-    color = color or "tokyonight"
-    vim.cmd.colorscheme(color)
+Mycolor = 'rose-pine' -- Just change this to switch themes
 
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
+-- Rose-pine theme
+require('rose-pine').setup {
+    dark_variant = "moon", -- main, moon, or dawn
+    dim_inactive_windows = true,
+    styles = {
+        -- transparency = true,
+        italic = false,
+    },
+}
 
--- Rose-pine
--- require('rose-pine').setup {
---     styles = {
---         transparency = true,
---         italic = false,
---     },
--- }
-
+-- Tokyonight theme
 require("tokyonight").setup({
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    style = "night", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+    style = "night", -- The theme comes in four styles, `storm`, `moon`, a darker variant `night` and `day`
     transparent = true, -- Enable this to disable setting the background color
     styles = {
         -- Style to be applied to different syntax groups
@@ -40,5 +35,24 @@ require("tokyonight").setup({
 
 })
 
-Color()
+-- This function sets the theme the right way
+function Color(color)
+    color = color or Mycolor
+    vim.cmd.colorscheme(color)
 
+    -- The following is needed for some themes to fix the background
+    -- of some windows or parts of the screen
+    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+Color() -- Run function at startup
+
+-- Lualine setup
+require('lualine').setup {
+    options = {
+        icons_enabled = true,
+        theme = Mycolor,
+        component_separators = '|',
+        section_separators = '',
+    },
+}

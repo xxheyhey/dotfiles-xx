@@ -6,15 +6,12 @@ vim.g.R_objbr_place = 'console,above' -- Location of the object window
 vim.g.R_objbr_opendf = 1    -- Show data.frames elements
 vim.g.R_objbr_openlist = 0  -- Show lists elements vim.g.R_objbr_allnames = 0  -- Show hidden objects
 -- ` or > won't result in R chunk in .Rmd and .Rnoweb files
-vim.g.R_rmdchunk = '```' -- '```' inserts R chunk
+vim.g.R_rmdchunk = '```' -- '```' inserts R chunk in insert mode
 vim.g.R_rnowebchunk = 0
 
 vim.g.R_args =  { '--no-save', '--no-restore' } -- R Startup flags
 
--- Tried to change the R console size, to no avail
-vim.g.rconsole_width = 57
-vim.g.R_min_editor_width = 18
--- Resize R console after starting R (lol)
+-- Resize R console and object browser after starting R
 vim.g.R_after_start = { ':vert res +13' }
 
 -- Knitting options
@@ -23,7 +20,7 @@ vim.g.R_pdfviewer = 'evince'
 vim.g.R_openhtml = 1
 
 -- Functions that can autocomplete column names of data frames as *first argument*
-vim.g.R_fun_data_1 = { 't.test' }
+vim.g.R_fun_data_1 = { 't.test', 'lm', 'gls', 'glm' }
 
 -- Open data frames and such in Visidata in another terminal
 vim.g.R_csv_app = 'terminal:vd'
