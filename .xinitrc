@@ -8,6 +8,7 @@ setxkbmap -option "compose:ralt"
 xbindkeys
 
 # Other startup apps/services
+picom &
 ~/.fehbg &
 slstatus &
 nm-applet &

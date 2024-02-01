@@ -53,6 +53,19 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
+-- -- Disable picom transparency at startup (TODO: find a better solution)
+-- vim.api.nvim_create_autocmd("VimEnter", {
+-- 	callback = function()
+--         vim.fn.system("transoff")
+-- 	end,
+-- })
+-- -- And enabling it when exiting
+-- vim.api.nvim_create_autocmd("VimLeave", {
+-- 	callback = function()
+--         vim.fn.system("transon")
+-- 	end,
+-- })
+
 -- Other settings
 vim.opt.incsearch = true
 vim.opt.scrolloff = 8

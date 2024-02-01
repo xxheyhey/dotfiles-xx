@@ -10,6 +10,18 @@ require('rose-pine').setup {
         -- transparency = true,
         italic = false,
     },
+	highlight_groups = {
+        -- Telescope colors
+		TelescopeBorder = { fg = "highlight_high", bg = "none" },
+		TelescopeNormal = { bg = "none" },
+		TelescopePromptNormal = { bg = "base" },
+		TelescopeResultsNormal = { fg = "subtle", bg = "none" },
+        -- Normal background color
+        Normal = { bg = "#1f1d2e" }, -- Rosé pine normal "surface"
+        NormalFloat = { bg = "#1f1d2e" }, -- Rosé pine normal "surface"
+        -- Normal = { bg = "#191724" }, -- Rosé pine normal "base"
+        -- NormalFloat = { bg = "#191724" }, -- Rosé pine normal "base"
+	},
 }
 
 -- Tokyonight theme

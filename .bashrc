@@ -133,7 +133,7 @@ bind '"\C-n":"alacritty -e less ~/personal/Documents/NeovimCheatsheet\n"'
 bind '"\C-t":"tmux a\n"'
 
 # For some reason since an upgrade I have to launch picom (for transparancy) after dwm starts and not before
-# (I don't use picom at the moment)
+# (This is fixed at the moment!, picom is now started through .xinitrc)
 # if ! pgrep -x "picom" > /dev/null
 # then
 # 	nohup picom >/dev/null 2>&1 & # No output will be shown when running the command this way
@@ -145,3 +145,11 @@ eval $(opam env)
 
 # Alacritty shell completions
 source /home/vic/Github/alacritty/extra/completions/alacritty.bash
+
+# fzf colors
+export FZF_DEFAULT_OPTS="
+	--color=fg:#908caa,bg:#000000,hl:#ea9a97
+	--color=fg+:#e0def4,bg+:#393552,hl+:#ea9a97
+	--color=border:#44415a,header:#3e8fb0,gutter:#232136
+	--color=spinner:#f6c177,info:#9ccfd8,separator:#44415a
+	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
