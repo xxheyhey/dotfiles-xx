@@ -1,6 +1,6 @@
 -- theme customization
 
-Mycolor = 'rose-pine' -- Just change this to switch themes
+Mycolor = "rose-pine" -- Just change this to switch themes
 
 -- Rose-pine theme
 require('rose-pine').setup {
@@ -15,7 +15,7 @@ require('rose-pine').setup {
 -- Tokyonight theme
 require("tokyonight").setup({
     style = "night", -- The theme comes in four styles, `storm`, `moon`, a darker variant `night` and `day`
-    transparent = true, -- Enable this to disable setting the background color
+    -- transparent = true, -- Enable this to disable setting the background color
     styles = {
         -- Style to be applied to different syntax groups
         -- Value is any valid attr-list value for `:help nvim_set_hl`
@@ -46,6 +46,16 @@ function Color(color)
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 Color() -- Run function at startup
+
+-- Function to toggle between themes
+function ToggleColorScheme()
+    if Mycolor == "tokyonight" then
+        Mycolor = "rose-pine"
+    else
+        Mycolor = "tokyonight"
+    end
+    Color()
+end
 
 -- Lualine setup
 require('lualine').setup {

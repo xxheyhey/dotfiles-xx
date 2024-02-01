@@ -46,6 +46,9 @@ vim.keymap.set("n", "<tab>", ":winc w<CR>", { silent = true })
 -- Toggle wrap
 vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>", { silent = true })
 
+-- Remap to toggle the color scheme
+vim.api.nvim_set_keymap('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { noremap = true, silent = true })
+
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
 
