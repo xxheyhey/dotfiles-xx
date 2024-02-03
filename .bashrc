@@ -153,3 +153,19 @@ export FZF_DEFAULT_OPTS="
 	--color=border:#44415a,header:#3e8fb0,gutter:#232136
 	--color=spinner:#f6c177,info:#9ccfd8,separator:#44415a
 	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/vic/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/vic/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/vic/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/vic/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
