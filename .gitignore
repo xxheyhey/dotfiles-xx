@@ -25,5 +25,5 @@
 .config/onedrive/items.sqlite3
 .config/qimgv
 .config/flameshot
-~/.config/zsh/.zsh_history
-~/.config/zsh/.zcompdump*
+.config/zsh/.zsh_history
+.config/zsh/.zcompdump*

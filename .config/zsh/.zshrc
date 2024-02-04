@@ -77,14 +77,18 @@ bindkey -s ^f "tmux-sessionizer\n"
 bindkey -s  ^n "alacritty -e less ~/personal/Documents/NeovimCheatsheet\n"
 
 # Completion
-# autoload -Uz compinit
-# compinit
+autoload -Uz compinit
+compinit
 # zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # zstyle ':completion:*' completer _expand _complete _ignored _approximate
 # zstyle ':completion:*' menu select=2
 # zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 # zstyle ':completion::complete:*' use-cache 1
 # zstyle ':completion:*:descriptions' format '%U%F{cyan}%d%f%u'
+
+# Fix slow git autocompletion
+__git_files () {
+    _wanted files expl 'local files' _files }
 
 # Zsh options
 # Keep history of `cd` as in with `pushd` and make `cd -<TAB>` work.
