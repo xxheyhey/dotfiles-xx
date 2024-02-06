@@ -1,9 +1,9 @@
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
-
     -- We create a function that lets us more easily define mappings specific
     -- for LSP related items. It sets the mode, buffer and description for us each time.
+
     local lspmap = function(keys, func, desc)
         if desc then
             desc = 'LSP: ' .. desc

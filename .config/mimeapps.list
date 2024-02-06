@@ -14,3 +14,4 @@ image/png=google-chrome.desktop;display-im6.q16.desktop;feh.desktop;qimgv.deskto
 application/pdf=google-chrome.desktop;org.gnome.Evince.desktop;
 text/x-r-source=org.gnome.gedit.desktop;R.desktop;nvim.desktop;
 audio/mp4=vlc.desktop;
+application/x-bat=org.gnome.gedit.desktop;

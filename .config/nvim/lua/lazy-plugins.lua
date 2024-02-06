@@ -297,9 +297,21 @@ require('lazy').setup({
 
     {
         "ThePrimeagen/harpoon",
+        lazy = false,
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
-    }
+    },
+    {
+        'stevearc/oil.nvim',
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        opts = {
+            max_lines = 3
+        }
+    },
 
     -- Plugins with dependencies that are already being installed above come here
 

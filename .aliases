@@ -69,3 +69,6 @@ alias tls="tmux ls"
 alias tk="tmux kill-server"
 # Bluetooth
 alias bluebuds="sudo bluetoothctl connect 40:5E:F6:6D:CE:9E"
+# Picom transparency
+alias transon="sed -i 's/100/85/g' ~/.config/picom/picom.conf"
+alias transoff="sed -i 's/85/100/g' ~/.config/picom/picom.conf"

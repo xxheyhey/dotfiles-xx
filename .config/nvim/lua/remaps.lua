@@ -22,8 +22,11 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
+-- Search and replace in regex mode, '\(' means match bracket and not open atom
+vim.keymap.set("n", "<leader>sr", ":%s/\\v")
+
 -- Change all words that are the same as the one you're on
-vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
@@ -46,8 +49,8 @@ vim.keymap.set("n", "<tab>", ":winc w<CR>", { silent = true })
 -- Toggle wrap
 vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>", { silent = true })
 
--- Remap to toggle the color scheme
-vim.api.nvim_set_keymap('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { noremap = true, silent = true })
+-- Toggle the color scheme
+vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { noremap = true, silent = true })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
