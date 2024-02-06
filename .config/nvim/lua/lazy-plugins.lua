@@ -312,6 +312,13 @@ require('lazy').setup({
             max_lines = 3
         }
     },
+    {
+        'tamton-aquib/duck.nvim',
+        config = function()
+            vim.keymap.set('n', '<leader>;', function() require("duck").hatch("🐿️", 2) end, {})
+            vim.keymap.set('n', '<leader>;;', function() require("duck").cook() end, {})
+        end
+    },
 
     -- Plugins with dependencies that are already being installed above come here
 

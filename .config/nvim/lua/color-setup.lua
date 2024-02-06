@@ -5,7 +5,7 @@ Mycolor = "rose-pine" -- Change this to switch themes
 -- Rose-pine theme
 require('rose-pine').setup {
     dark_variant = "moon", -- main, moon, or dawn
-    dim_inactive_windows = true,
+    dim_inactive_windows = false,
     styles = {
         transparency = true,
         italic = false,

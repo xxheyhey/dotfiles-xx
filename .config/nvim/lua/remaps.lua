@@ -50,7 +50,11 @@ vim.keymap.set("n", "<tab>", ":winc w<CR>", { silent = true })
 vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>", { silent = true })
 
 -- Toggle the color scheme
-vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { silent = true })
+
+-- Toggle transparency (custom scripts)
+vim.keymap.set("n", "<leader>ty", ":!transon<CR>", { silent = true })
+vim.keymap.set("n", "<leader>tn", ":!transoff<CR>", { silent = true })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
