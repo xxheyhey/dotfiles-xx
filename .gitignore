@@ -28,3 +28,4 @@
 .config/zsh/.zsh_history
 .config/zsh/.zcompdump*
 .config/Code
+.config/fontforge

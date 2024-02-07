@@ -7,8 +7,10 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
--- Open netrw
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- Open the Oil file explorer
+vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- And as a popup
+vim.keymap.set("n", "-", "<cmd>lua require('oil').toggle_float()<CR>", { desc = "Oil" })
 
 -- Move lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

@@ -322,7 +322,7 @@ require('lazy').setup({
     {
         'tamton-aquib/duck.nvim',
         config = function()
-            vim.keymap.set('n', '<leader>;', function() require("duck").hatch("🐿️", 2) end, {})
+            vim.keymap.set('n', '<leader>;', function() require("duck").hatch("", 5) end, {})
             vim.keymap.set('n', '<leader>;;', function() require("duck").cook() end, {})
         end
     },
@@ -354,7 +354,6 @@ require('lazy').setup({
     ██║╚████║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
     ██║ ╚███║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
     ╚═╝  ╚══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
-    - viis -
     ]]
 
             logo = string.rep("\n", 4) .. logo .. "\n\n"
