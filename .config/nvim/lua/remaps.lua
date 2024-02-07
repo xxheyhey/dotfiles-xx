@@ -38,23 +38,23 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Quickfix list
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<down>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<leader><up>", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader><down>", "<cmd>lprev<CR>zz")
 
 -- Switch to next window
-vim.keymap.set("n", "<tab>", ":winc w<CR>", { silent = true })
+vim.keymap.set("n", "<tab>", "<cmd>winc w<CR>", { silent = true })
 
 -- Toggle wrap
-vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>", { silent = true })
+vim.keymap.set("n", "<leader>tw", "<cmd>set wrap!<CR>", { silent = true })
 
 -- Toggle the color scheme
 vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { silent = true })
 
 -- Toggle transparency (custom scripts)
-vim.keymap.set("n", "<leader>ty", ":!transon<CR>", { silent = true })
-vim.keymap.set("n", "<leader>tn", ":!transoff<CR>", { silent = true })
+vim.keymap.set("n", "<leader>tro", "<cmd>!transon<CR>", { silent = true })
+vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { silent = true })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")

@@ -1,6 +1,6 @@
 -- theme customization
 
-Mycolor = "rose-pine" -- Change this to switch themes
+Mycolor = "catppuccin" -- Change this to switch themes
 
 -- Rose-pine theme
 require('rose-pine').setup {
@@ -42,6 +42,45 @@ require("tokyonight").setup({
 
 })
 
+-- Catpuccin
+require("catppuccin").setup({
+    transparent_background = true, -- disables setting the background color.
+    no_italic = true, -- Force no italic
+    integrations = {
+        harpoon = true,
+        fidget = true,
+        cmp = true,
+        gitsigns = true,
+        treesitter = true,
+        indent_blankline = { enabled = true },
+        lsp_trouble = true,
+        mason = true,
+        native_lsp = {
+            enabled = true,
+            underlines = {
+                errors = { "undercurl" },
+                hints = { "undercurl" },
+                warnings = { "undercurl" },
+                information = { "undercurl" },
+            },
+        },
+        telescope = { enabled = true, },
+        which_key = true,
+        semantic_tokens = true,
+        notify = true,
+        treesitter_context = true,
+        gitgutter = true,
+        -- For more plugins integrations see https://github.com/catppuccin/nvim#integrations
+    },
+    color_overrides = {
+        mocha = {
+            -- These colours are pastel enough by default
+            peach = "#fcc6a7",
+            green = "#d2fac5",
+        }
+    },
+})
+
 -- This function sets the theme the right way
 function Color(color)
     color = color or Mycolor
@@ -56,10 +95,12 @@ Color() -- Run function at startup
 
 -- Function to cycle between themes
 function ToggleColorScheme()
-    if Mycolor == "tokyonight" then
+    if Mycolor == "catppuccin" then
         Mycolor = "rose-pine"
-    else
+    elseif Mycolor == "rose-pine" then
         Mycolor = "tokyonight"
+    else
+        Mycolor = "catppuccin"
     end
     Color()
 end

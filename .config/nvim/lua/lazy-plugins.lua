@@ -141,7 +141,8 @@ require('lazy').setup({
     {
         -- Nice theme
         'rose-pine/neovim',
-        name = 'rose-pine'
+        name = 'rose-pine',
+        priority = 1000
     },
 
     {
@@ -150,6 +151,12 @@ require('lazy').setup({
         lazy = false,
         priority = 1000,
         opts = {},
+    },
+    {
+        -- Another one
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000
     },
 
     {
@@ -318,6 +325,88 @@ require('lazy').setup({
             vim.keymap.set('n', '<leader>;', function() require("duck").hatch("🐿️", 2) end, {})
             vim.keymap.set('n', '<leader>;;', function() require("duck").cook() end, {})
         end
+    },
+    {
+        "christoomey/vim-tmux-navigator",
+        cmd = {
+            "TmuxNavigateLeft",
+            "TmuxNavigateDown",
+            "TmuxNavigateUp",
+            "TmuxNavigateRight",
+            "TmuxNavigatePrevious",
+        },
+        keys = {
+            { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+            { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+            { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+            { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+            { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+        },
+    },
+    {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        opts = function()
+            local logo = [[
+    ███╗  ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+    ████╗ ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+    ██╔██╗██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+    ██║╚████║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+    ██║ ╚███║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+    ╚═╝  ╚══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+    - viis -
+    ]]
+
+            logo = string.rep("\n", 4) .. logo .. "\n\n"
+
+            local opts = {
+                theme = "doom",
+                hide = {
+                    statusline = false,
+                },
+                config = {
+                    header = vim.split(logo, "\n"),
+                    center = {
+                        { action = "Telescope find_files", desc = " Find file", icon = " ", key = "f" },
+                        { action = "ene | startinsert", desc = " New file", icon = " ", key = "n" },
+                        { action = "Telescope oldfiles", desc = " Recent files", icon = " ", key = "r" },
+                        { action = "e $MYVIMRC", desc = " Config", icon = " ", key = "c" },
+                        { action = 'lua require("persistence").load()', desc = " Restore Session", icon = " ", key = "s" },
+                        { action = "Lazy", desc = " Lazy", icon = "󰒲 ", key = "l" },
+                        { action = "qa", desc = " Quit", icon = " ", key = "q" },
+                    },
+                    footer = function()
+                        local stats = require("lazy").stats()
+                        local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+                        return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
+                    end,
+                },
+            }
+
+            for _, button in ipairs(opts.config.center) do
+                button.desc = button.desc .. string.rep(" ", 43 - #button.desc)
+            end
+
+            if vim.o.filetype == "lazy" then
+                vim.cmd.close()
+                vim.api.nvim_create_autocmd("User", {
+                    pattern = "DashboardLoaded",
+                    callback = function()
+                        require("lazy").show()
+                    end,
+                })
+            end
+
+            return opts
+        end,
+        dependencies = { {'nvim-tree/nvim-web-devicons'}}
+    },
+    {
+        "folke/persistence.nvim",
+        event = "BufReadPre", -- this will only start session saving when an actual file was opened
+        opts = {
+            -- add any custom options here
+        }
     },
 
     -- Plugins with dependencies that are already being installed above come here

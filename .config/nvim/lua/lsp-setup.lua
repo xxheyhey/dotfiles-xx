@@ -24,7 +24,7 @@ local on_attach = function(_, bufnr)
 
     -- See `:help K` for why this keymap
     lspmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-    lspmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+    lspmap('<C-s>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
     -- Lesser used LSP functionality
     lspmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
