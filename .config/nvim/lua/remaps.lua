@@ -58,6 +58,9 @@ vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { silent =
 vim.keymap.set("n", "<leader>tro", "<cmd>!transon<CR>", { silent = true })
 vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { silent = true })
 
+-- Toggle ZenMode
+vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { silent = true })
+
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
 

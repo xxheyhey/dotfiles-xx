@@ -360,13 +360,11 @@ require('lazy').setup({
 
             local opts = {
                 theme = "doom",
-                hide = {
-                    statusline = false,
-                },
                 config = {
                     header = vim.split(logo, "\n"),
                     center = {
                         { action = "Telescope find_files", desc = " Find file", icon = " ", key = "f" },
+                        { action = "Telescope live_grep", desc = "Find Word", icon = "  ", key = "w" },
                         { action = "ene | startinsert", desc = " New file", icon = " ", key = "n" },
                         { action = "Telescope oldfiles", desc = " Recent files", icon = " ", key = "r" },
                         { action = "e $MYVIMRC", desc = " Config", icon = " ", key = "c" },
@@ -407,7 +405,18 @@ require('lazy').setup({
             -- add any custom options here
         }
     },
+    {
+        "folke/zen-mode.nvim",
+        opts = {
+            window = {
+                width = 1.0,
+            },
+            plugins = {
+                tmux = { enabled = true },
+            },
+        }
+    }
 
-    -- Plugins with dependencies that are already being installed above come here
+        -- Plugins with dependencies that are already being installed above come here
 
 }, {})
