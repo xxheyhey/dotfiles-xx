@@ -1,6 +1,6 @@
 -- theme customization
 
-Mycolor = "catppuccin" -- Change this to switch themes
+Mycolor = "tokyonight" -- Change this to switch themes
 
 -- Rose-pine theme
 require('rose-pine').setup {

@@ -1,0 +1,3 @@
+-- local animals = { "🦆", "🐧", "🐆", "🐫", "🦩", "🐓", "🐈", "🦀", "🐀", }
+-- vim.keymap.set('n', '<leader>;', function() require("duck").hatch("🐀", 5) end, {})
+-- vim.keymap.set('n', '<leader>;;', function() require("duck").cook() end, {})
