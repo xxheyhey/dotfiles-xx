@@ -2,7 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="simple"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -101,3 +101,7 @@ setopt pushd_minus
 setopt hist_ignore_dups
 # Nobody need flow control anymore. Troublesome feature.
 setopt noflowcontrol
+
+# I have to do this to correctly display the directory name when running
+# tmux-sessionizer (I have no idea why)
+cd .
