@@ -61,6 +61,9 @@ vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { silent = true })
 -- Toggle ZenMode
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { silent = true })
 
+-- Open current file in browser
+vim.keymap.set("n", "gX", "<cmd>!open %<CR>", { silent = true })
+
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
 
