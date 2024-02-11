@@ -1,5 +1,5 @@
 # ls
-alias ls='ls --color=tty --group-directories-first'
+alias ls='ls --color=tty --group-directories-first --human-readable'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
