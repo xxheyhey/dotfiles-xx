@@ -5,8 +5,8 @@ xset b off
 xrdb ~/.Xresources
 xautolock -time 5 -locker slock -corners ---- -detectsleep &
 setxkbmap -option "compose:ralt"
+setxkbmap -option "caps:swapescape"
 xbindkeys
-setxkbmap -option caps:escape
 
 # Other startup apps/services
 picom &
