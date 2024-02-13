@@ -1,7 +1,7 @@
 require("dap").adapters["pwa-node"] = {
     type = "server",
     host = "127.0.0.1",
-    port = 8123,
+    port = 8888,
     executable = {
         command = "js-debug-adapter",
     }
