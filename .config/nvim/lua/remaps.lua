@@ -25,10 +25,10 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Search and replace in regex mode, '\(' means match bracket and not open atom
-vim.keymap.set("n", "<leader>sr", ":%s/\\v")
+vim.keymap.set("n", "<leader>rs", ":%s/\\v", { desc = "Search and replace" })
 
 -- Change all words that are the same as the one you're on
-vim.keymap.set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Change the current and all the same words" })
 
 -- Make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
@@ -62,7 +62,7 @@ vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { silent = true })
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>!open %<CR>", { silent = true })
+vim.keymap.set("n", "gX", "<cmd>!google-chrome-stable %<CR>", { silent = true })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")

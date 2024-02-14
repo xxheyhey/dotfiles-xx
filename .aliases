@@ -44,6 +44,7 @@ alias svim='sudo nvim'
 alias g="git"
 alias gs="git status"
 alias gp="git push"
+alias gpo="git push origin"
 alias gpom="git push origin master"
 alias ga="git add"
 alias gc="git commit --verbose"
@@ -72,3 +73,5 @@ alias bluebuds="sudo bluetoothctl connect 40:5E:F6:6D:CE:9E"
 # Anaconda
 alias cona="conda activate"
 alias cond="conda deactivate"
+# My browser of choice
+alias browser="google-chrome-stable"
