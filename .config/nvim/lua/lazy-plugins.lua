@@ -7,6 +7,9 @@
 require('lazy').setup({
     -- First, some plugins that don't require any configuration in this file
 
+    -- The most important dependency
+    'nvim-lua/plenary.nvim',
+
     -- Git related plugins
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
@@ -415,7 +418,38 @@ require('lazy').setup({
                 tmux = { enabled = true },
             },
         }
-    }
+    },
+    {
+        'nvim-pack/nvim-spectre',
+        opts = {
+            default = {
+                find = {
+                    cmd = "rg",
+                    options = {"ignore-case", "hidden"}
+                },
+            },
+        },
+    },
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+            -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+        },
+    },
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    },
 
         -- Plugins with dependencies that are already being installed above come here
 
