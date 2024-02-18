@@ -25,13 +25,13 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Make file executable
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' on current file", silent = true })
 
 -- tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- Format file (remove white spaces and such)
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format file" })
 
 -- Quickfix list
 vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz")
@@ -43,25 +43,24 @@ vim.keymap.set("n", "<leader><down>", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<tab>", "<cmd>winc w<CR>", { silent = true })
 
 -- Toggle wrap
-vim.keymap.set("n", "<leader>tw", "<cmd>set wrap!<CR>", { silent = true })
+vim.keymap.set("n", "<leader>tw", "<cmd>set wrap!<CR>", { desc = "Toggle wrap", silent = true })
 
 -- Toggle the color scheme
-vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { desc = "Toggle theme", silent = true })
 
 -- Toggle transparency (custom scripts)
-vim.keymap.set("n", "<leader>tro", "<cmd>!transon<CR>", { silent = true })
-vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { silent = true })
+vim.keymap.set("n", "<leader>tro", "<cmd>!transon<CR>", { desc = "Transparency on", silent = true })
+vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { desc = "Transparency off", silent = true })
 
 -- Toggle ZenMode
-vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { silent = true })
+vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
 vim.keymap.set("n", "gX", "<cmd>!google-chrome-stable %<CR>", { silent = true })
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
-vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" })
-vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
+vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" }) vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
 vim.keymap.set('n', '<leader>sf', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
 
 -- Simpler search and replace than nvim-spectre:
@@ -73,7 +72,7 @@ vim.keymap.set("n", "<leader>Sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("n", "<leader>SW", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Change the current and all the same words" })
 
 -- Neotree
-vim.keymap.set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { silent = true })
+vim.keymap.set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { desc = "Neotree", silent = true })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
