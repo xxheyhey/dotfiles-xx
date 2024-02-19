@@ -17,3 +17,4 @@ text/x-r-source=org.gnome.gedit.desktop;R.desktop;nvim.desktop;
 audio/mp4=vlc.desktop;
 application/x-bat=org.gnome.gedit.desktop;
 text/plain=google-chrome.desktop;
+image/jpeg=qimgv.desktop;
