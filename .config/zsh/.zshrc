@@ -76,6 +76,7 @@ unset __conda_setup
 bindkey -s ^f "tmux-sessionizer\n"
 bindkey -s ^n "alacritty -e less ~/personal/Documents/NeovimCheatsheet\n"
 bindkey -s ^t "tmux attach\n"
+bindkey -s ^g "open-current-dir\n"
 
 # Completion
 autoload -Uz compinit

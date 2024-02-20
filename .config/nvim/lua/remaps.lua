@@ -29,6 +29,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' o
 
 -- tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>")
 
 -- Format file (remove white spaces and such)
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format file" })
@@ -49,14 +50,14 @@ vim.keymap.set("n", "<leader>tw", "<cmd>set wrap!<CR>", { desc = "Toggle wrap", 
 vim.keymap.set('n', '<leader>th', '<cmd>lua ToggleColorScheme()<CR>', { desc = "Toggle theme", silent = true })
 
 -- Toggle transparency (custom scripts)
-vim.keymap.set("n", "<leader>tro", "<cmd>!transon<CR>", { desc = "Transparency on", silent = true })
-vim.keymap.set("n", "<leader>trf", "<cmd>!transoff<CR>", { desc = "Transparency off", silent = true })
+vim.keymap.set("n", "<leader>tro", "<cmd>silent !transon<CR>", { desc = "Transparency on" })
+vim.keymap.set("n", "<leader>trf", "<cmd>silent !transoff<CR>", { desc = "Transparency off" })
 
 -- Toggle ZenMode
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>!google-chrome-stable %<CR>", { silent = true })
+vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable %<CR>")
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
