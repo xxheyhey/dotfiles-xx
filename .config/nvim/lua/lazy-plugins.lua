@@ -13,6 +13,7 @@ require('lazy').setup({
     -- Git related plugins
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
+    'sindrets/diffview.nvim',
 
     -- Other
     'jamespeapen/Nvim-R',

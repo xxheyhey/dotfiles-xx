@@ -13,35 +13,35 @@ vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent director
 vim.keymap.set("n", "-", "<cmd>lua require('oil').toggle_float()<CR>", { desc = "Oil" })
 
 -- Move lines up and down
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 
 -- Paste and delete without changing paste buffer
-vim.keymap.set("x", "<leader>p", [["_dP]])
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without changing paste buffer" })
+vim.keymap.set({"n", "v"}, "<leader>d", [["_d]], { desc = "Delete without changing paste buffer" })
 
 -- yank to clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]], { desc = "Yank to clipboard" })
+vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank to clipboard" })
 
 -- Make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' on current file", silent = true })
 
 -- tmux-sessionizer
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "Launch tmux-sessionizer script" })
+vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Launch open-current-dir script" })
 
 -- Format file (remove white spaces and such)
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format file" })
 
 -- Quickfix list
-vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<down>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader><up>", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader><down>", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
+vim.keymap.set("n", "<down>", "<cmd>cprev<CR>zz", { desc = "Quickfix list previous" })
+vim.keymap.set("n", "<leader><up>", "<cmd>lnext<CR>zz", { desc = "Idk" })
+vim.keymap.set("n", "<leader><down>", "<cmd>lprev<CR>zz", { desc = "Idk" })
 
 -- Switch to next window
-vim.keymap.set("n", "<tab>", "<cmd>winc w<CR>", { silent = true })
+vim.keymap.set("n", "<tab>", "<cmd>winc w<CR>", { desc = "Change focus to next vim window", silent = true })
 
 -- Toggle wrap
 vim.keymap.set("n", "<leader>tw", "<cmd>set wrap!<CR>", { desc = "Toggle wrap", silent = true })
@@ -57,7 +57,7 @@ vim.keymap.set("n", "<leader>trf", "<cmd>silent !transoff<CR>", { desc = "Transp
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable %<CR>")
+vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable %<CR>", { desc = "Open current file in browser" })
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
@@ -75,6 +75,13 @@ vim.keymap.set("n", "<leader>SW", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 -- Neotree
 vim.keymap.set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { desc = "Neotree", silent = true })
 
+-- Diffview
+vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "DiffviewOpen", silent = true })
+vim.keymap.set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "DiffviewOpen", silent = true })
+
+-- Search through all keymaps with Telescope
+vim.keymap.set("n", "<leader>key", "<cmd>Telescope keymaps<CR>", { desc = "Search through keymaps", silent = true })
+
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
 
@@ -83,7 +90,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("i", "<C-c>", "<Esc>")
-
 vim.keymap.set("n", "Q", "<nop>")
 
 -- Functions
