@@ -16,4 +16,6 @@ export FZF_DEFAULT_OPTS="
 	--color=fg+:#e0def4,bg+:#393552,hl+:#f38ba8
 	--color=border:#44415a,header:#3e8fb0,gutter:#000000
 	--color=spinner:#f6c177,info:#9ccfd8,separator:#44415a
-	--color=pointer:#f5e0dc,marker:#eb6f92,prompt:#908caa"
+	--color=pointer:#f5e0dc,marker:#eb6f92,prompt:#908caa
+    --layout=reverse
+    --border"
