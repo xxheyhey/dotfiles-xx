@@ -106,3 +106,6 @@ setopt noflowcontrol
 # I have to do this to correctly display the directory name when running
 # tmux-sessionizer (I have no idea why)
 cd .
+
+# Zoxide
+eval "$(zoxide init --cmd cd zsh)"
