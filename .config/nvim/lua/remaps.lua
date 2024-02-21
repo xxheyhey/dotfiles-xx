@@ -57,7 +57,7 @@ vim.keymap.set("n", "<leader>trf", "<cmd>silent !transoff<CR>", { desc = "Transp
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable %<CR>", { desc = "Open current file in browser" })
+vim.keymap.set("n", "gX", "<cmd>!google-chrome-stable % &<CR>", { desc = "Open current file in browser" })
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
@@ -77,7 +77,7 @@ vim.keymap.set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { desc = "Neotree", 
 
 -- Diffview
 vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "DiffviewOpen", silent = true })
-vim.keymap.set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "DiffviewOpen", silent = true })
+vim.keymap.set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "DiffviewClose", silent = true })
 
 -- Search through all keymaps with Telescope
 vim.keymap.set("n", "<leader>key", "<cmd>Telescope keymaps<CR>", { desc = "Search through keymaps", silent = true })
