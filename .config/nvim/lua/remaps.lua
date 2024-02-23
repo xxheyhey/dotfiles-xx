@@ -57,7 +57,7 @@ vim.keymap.set("n", "<leader>trf", "<cmd>silent !transoff<CR>", { desc = "Transp
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>!google-chrome-stable % &<CR>", { desc = "Open current file in browser" })
+vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable % &<CR>", { desc = "Open current file in browser" })
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })

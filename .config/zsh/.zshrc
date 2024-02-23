@@ -109,3 +109,6 @@ cd .
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# Thefuck
+eval $(thefuck --alias)
