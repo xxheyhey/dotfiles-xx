@@ -77,3 +77,7 @@ alias cona="conda activate"
 alias cond="conda deactivate"
 # My browser of choice
 alias browser="google-chrome-stable"
+# Updating
+alias upd="sudo apt update"
+alias upg="sudo apt upgrade -y"
+alias aptin="sudo apt list --upgradable"
