@@ -426,7 +426,7 @@ require('lazy').setup({
             default = {
                 find = {
                     cmd = "rg",
-                    options = {"ignore-case", "hidden"}
+                    options = {"hidden"}
                 },
             },
         },

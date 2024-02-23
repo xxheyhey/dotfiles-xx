@@ -29,3 +29,4 @@
 .config/zsh/.zcompdump*
 .config/Code
 .config/fontforge
+.config/thefuck
