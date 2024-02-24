@@ -81,4 +81,4 @@ alias browser="google-chrome-stable"
 # Updating
 alias upd="sudo apt update"
 alias upg="sudo apt upgrade -y"
-alias aptin="sudo apt list --upgradable"
+alias aptin="apt list --upgradable"
