@@ -11,7 +11,6 @@ require('lazy').setup({
     'nvim-lua/plenary.nvim',
 
     -- Git related plugins
-    'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
     'sindrets/diffview.nvim',
 
@@ -326,11 +325,7 @@ require('lazy').setup({
     },
     {
         'tamton-aquib/duck.nvim',
-        config = function()
-            -- local animals = { "🦆", "🐧", "🐆", "🐫", "🦩", "🐓", "🐈", "🦀", "🐀", }
-            vim.keymap.set('n', '<leader>;', function() require("duck").hatch("🐀", 5) end, {})
-            vim.keymap.set('n', '<leader>;;', function() require("duck").cook() end, {})
-        end
+        opts = {},
     },
     {
         "christoomey/vim-tmux-navigator",
@@ -342,10 +337,10 @@ require('lazy').setup({
             "TmuxNavigatePrevious",
         },
         keys = {
-            { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
-            { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
-            { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
-            { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+            { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
+            { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
+            { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
+            { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
             { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
         },
     },
@@ -402,7 +397,7 @@ require('lazy').setup({
 
             return opts
         end,
-        dependencies = { {'nvim-tree/nvim-web-devicons'}}
+        dependencies = { { 'nvim-tree/nvim-web-devicons' } }
     },
     {
         "folke/persistence.nvim",
@@ -426,7 +421,7 @@ require('lazy').setup({
             default = {
                 find = {
                     cmd = "rg",
-                    options = {"hidden"}
+                    options = { "hidden" }
                 },
             },
         },
@@ -451,7 +446,23 @@ require('lazy').setup({
             })
         end
     },
-
-        -- Plugins with dependencies that are already being installed above come here
+    {
+        "NeogitOrg/neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim",         -- required
+            "sindrets/diffview.nvim",        -- optional - Diff integration
+            "nvim-telescope/telescope.nvim", -- optional
+        },
+        config = true
+    },
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        }
+    }
 
 }, {})

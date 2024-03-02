@@ -82,6 +82,10 @@ vim.keymap.set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "DiffviewCl
 -- Search through all keymaps with Telescope
 vim.keymap.set("n", "<leader>key", "<cmd>Telescope keymaps<CR>", { desc = "Search through keymaps", silent = true })
 
+-- Neogit
+vim.keymap.set("n", "<leader>gs", function() require('neogit').open({ kind = 'split' }) end, { desc = "Neogit" })
+vim.keymap.set("n", "<leader>gc", function() require('neogit').open({ kind = 'split' }) end, { desc = "Neogit" })
+
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
 
