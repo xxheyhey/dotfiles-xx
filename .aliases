@@ -5,6 +5,7 @@ alias la='ls -A'
 alias l='ls -CF'
 # Nice ones
 alias python="python3"
+alias py="python3"
 alias goto="source"
 alias ..="cd .."
 alias monitor="mons"
