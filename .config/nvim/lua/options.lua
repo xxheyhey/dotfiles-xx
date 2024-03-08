@@ -53,18 +53,9 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
--- -- Disable picom transparency at startup (TODO: find a better solution)
--- vim.api.nvim_create_autocmd("VimEnter", {
--- 	callback = function()
---         vim.fn.system("transoff")
--- 	end,
--- })
--- -- And enabling it when exiting
--- vim.api.nvim_create_autocmd("VimLeave", {
--- 	callback = function()
---         vim.fn.system("transon")
--- 	end,
--- })
+-- Remove annoying auto continuation of commenting
+vim.cmd("autocmd BufEnter * set formatoptions-=cro")
+vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
 
 -- Other settings
 vim.opt.incsearch = true
@@ -87,3 +78,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
+

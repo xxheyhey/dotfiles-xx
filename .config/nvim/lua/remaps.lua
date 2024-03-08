@@ -8,9 +8,9 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open float
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- Open the Oil file explorer
-vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 -- And as a popup
-vim.keymap.set("n", "-", "<cmd>lua require('oil').toggle_float()<CR>", { desc = "Oil" })
+vim.keymap.set("n", "<leader>pv", "<cmd>lua require('oil').toggle_float()<CR>", { desc = "Oil" })
 
 -- Move lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
@@ -57,7 +57,9 @@ vim.keymap.set("n", "<leader>trf", "<cmd>silent !transoff<CR>", { desc = "Transp
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable % &<CR>", { desc = "Open current file in browser" })
+vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable % &<CR>", { desc = "Open current file in Chrome" })
+vim.keymap.set("n", "<leader>oc", "<cmd>silent !google-chrome-stable % &<CR>", { desc = "Open current file in Chrome" })
+vim.keymap.set("n", "<leader>of", "<cmd>silent !firefox % &<CR>", { desc = "Open current file in Firefox" })
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
