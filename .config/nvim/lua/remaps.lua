@@ -57,7 +57,7 @@ vim.keymap.set("n", "<leader>trf", "<cmd>silent !transoff<CR>", { desc = "Transp
 vim.keymap.set("n", "<F11>", "<cmd>ZenMode<CR>", { desc = "Start ZenMode", silent = true })
 
 -- Open current file in browser
-vim.keymap.set("n", "gX", "<cmd>silent !google-chrome-stable % &<CR>", { desc = "Open current file in Chrome" })
+vim.keymap.set("n", "gX", "<cmd>silent !firefox % &<CR>", { desc = "Open current file in Firefox" })
 vim.keymap.set("n", "<leader>oc", "<cmd>silent !google-chrome-stable % &<CR>", { desc = "Open current file in Chrome" })
 vim.keymap.set("n", "<leader>of", "<cmd>silent !firefox % &<CR>", { desc = "Open current file in Firefox" })
 
