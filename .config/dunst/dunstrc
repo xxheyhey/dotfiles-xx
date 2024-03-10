@@ -15,3 +15,7 @@ enable_recursive_icon_lookup = true
     background = "#292e42"
     foreground = "#db4b4b"
     frame_color = "#db4b4b"
+
+[play_sound]
+    msg_urgency = critical
+    script = /home/vic/personal/bin/alert
