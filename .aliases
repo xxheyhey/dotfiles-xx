@@ -86,3 +86,5 @@ alias browser="google-chrome-stable"
 alias upd="sudo apt update"
 alias upg="sudo apt upgrade -y"
 alias aptin="apt list --upgradable"
+# Neofetch with lolcat
+alias neofetchlol="neofetch | lolcat"
