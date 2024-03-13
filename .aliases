@@ -54,6 +54,7 @@ alias gpom="git push origin master"
 alias gpu="git pull"
 alias ga="git add"
 alias gc="git commit --verbose"
+alias glo="git log --pretty=oneline"
 # Git for my dotfiles
 alias dotgit="/usr/bin/git --git-dir=$HOME/Github/dotfiles-xx/ --work-tree=$HOME"
 alias d="dotgit"
