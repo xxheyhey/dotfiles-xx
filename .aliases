@@ -85,9 +85,10 @@ alias cona="conda activate"
 alias cond="conda deactivate"
 # My browser of choice
 alias browser="google-chrome-stable"
-# Updating
+# Updating, upgrading and cleaning
 alias upd="sudo apt update"
 alias upg="sudo apt upgrade -y"
 alias aptin="apt list --upgradable"
+alias clean="sudo apt autoremove -y"
 # Neofetch with lolcat
 alias neofetchlol="neofetch | lolcat"
