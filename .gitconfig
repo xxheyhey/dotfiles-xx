@@ -3,3 +3,5 @@
     email = 95343562+xxheyhey@users.noreply.github.com
 [core]
     editor = nvim
+[advice]
+	addIgnoredFile = false

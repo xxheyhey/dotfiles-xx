@@ -92,3 +92,5 @@ alias aptin="apt list --upgradable"
 alias clean="sudo apt autoremove -y"
 # Neofetch with lolcat
 alias neofetchlol="neofetch | lolcat"
+# Starting Express app
+alias run-express="DEBUG=$(basename $PWD):* npm start"

@@ -216,6 +216,7 @@ require('lazy').setup({
         -- NOTE: And you can specify dependencies as well
         dependencies = {
             -- Creates a beautiful debugger UI
+            'nvim-neotest/nvim-nio', -- Dependency for nvim-dap-ui
             'rcarriga/nvim-dap-ui',
 
             -- Installs the debug adapters for you
@@ -459,9 +460,9 @@ require('lazy').setup({
         "folke/todo-comments.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = {
-            -- your configuration comes here
-            -- or leave it empty to use the default settings
-            -- refer to the configuration section below
+            keywords = {
+                REMOVE = { icon = " ", color = "error", alt = { "REMOVE" } }
+            }
         }
     }
 
