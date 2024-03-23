@@ -56,6 +56,7 @@ alias gpo="git push origin"
 alias gpom="git push origin master"
 alias gpu="git pull"
 alias ga="git add"
+alias gaa="git add --all"
 alias gc="git commit --verbose"
 alias glo="git log --pretty=oneline"
 # Git for my dotfiles
