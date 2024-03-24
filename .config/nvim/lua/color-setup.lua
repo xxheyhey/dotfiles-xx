@@ -87,6 +87,8 @@ function Color(color)
     color = color or Mycolor
     vim.cmd.colorscheme(color)
 
+    -- Highlight groups
+    vim.api.nvim_set_hl(0, "BiscuitColor", { fg = "#494c57" })
     -- The following is needed for some themes to fix the background
     -- of some windows or parts of the screen
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

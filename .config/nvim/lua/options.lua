@@ -64,18 +64,20 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.colorcolumn = "80"
 vim.diagnostic.config({
-  virtual_text = true
+    virtual_text = true
 })
 vim.opt.shortmess:append({ I = true }) -- Remove intro screen because of flicker bug
+-- Tried to make wrapping smaller when toggling wrap with keybind. Didn't work...
+vim.opt.textwidth = 0
+vim.opt.wrapmargin = 80
 
 -- Highlight on yank
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+    group = highlight_group,
+    pattern = '*',
 })
-

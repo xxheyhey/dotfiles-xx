@@ -464,6 +464,20 @@ require('lazy').setup({
                 REMOVE = { icon = " ", color = "error", alt = { "REMOVE" } }
             }
         }
-    }
+    },
+    {
+        'code-biscuits/nvim-biscuits',
+        opts = {
+            default_config = {
+                prefix_string = " 👁  "
+            },
+            cursor_line_only = true,
+            language_config = {
+                python = {
+                    disabled = true
+                }
+            },
+        },
+    },
 
 }, {})

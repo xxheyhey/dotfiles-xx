@@ -88,6 +88,9 @@ vim.keymap.set("n", "<leader>key", "<cmd>Telescope keymaps<CR>", { desc = "Searc
 vim.keymap.set("n", "<leader>gs", function() require('neogit').open({ kind = 'split' }) end, { desc = "Neogit" })
 vim.keymap.set("n", "<leader>gc", function() require('neogit').open({ kind = 'split' }) end, { desc = "Neogit" })
 
+-- Biscuits toggle
+vim.keymap.set("n", "<leader>tb", function() require("nvim-biscuits").toggle_biscuits() end, { desc = "Toggle Biscuits" })
+
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
 

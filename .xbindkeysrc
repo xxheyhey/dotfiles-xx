@@ -25,3 +25,15 @@
 # Open Flameshot screenshot utility
 "flameshot gui"
    Mod2 + Print
+
+# Play/pause
+"playerctl play-pause"
+   XF86AudioPlay
+
+# Play next
+"playerctl next"
+   XF86AudioNext
+
+# Play previous
+"playerctl previous"
+   XF86AudioPrev
