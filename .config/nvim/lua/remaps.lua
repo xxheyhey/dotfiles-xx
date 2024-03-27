@@ -62,17 +62,15 @@ vim.keymap.set("n", "<leader>oc", "<cmd>silent !google-chrome-stable % &<CR>", {
 vim.keymap.set("n", "<leader>of", "<cmd>silent !firefox % &<CR>", { desc = "Open current file in Firefox" })
 
 -- nvim-spectre
-vim.keymap.set('n', '<leader>sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
-vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" }) vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
-vim.keymap.set('n', '<leader>sf', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
+vim.keymap.set('n', '<leader>Sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
+vim.keymap.set('n', '<leader>Sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" }) vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
+vim.keymap.set('n', '<leader>Sf', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
 
 -- Simpler search and replace than nvim-spectre:
 -- Search and replace in regex mode, '\(' means match bracket and not open atom
-vim.keymap.set("n", "<leader>Sr", ":%s/\\v", { desc = "Search and replace" })
-vim.keymap.set("n", "<leader>SR", ":%s/\\v", { desc = "Search and replace" })
+vim.keymap.set("n", "<leader>sr", ":%s/\\v", { desc = "Search and replace" })
 -- Search and replace current word
-vim.keymap.set("n", "<leader>Sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Change the current and all the same words" })
-vim.keymap.set("n", "<leader>SW", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Change the current and all the same words" })
+vim.keymap.set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Change the current and all the same words" })
 
 -- Neotree
 vim.keymap.set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { desc = "Neotree", silent = true })
