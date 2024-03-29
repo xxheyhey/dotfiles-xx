@@ -360,10 +360,23 @@ require('lazy').setup({
 
             logo = string.rep("\n", 4) .. logo .. "\n\n"
 
+            local logo2 = [[
+	                                                                   
+	      ████ ██████           █████      ██                    
+	     ███████████             █████                            
+	     █████████ ███████████████████ ███   ███████████  
+	    █████████  ███    █████████████ █████ ██████████████  
+	   █████████ ██████████ █████████ █████ █████ ████ █████  
+	 ███████████ ███    ███ █████████ █████ █████ ████ █████ 
+	██████  █████████████████████ ████ █████ █████ ████ ██████
+    ]]
+
+            logo2 = string.rep("\n", 4) .. logo2 .. "\n\n"
+
             local opts = {
                 theme = "doom",
                 config = {
-                    header = vim.split(logo, "\n"),
+                    header = vim.split(logo2, "\n"),
                     center = {
                         { action = "Telescope find_files", desc = " Find file", icon = " ", key = "f" },
                         { action = "Telescope live_grep", desc = "Find Word", icon = "  ", key = "w" },
