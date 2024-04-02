@@ -462,6 +462,7 @@ require('lazy').setup({
     },
     {
         "NeogitOrg/neogit",
+        branch = 'nightly',
         dependencies = {
             "nvim-lua/plenary.nvim",         -- required
             "sindrets/diffview.nvim",        -- optional - Diff integration
@@ -488,6 +489,9 @@ require('lazy').setup({
             cursor_line_only = true,
             language_config = {
                 python = {
+                    disabled = true
+                },
+                markdown = {
                     disabled = true
                 }
             },
