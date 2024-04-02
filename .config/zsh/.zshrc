@@ -112,3 +112,8 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Thefuck
 eval $(thefuck --alias)
+
+# Always working in tmux
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux-home
+fi
