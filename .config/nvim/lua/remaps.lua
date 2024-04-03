@@ -29,7 +29,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' o
 
 -- tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "Launch tmux-sessionizer script" })
-vim.keymap.set("n", "<C-g>", "<cmd>silent !tmux split-window -h -c .<CR>", { desc = "Launch open-current-dir script" })
+vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Launch open-current-dir script" })
 
 -- Format file (remove white spaces and such)
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format file" })
