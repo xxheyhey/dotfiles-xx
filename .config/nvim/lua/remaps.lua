@@ -9,8 +9,6 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 -- Open the Oil file explorer
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
--- And as a popup
-vim.keymap.set("n", "<leader>pv", "<cmd>lua require('oil').toggle_float()<CR>", { desc = "Oil" })
 
 -- Move lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
