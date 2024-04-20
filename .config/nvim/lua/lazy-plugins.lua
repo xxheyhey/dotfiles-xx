@@ -302,8 +302,10 @@ require('lazy').setup({
             local trouble = require("trouble")
 
             vim.keymap.set("n", "<leader>tt", trouble.toggle, { desc = "Toggle Trouble" })
-            vim.keymap.set("n", "<leader>tn", function() trouble.next({ skip_goups = true, jump = true }) end, { desc = "Trouble Next" })
-            vim.keymap.set("n", "<leader>tp", function() trouble.previous({ skip_goups = true, jump = true }) end, { desc = "Trouble Previous" })
+            vim.keymap.set("n", "<leader>tn", function() trouble.next({ skip_goups = true, jump = true }) end,
+                { desc = "Trouble Next" })
+            vim.keymap.set("n", "<leader>tp", function() trouble.previous({ skip_goups = true, jump = true }) end,
+                { desc = "Trouble Previous" })
         end
     },
 
@@ -368,12 +370,12 @@ require('lazy').setup({
                     header = vim.split(logo2, "\n"),
                     center = {
                         { action = "Telescope find_files", desc = " Find file", icon = " ", key = "f" },
-                        { action = "Telescope live_grep", desc = "Find Word", icon = "  ", key = "w" },
+                        { action = "Telescope live_grep", desc = " Grep Word", icon = "  ", key = "g" },
                         { action = "ene | startinsert", desc = " New file", icon = " ", key = "n" },
-                        { action = "Telescope oldfiles", desc = " Recent files", icon = " ", key = "r" },
                         { action = "e $MYVIMRC", desc = " Config", icon = " ", key = "c" },
                         { action = 'lua require("persistence").load()', desc = " Restore Session", icon = " ", key = "s" },
                         { action = "Lazy", desc = " Lazy", icon = "󰒲 ", key = "l" },
+                        { action = "Mason", desc = " Mason", icon = "◍ ", key = "m" },
                         { action = "qa", desc = " Quit", icon = " ", key = "q" },
                     },
                     footer = function()
@@ -484,6 +486,14 @@ require('lazy').setup({
                     disabled = true
                 }
             },
+        },
+    },
+    {
+        "jay-babu/mason-null-ls.nvim",
+        event = { "BufReadPre", "BufNewFile" },
+        dependencies = {
+            "williamboman/mason.nvim",
+            "nvimtools/none-ls.nvim",
         },
     },
 

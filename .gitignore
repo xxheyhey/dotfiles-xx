@@ -34,3 +34,5 @@
 .config/rncbc.org
 .config/easyeffects
 .config/filezilla
+.config/onedrive/items.sqlite3*
+.config/configstore

@@ -67,9 +67,6 @@ vim.diagnostic.config({
     virtual_text = true
 })
 vim.opt.shortmess:append({ I = true }) -- Remove intro screen because of flicker bug
--- Tried to make wrapping smaller when toggling wrap with keybind. Didn't work...
-vim.opt.textwidth = 0
-vim.opt.wrapmargin = 80
 
 -- Highlight on yank
 -- See `:help vim.highlight.on_yank()`

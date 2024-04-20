@@ -16,10 +16,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 
 -- Paste and delete without changing paste buffer
 vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without changing paste buffer" })
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]], { desc = "Delete without changing paste buffer" })
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete without changing paste buffer" })
 
 -- yank to clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]], { desc = "Yank to clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank to clipboard" })
 
 -- Make file executable
@@ -29,8 +29,16 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' o
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "Launch tmux-sessionizer script" })
 vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Launch open-current-dir script" })
 
--- Format file (remove white spaces and such)
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format file" })
+-- Format file
+vim.keymap.set("n", "<leader>f", function()
+    vim.lsp.buf.format({
+        async = true,
+        -- -- Only request null-ls for formatting
+        -- filter = function(client)
+        --     return client.name == "null-ls"
+        -- end,
+    })
+end, { desc = "Format file" })
 
 -- Quickfix list
 vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
@@ -61,14 +69,18 @@ vim.keymap.set("n", "<leader>of", "<cmd>silent !firefox % &<CR>", { desc = "Open
 
 -- nvim-spectre
 vim.keymap.set('n', '<leader>Sr', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
-vim.keymap.set('n', '<leader>Sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" }) vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
-vim.keymap.set('n', '<leader>Sf', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
+vim.keymap.set('n', '<leader>Sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>',
+    { desc = "Search current word" })
+vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
+vim.keymap.set('n', '<leader>Sf', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
+    { desc = "Search on current file" })
 
 -- Simpler search and replace than nvim-spectre:
 -- Search and replace in regex mode, '\(' means match bracket and not open atom
 vim.keymap.set("n", "<leader>sr", ":%s/\\v", { desc = "Search and replace" })
 -- Search and replace current word
-vim.keymap.set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Change the current and all the same words" })
+vim.keymap.set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+    { desc = "Change the current and all the same words" })
 
 -- Neotree
 vim.keymap.set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { desc = "Neotree", silent = true })

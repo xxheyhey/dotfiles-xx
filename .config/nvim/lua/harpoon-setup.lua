@@ -9,7 +9,7 @@ harpoon:setup({
 })
 -- REQUIRED
 
-vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end, { desc = "Add to Harpoon list" })
+vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end, { desc = "Add to Harpoon list" })
 vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "Open Harpoon list" })
 
 vim.keymap.set("n", "<C-b>", function() harpoon:list():select(1) end)
@@ -26,7 +26,3 @@ vim.keymap.set("n", "<leader>7", function() harpoon:list():select(7) end, { desc
 vim.keymap.set("n", "<leader>8", function() harpoon:list():select(8) end, { desc = "Open Harpoon window 8" })
 vim.keymap.set("n", "<leader>9", function() harpoon:list():select(9) end, { desc = "Open Harpoon window 9" })
 vim.keymap.set("n", "<leader>0", function() harpoon:list():select(10) end, { desc = "Open Harpoon window 10" })
-
--- Toggle previous & next buffers stored within Harpoon list
-vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
-vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
