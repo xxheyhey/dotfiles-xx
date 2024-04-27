@@ -95,5 +95,7 @@ alias neofetchlol="neofetch | lolcat"
 # Starting Express app
 alias express-start="DEBUG=$(basename $PWD):* npm start"
 alias express-devstart="DEBUG=$(basename $PWD):* npm run devstart"
-# pandoc
+# Pandoc
 alias mdtopdf="pandoc --from=markdown --to=pdf -o pdf.pdf"
+# Markdown
+alias md="glow"

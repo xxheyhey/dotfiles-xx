@@ -36,3 +36,4 @@
 .config/filezilla
 .config/onedrive/items.sqlite3*
 .config/configstore
+.config/libreoffice
