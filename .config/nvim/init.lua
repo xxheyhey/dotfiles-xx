@@ -2,21 +2,24 @@
 vim.g.mapleader = ' '
 -- vim.g.maplocalleader = ' '
 
+-- Before everything else
 require 'lazy-bootstrap'
 require 'logo'
 require 'lazy-plugins'
+
+-- Thereafter
 require 'options'
-require 'remaps'
 require 'telescope-setup'
 require 'treesitter-setup'
 require 'lsp-setup'
 require 'cmp-setup'
 require 'color-setup'
 require 'harpoon-setup'
-require 'undotree-setup'
 require 'nvim-r-setup'
 require 'oil-setup'
-require 'ibl-setup'
 require 'dap-js'
 require 'duck-setup'
 require 'mason-null-ls-setup'
+
+-- After everything else
+require 'remaps'

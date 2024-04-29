@@ -13,6 +13,7 @@ alias :q="exit"
 alias :Q="exit"
 alias play="pw-play"
 alias chx="chmod +x"
+alias valias="vim $HOME/.aliases"
 # Finding files
 alias fa="fd --type f --hidden --exclude anaconda3 --exclude R --exclude x86_64-pc-linux-gnu-library --exclude go --exclude .TinyTex --exclude .local --exclude .config/google-chrome --exclude .opam --exclude .cargo --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm --base-directory $HOME --search-path $HOME | fzf --print0 | xargs -0 -o nvim"
 alias f="fd --type f --hidden --exclude anaconda3 --exclude R --exclude x86_64-pc-linux-gnu-library --exclude go --exclude .TinyTex --exclude .local --exclude .config/google-chrome --exclude .opam --exclude .cargo --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm | fzf --print0 | xargs -0 -o nvim"
@@ -87,7 +88,7 @@ alias cond="conda deactivate"
 alias browser="google-chrome-stable"
 # Updating, upgrading and cleaning
 alias upd="sudo apt update"
-alias upg="sudo apt upgrade -y"
+alias upg="sudo apt upgrade"
 alias aptin="apt list --upgradable"
 alias clean="sudo apt autoremove -y"
 # Neofetch with lolcat
@@ -97,5 +98,6 @@ alias express-start="DEBUG=$(basename $PWD):* npm start"
 alias express-devstart="DEBUG=$(basename $PWD):* npm run devstart"
 # Pandoc
 alias mdtopdf="pandoc --from=markdown --to=pdf -o pdf.pdf"
+alias mdtohtml="pandoc --from=markdown --to=html -o html.html"
 # Markdown
 alias md="glow"

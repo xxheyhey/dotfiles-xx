@@ -65,7 +65,7 @@ require('lazy').setup({
     },
 
     -- Useful plugin to show you pending keybinds.
-    { 'folke/which-key.nvim',  opts = {} },
+    { 'folke/which-key.nvim', opts = {} },
     {
         -- Adds git related signs to the gutter, as well as utilities for managing changes
         'lewis6991/gitsigns.nvim',
@@ -176,10 +176,24 @@ require('lazy').setup({
         -- See `:help ibl`
         main = 'ibl',
         opts = {},
+        config = function()
+            require("ibl").setup {
+                exclude = { filetypes = { "dashboard" } }
+            }
+        end
     },
 
     -- "gc" to comment visual regions/lines
-    { 'numToStr/Comment.nvim', opts = {} },
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            extra = {
+                ---Add comment at the end of line
+                eol = '<leader>C',
+            },
+        },
+        lazy = false,
+    },
 
     -- Fuzzy Finder (files, lsp, etc)
     {

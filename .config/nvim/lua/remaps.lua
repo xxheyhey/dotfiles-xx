@@ -32,15 +32,7 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { de
 vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Launch open-current-dir script" })
 
 -- Format file
-vim.keymap.set("n", "<leader>f", function()
-    vim.lsp.buf.format({
-        async = true,
-        -- -- Only request null-ls for formatting
-        -- filter = function(client)
-        --     return client.name == "null-ls"
-        -- end,
-    })
-end, { desc = "Format file" })
+vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({ async = true, }) end, { desc = "Format file" })
 
 -- Quickfix list
 vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
@@ -100,6 +92,12 @@ vim.keymap.set("n", "<leader>gc", function() require('neogit').open({ kind = 'sp
 
 -- Biscuits toggle
 vim.keymap.set("n", "<leader>tb", function() require("nvim-biscuits").toggle_biscuits() end, { desc = "Toggle Biscuits" })
+
+-- Comment
+vim.keymap.set("n", "<leader>c", "<Nop>", { desc = "Insert comment" })
+
+-- Undotree
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Undotree" })
 
 -- Other
 vim.keymap.set("n", "J", "mzJ`z")
