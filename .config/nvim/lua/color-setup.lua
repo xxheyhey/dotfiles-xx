@@ -10,18 +10,18 @@ require('rose-pine').setup {
         transparency = true,
         italic = false,
     },
-	-- highlight_groups = {
+    -- highlight_groups = {
     --      -- Normal background color
     --      Normal = { bg = "#1f1d2e" }, -- Rosé pine normal "surface"
     --      NormalFloat = { bg = "#1f1d2e" }, -- Rosé pine normal "surface"
     --      -- Normal = { bg = "#191724" }, -- Rosé pine normal "base"
     --      -- NormalFloat = { bg = "#191724" }, -- Rosé pine normal "base"
-	-- },
+    -- },
 }
 
 -- Tokyonight theme
 require("tokyonight").setup({
-    style = "night", -- The theme comes in four styles, `storm`, `moon`, a darker variant `night` and `day`
+    style = "night",    -- The theme comes in four styles, `storm`, `moon`, a darker variant `night` and `day`
     transparent = true, -- Enable this to disable setting the background color
     styles = {
         -- Style to be applied to different syntax groups
@@ -29,9 +29,9 @@ require("tokyonight").setup({
         comments = { italic = false },
         keywords = { italic = false },
         sidebars = "transparent", -- style for sidebars, see below
-        floats = "transparent", -- style for floating windows
+        floats = "transparent",   -- style for floating windows
     },
-    lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
+    lualine_bold = true,          -- When `true`, section headers in the lualine theme will be bold
 
     -- Changing some colors
     ---@param colors ColorScheme
@@ -94,6 +94,7 @@ function Color(color)
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
+
 Color() -- Run function at startup
 
 -- Function to cycle between themes
@@ -163,7 +164,7 @@ require('lualine').setup {
                 "filename",
             },
         },
-        lualine_x = { "filesize" },
+        lualine_x = { "progress", "filesize" },
         lualine_y = {
             {
                 "filetype",
