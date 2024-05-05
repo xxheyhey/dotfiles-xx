@@ -178,6 +178,7 @@ require('lazy').setup({
         opts = {},
         config = function()
             require("ibl").setup {
+                scope = { show_end = false, priority = 10 },
                 exclude = { filetypes = { "dashboard" } }
             }
         end
