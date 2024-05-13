@@ -138,7 +138,7 @@ eval $(opam env)
 . "$HOME/.cargo/env"
 
 # Alacritty shell completions
-source /home/vic/Github/alacritty/extra/completions/alacritty.bash
+source /home/vic/Git/alacritty/extra/completions/alacritty.bash
 
 # fzf colors
 export FZF_DEFAULT_OPTS="

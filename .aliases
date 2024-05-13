@@ -60,7 +60,7 @@ alias gaa="git add --all"
 alias gc="git commit --verbose"
 alias glo="git log --pretty=oneline"
 # Git for my dotfiles
-alias dotgit="/usr/bin/git --git-dir=$HOME/Github/dotfiles-xx/ --work-tree=$HOME"
+alias dotgit="/usr/bin/git --git-dir=$HOME/Git/dotfiles-xx/ --work-tree=$HOME"
 alias d="dotgit"
 alias dg="dotgit"
 alias ds="dotgit status"

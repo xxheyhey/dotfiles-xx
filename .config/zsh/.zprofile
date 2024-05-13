@@ -14,8 +14,8 @@ if [ -d "$HOME/personal/bin" ] ; then
 fi
 
 # set PATH so it includes alacritty if it exists
-if [ -d "$HOME/Github/alacritty/target/release" ] ; then
-    PATH="$HOME/Github/alacritty/target/release:$PATH"
+if [ -d "$HOME/Git/alacritty/target/release" ] ; then
+    PATH="$HOME/Git/alacritty/target/release:$PATH"
 fi
 
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
