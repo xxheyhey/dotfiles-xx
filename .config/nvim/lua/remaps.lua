@@ -29,6 +29,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' o
 -- tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "Launch tmux-sessionizer script" })
 vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Launch open-current-dir script" })
+vim.keymap.set("n", "<leader>gh", "<cmd>silent !open-home-dir<CR>", { desc = "Launch open-current-dir script" })
 
 -- Format file
 vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({ async = true, }) end, { desc = "Format file" })

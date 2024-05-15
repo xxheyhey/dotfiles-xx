@@ -1,8 +1,3 @@
-# PATH
-export PATH="/home/vic/ncbi-blast-2.15.0+/bin:$PATH"
-export PATH="/home/vic/iqtree-2.2.5-linux/bin:$PATH"
-export PATH="/home/vic/go/bin:$PATH"
-
 # Other variables
 export HISTSIZE=1000
 export SAVEHIST=2000

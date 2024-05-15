@@ -18,6 +18,14 @@ if [ -d "$HOME/Git/alacritty/target/release" ] ; then
     PATH="$HOME/Git/alacritty/target/release:$PATH"
 fi
 
+if [ -d "$HOME/.local/ncbi-blast-2.15.0+/bin" ] ; then
+    PATH="$HOME/.local/ncbi-blast-2.15.0+/bin:$PATH"
+fi
+
+if [ -d"$HOME/go/bin" ] ; then
+    PATH="$HOME/go/bin:$PATH"
+fi
+
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
     exec startx
 fi
