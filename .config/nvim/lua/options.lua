@@ -54,9 +54,22 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
--- Remove annoying auto continuation of commenting
+-- Formatting options
 vim.cmd("autocmd BufEnter * set formatoptions-=cro")
 vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
+
+-- Taken from tjdevries's github, but NOTE: does not work
+vim.opt.formatoptions = vim.opt.formatoptions
+    - "a"                  -- Auto formatting is BAD.
+    - "t"                  -- Don't auto format my code. I got linters for that.
+    - "c"                  -- In general, I like it when comments respect textwidth
+    - "o"                  -- O and o, don't continue comments
+    - "r"                  -- But do continue when pressing enter.
+    + "n"                  -- Indent past the formatlistpat, not underneath it.
+    - "2"                  -- Idk what this does
+
+vim.opt.joinspaces = false -- Same for this one...
+
 
 -- Other settings
 vim.opt.incsearch = true

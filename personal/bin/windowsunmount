@@ -1,7 +1,5 @@
 #!/bin/bash
 
-guestunmount ~/mounts/wsl
-
 sudo umount ~/mounts/windows
 
 rm -r ~/mounts

@@ -21,7 +21,7 @@ require("mason-null-ls").setup({
                 -- Add more arguments to a source's defaults
                 -- Default: { "--enable-outside-detected-project", "--name", "$FILENAME", "-" }
                 -- Type `ocamlformat --help` in your terminal to check more args
-                extra_args = { "--if-then-else", "vertical", "--break-cases", "toplevel", "--extension-indent", "4", "--function-indent", "4", "--let-binding-indent", "4", "--type-decl-indent", "4", "--exp-grouping", "preserve" },
+                extra_args = { "--if-then-else", "vertical", "--break-cases", "toplevel", "--extension-indent", "2", "--function-indent", "2", "--let-binding-indent", "2", "--type-decl-indent", "2", "--exp-grouping", "preserve" },
             }))
         end,
     },
