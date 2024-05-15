@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir -p ~/mounts/windows
+
+# Sometimes the nvme name changes (it's either nvme1n1p3 or nvme0n1p3 most of
+# the time)
+sudo mount /dev/nvme1n1p3 ~/mounts/windows
+
+cd ~/mounts/windows/Users/victe/

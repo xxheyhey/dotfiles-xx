@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo umount ~/mounts/windows
+
+guestunmount ~/mounts/wsl

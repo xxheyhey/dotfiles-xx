@@ -39,14 +39,15 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+-- Indentation
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+
 -- Disable line wrap
 vim.opt.wrap = false
 
 -- Enable break indent for wrap mode
-vim.opt.breakindent = true
-
--- Indentation
-vim.opt.indentexpr = ''
+vim.o.breakindent = true
 
 -- Undo history settings
 vim.opt.swapfile = false

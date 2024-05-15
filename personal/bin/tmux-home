@@ -1,0 +1,17 @@
+#!/bin/bash
+
+session_name="home"
+counter=1
+new_session_name="${session_name}_${counter}"
+
+# Check if the session exists
+while tmux has-session -t "$new_session_name" 2>/dev/null; do
+    ((counter++))
+    new_session_name="${session_name}_${counter}"
+done
+
+# Create a new session
+tmux new-session -d -s "$new_session_name" -c ~
+
+# Attach to the session
+tmux attach-session -t "$new_session_name"

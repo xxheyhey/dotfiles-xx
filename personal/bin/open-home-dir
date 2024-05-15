@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if inside a tmux session
+if [ -n "$TMUX" ]; then
+    # Inside a tmux session, open a new pane
+    tmux split-window -h -c ~
+else
+    # Not inside a tmux session, open a new terminal
+    alacritty --working-directory="$HOME" &
+fi
+

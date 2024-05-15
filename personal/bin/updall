@@ -1,0 +1,20 @@
+#!/bin/bash
+
+sudo apt update
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo apt full-upgrade -y
+
+updvim # Neovim
+updocaml # OCaml/Opam
+updrust # Rust
+updalacritty # Alacritty
+
+# General cleaning
+sudo apt autoremove -y
+sudo apt clean
+sudo apt autoclean -y
+
+printf "\n\n\nYou might want to run the 'signmodules' command if some drivers updated.\n\n\n"
+
+# Check for new Envycontrol version on Github

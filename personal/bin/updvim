@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo echo -n
+
+if [ -d ~/Git/neovim ]; then
+    cd ~/Git/neovim
+    git pull
+else
+    git clone https://github.com/neovim/neovim.git ~/Git/neovim
+    cd ~/Git/neovim
+fi
+
+sudo make distclean
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
