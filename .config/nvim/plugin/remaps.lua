@@ -104,12 +104,6 @@ set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Undotree" })
 -- Other
 set("n", "J", "mzJ`z")
 
--- There are builtin keymaps for this now, but I (tjdevries) like that it shows
--- the float when I navigate to the error - so I override them.
-set("n", "]d", vim.diagnostic.goto_next)
-set("n", "[d", vim.diagnostic.goto_prev)
-
-
 set("n", "<C-d>", "<C-d>zz")
 set("n", "<C-u>", "<C-u>zz")
 set("n", "n", "nzzzv")
