@@ -15,3 +15,4 @@ export FZF_DEFAULT_OPTS="
 	--color=pointer:#f5e0dc,marker:#eb6f92,prompt:#908caa
     --layout=reverse
     --border"
+export R_LIBS_USER="/home/vic/.local/R"

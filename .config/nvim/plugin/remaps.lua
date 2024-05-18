@@ -32,7 +32,8 @@ vim.keymap.set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Laun
 vim.keymap.set("n", "<leader>gh", "<cmd>silent !open-home-dir<CR>", { desc = "Launch open-current-dir script" })
 
 -- Format file
-vim.keymap.set("n", "<leader>f", "<cmd>Format<CR>", { desc = "Format file" })
+vim.keymap.set("n", "<leader>f", function() require("conform").format { lsp_fallback = true, quiet = true, } end,
+    { desc = "Format file" })
 
 -- Quickfix list
 vim.keymap.set("n", "<up>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })

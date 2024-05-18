@@ -1,3 +1,5 @@
+.libPaths("/home/vic/.local/R/x86_64-pc-linux-gnu-library/4.4/")
+
 # Colored output
 require(colorout)
 setOutputColors256(normal = 15, verbose = FALSE)
