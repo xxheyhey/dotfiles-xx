@@ -4,6 +4,9 @@ local opt = vim.opt
 
 opt.inccommand = "split"
 
+-- Set highlight off on search
+opt.hlsearch = false
+
 -- Make relative line numbers default
 opt.number = true
 opt.relativenumber = true

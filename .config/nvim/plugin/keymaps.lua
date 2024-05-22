@@ -4,8 +4,6 @@ local set = vim.keymap.set
 set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 set({ 'n', 'v' }, '<CR>', '<Nop>', { silent = true })
 
-set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
 -- Diagnostics
 set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
@@ -40,10 +38,8 @@ set("n", "<leader>f", function() require("conform").format { lsp_fallback = true
     { desc = "Format file" })
 
 -- Quickfix list
-set("n", "<up>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
-set("n", "<down>", "<cmd>cprev<CR>zz", { desc = "Quickfix list previous" })
-set("n", "<leader><up>", "<cmd>lnext<CR>zz", { desc = "Idk" })
-set("n", "<leader><down>", "<cmd>lprev<CR>zz", { desc = "Idk" })
+set("n", "<C-k>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
+set("n", "<C-j>", "<cmd>cprev<CR>zz", { desc = "Quickfix list previous" })
 
 -- Switch to next window
 set("n", "<tab>", "<cmd>winc w<CR>", { desc = "Change focus to next vim window", silent = true })
