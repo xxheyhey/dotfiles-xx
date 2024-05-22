@@ -9,7 +9,7 @@ return {
 					header = Logo2,
 					center = {
 						{ action = "Telescope find_files", desc = " Find file", icon = " ", key = "f" },
-						{ action = "Telescope live_grep", desc = " Grep Word", icon = "  ", key = "g" },
+						{ action = "Telescope live_grep", desc = "Grep Word", icon = "  ", key = "g" },
 						{ action = "ene | startinsert", desc = " New file", icon = " ", key = "n" },
 						{ action = "e $MYVIMRC", desc = " Config", icon = " ", key = "c" },
 						{

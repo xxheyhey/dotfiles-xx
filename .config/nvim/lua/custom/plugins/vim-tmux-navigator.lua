@@ -1,12 +1,12 @@
 return {
 	{
-		"christoomey/vim-tmux-navigator",
+		"vim-tmux-navigator-custom",
+		dir = "~/.nvim/plugins/vim-tmux-navigator-custom",
 		cmd = {
 			"TmuxNavigateLeft",
 			"TmuxNavigateDown",
 			"TmuxNavigateUp",
 			"TmuxNavigateRight",
-			"TmuxNavigatePrevious",
 		},
 		keys = {
 			{ "<F1>", "<cmd>TmuxNavigateLeft<cr>" },

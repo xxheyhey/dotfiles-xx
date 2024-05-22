@@ -45,7 +45,7 @@ opt.breakindent = true
 opt.undofile = true
 opt.swapfile = false
 opt.backup = false
-opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 
 -- Formatting options
 opt.formatoptions:remove("o")
