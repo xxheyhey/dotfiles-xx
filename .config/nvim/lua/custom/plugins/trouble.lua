@@ -7,12 +7,12 @@ return {
 			local trouble = require("trouble")
 
 			vim.keymap.set("n", "<leader>tt", trouble.toggle, { desc = "Toggle Trouble" })
-			vim.keymap.set("n", "<leader>tn", function()
-				trouble.next({ skip_goups = true, jump = true })
-			end, { desc = "Trouble Next" })
-			vim.keymap.set("n", "<leader>tp", function()
+			vim.keymap.set("n", "[t", function()
 				trouble.previous({ skip_goups = true, jump = true })
 			end, { desc = "Trouble Previous" })
+			vim.keymap.set("n", "]t", function()
+				trouble.next({ skip_goups = true, jump = true })
+			end, { desc = "Trouble Next" })
 		end,
 	},
 }

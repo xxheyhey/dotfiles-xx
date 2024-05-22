@@ -66,7 +66,7 @@ return {
 					comments = { italic = false },
 					keywords = { italic = false },
 					sidebars = "transparent", -- style for sidebars, see below
-					floats = "transparent", -- style for floating windows
+					floats = "dark", -- style for floating windows
 				},
 				lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 
@@ -76,52 +76,6 @@ return {
 					--colors.green = "#b4f56e"
 					colors.comment = "#7d86ad"
 				end,
-			})
-		end,
-	},
-	{
-		-- Another one
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		config = function()
-			require("catppuccin").setup({
-				transparent_background = true, -- disables setting the background color.
-				no_italic = true,
-				no_bold = true,
-				integrations = {
-					harpoon = true,
-					fidget = true,
-					cmp = true,
-					gitsigns = true,
-					treesitter = true,
-					indent_blankline = { enabled = true },
-					lsp_trouble = true,
-					mason = true,
-					native_lsp = {
-						enabled = true,
-						underlines = {
-							errors = { "undercurl" },
-							hints = { "undercurl" },
-							warnings = { "undercurl" },
-							information = { "undercurl" },
-						},
-					},
-					telescope = { enabled = true },
-					which_key = true,
-					semantic_tokens = true,
-					notify = true,
-					treesitter_context = true,
-					gitgutter = true,
-					-- For more plugins integrations see https://github.com/catppuccin/nvim#integrations
-				},
-				color_overrides = {
-					mocha = {
-						-- These colours are pastel enough by default
-						peach = "#fcc6a7",
-						green = "#d2fac5",
-					},
-				},
 			})
 		end,
 	},

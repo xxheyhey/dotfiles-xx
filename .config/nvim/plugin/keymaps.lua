@@ -4,6 +4,9 @@ local set = vim.keymap.set
 set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 set({ 'n', 'v' }, '<CR>', '<Nop>', { silent = true })
 
+set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- Diagnostics
 set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
@@ -77,9 +80,6 @@ set("n", "<leader>sr", ":%s/\\v", { desc = "Search and replace" })
 -- Search and replace current word
 set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
     { desc = "Change the current and all the same words" })
-
--- Neotree
-set('n', '<leader>T', '<cmd>Neotree reveal<CR>', { desc = "Neotree", silent = true })
 
 -- Diffview
 set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "DiffviewOpen", silent = true })
