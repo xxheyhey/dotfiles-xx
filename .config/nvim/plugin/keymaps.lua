@@ -98,14 +98,6 @@ set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "DiffviewClose", silen
 -- Search through all keymaps with Telescope
 set("n", "<leader>key", "<cmd>Telescope keymaps<CR>", { desc = "Search through keymaps", silent = true })
 
--- Neogit
-set("n", "<leader>gs", function()
-	require("neogit").open({ kind = "split" })
-end, { desc = "Neogit" })
-set("n", "<leader>gc", function()
-	require("neogit").open({ kind = "split" })
-end, { desc = "Neogit" })
-
 -- Biscuits toggle
 set("n", "<leader>tb", function()
 	require("nvim-biscuits").toggle_biscuits()

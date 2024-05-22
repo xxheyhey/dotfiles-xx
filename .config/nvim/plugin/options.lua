@@ -7,6 +7,10 @@ opt.inccommand = "split"
 -- Set highlight off on search
 opt.hlsearch = false
 
+-- Default split style
+opt.splitbelow = true
+opt.splitright = true
+
 -- Make relative line numbers default
 opt.number = true
 opt.relativenumber = true
