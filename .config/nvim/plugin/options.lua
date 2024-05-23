@@ -1,66 +1,68 @@
 -- See `:help vim.opt`
 
-local opt = vim.opt
+vim.opt.inccommand = "split"
 
-opt.inccommand = "split"
+-- List mode
+vim.opt.list = false -- Set to true to enable this:
+vim.opt.listchars = { leadmultispace = "·", tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Set highlight off on search
-opt.hlsearch = false
+vim.opt.hlsearch = false
 
 -- Default split style
-opt.splitbelow = true
-opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
 -- Make relative line numbers default
-opt.number = true
-opt.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode
-opt.mouse = "a"
+vim.opt.mouse = "a"
 
 -- Case-insensitive searching UNLESS \C or capital in search
-opt.ignorecase = true
-opt.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-opt.signcolumn = "yes"
+vim.opt.signcolumn = "yes"
 
 -- Decrease update time
-opt.updatetime = 250
-opt.timeoutlen = 500
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 500
 
 -- Tab width
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
 -- Indentation
-opt.smartindent = true
-opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.autoindent = true
 
 -- Disable line wrap
-opt.wrap = false
+vim.opt.wrap = false
 
 -- Enable break indent for wrap mode
-opt.breakindent = true
+vim.opt.breakindent = true
 
 -- Undo history settings
-opt.undofile = true
-opt.swapfile = false
-opt.backup = false
-opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+vim.opt.undofile = true
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 
 -- Formatting options
-opt.formatoptions:remove("o")
+vim.opt.formatoptions:remove("o")
 
 -- Other settings
-opt.termguicolors = true
-opt.incsearch = true
-opt.scrolloff = 8
-opt.signcolumn = "yes"
-opt.isfname:append("@-@")
-opt.colorcolumn = "80"
+vim.opt.termguicolors = true
+vim.opt.incsearch = true
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.isfname:append("@-@")
+vim.opt.colorcolumn = "80"
 vim.diagnostic.config({ virtual_text = true })
 
 -- Highlight on yank
