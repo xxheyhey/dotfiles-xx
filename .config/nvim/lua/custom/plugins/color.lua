@@ -33,7 +33,7 @@ return {
 		config = function()
 			require("rose-pine").setup({
 				dark_variant = "moon", -- main, moon, or dawn
-				dim_inactive_windows = false,
+				dim_inactive_windows = true,
                 disable_background = true,
 				styles = {
 					transparency = true,

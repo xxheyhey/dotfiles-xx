@@ -106,9 +106,14 @@ end, { desc = "Toggle Biscuits" })
 -- Undotree
 set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Undotree" })
 
+-- Navigation
+set("n", "<C-a><C-h>", "<C-w><C-h>")
+set("n", "<C-a><C-j>", "<C-w><C-j>")
+set("n", "<C-a><C-k>", "<C-w><C-k>")
+set("n", "<C-a><C-l>", "<C-w><C-l>")
+
 -- Other
 set("n", "J", "mzJ`z")
-
 set("n", "<C-d>", "<C-d>zz")
 set("n", "<C-u>", "<C-u>zz")
 set("n", "n", "nzzzv")
