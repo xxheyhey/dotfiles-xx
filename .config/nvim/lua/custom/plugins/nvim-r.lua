@@ -8,7 +8,8 @@ return {
 			vim.g.R_objbr_auto_start = 1 -- Autostart object window
 			vim.g.R_objbr_place = "console,above" -- Location of the object window
 			vim.g.R_objbr_opendf = 1 -- Show data.frames elements
-			vim.g.R_objbr_openlist = 0 -- Show lists elements vim.g.R_objbr_allnames = 0  -- Show hidden objects
+			vim.g.R_objbr_openlist = 0 -- Show lists elements
+            -- vim.g.R_objbr_allnames = 0  -- Show hidden objects
 			-- ` or > won't result in R chunk in .Rmd and .Rnoweb files
 			vim.g.R_rmdchunk = "```" -- '```' inserts R chunk in insert mode
 			vim.g.R_rnowebchunk = 0
@@ -16,7 +17,7 @@ return {
 			vim.g.R_args = { "--no-save", "--no-restore" } -- R Startup flags
 
 			-- Resize R console and object browser after starting R
-			vim.g.R_after_start = { ":vert res +13" }
+			vim.g.R_after_start = { ":vert res +2" }
 
 			-- Knitting options
 			vim.g.R_openpdf = 2
@@ -51,7 +52,7 @@ return {
 					set("n", "<LocalLeader>q", ":RStop<CR>")
 					set("n", "gcr", ':call RSimpleCommentLine("selection", "c")<CR>', { silent = true })
 					set("v", "gcr", ':call RSimpleCommentLine("normal", "c")<CR>', { silent = true })
-					set("n", "<leader>l", ":call RClearConsole()<CR>", { silent = true })
+					set("n", "<C-l>", ":call RClearConsole()<CR>", { silent = true })
 					set("n", "<C-q>", ':call RQuit("nosave")<CR>', { silent = true })
 					set("n", "<C-s>", ':call StartR("R")<CR>', { silent = true })
 					set("n", "<leader>gn", ":call b:NextRChunk()<CR>", { silent = true })
