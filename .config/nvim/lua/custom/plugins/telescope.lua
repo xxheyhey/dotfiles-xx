@@ -16,6 +16,7 @@ return {
 						i = {
 							["<C-u>"] = false,
 							["<C-d>"] = false,
+							["<c-t>"] = require("trouble.sources.telescope").open,
 						},
 					},
 				},
