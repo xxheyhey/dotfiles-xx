@@ -66,5 +66,4 @@ return {
 			})
 		end,
 	},
-	{ "jalvesaq/cmp-nvim-r", opts = {} },
 }

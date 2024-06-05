@@ -37,3 +37,5 @@
 .config/onedrive/items.sqlite3*
 .config/configstore
 .config/libreoffice
+.config/teams-for-linux
+.config/discord
