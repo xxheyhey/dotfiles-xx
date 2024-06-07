@@ -9,6 +9,7 @@ updvim # Neovim
 updocaml # OCaml/Opam
 updrust # Rust
 updalacritty # Alacritty
+conda update --all # Anaconda
 
 # General cleaning
 sudo apt autoremove -y

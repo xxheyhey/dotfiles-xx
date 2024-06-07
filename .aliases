@@ -83,6 +83,7 @@ alias bluebuds="sudo bluetoothctl connect 40:5E:F6:6D:CE:9E"
 # Anaconda
 alias cona="conda activate"
 alias cond="conda deactivate"
+alias condaeval='eval "$(/home/vic/.local/anaconda3/bin/conda shell.zsh hook)"'
 # My browser of choice
 alias browser="google-chrome-stable"
 # Updating, upgrading and cleaning
