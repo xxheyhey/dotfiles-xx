@@ -45,3 +45,5 @@ test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh
 
 # Rust configuration
 . "$HOME/.cargo/env"
+
+[ -f "/home/vic/.ghcup/env" ] && . "/home/vic/.ghcup/env" # ghcup-env
