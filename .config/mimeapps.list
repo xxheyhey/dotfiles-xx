@@ -12,6 +12,7 @@ x-scheme-handler/webcal=google-chrome.desktop
 x-scheme-handler/etcher=balena-etcher.desktop
 text/plain=nvim.desktop
 application/octet-stream=nvim.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop
 
 [Added Associations]
 image/png=google-chrome.desktop;display-im6.q16.desktop;feh.desktop;qimgv.desktop;
@@ -22,3 +23,4 @@ application/x-bat=org.gnome.gedit.desktop;
 text/plain=vim.desktop;google-chrome.desktop;nvim.desktop;
 image/jpeg=qimgv.desktop;
 application/octet-stream=nvim.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
