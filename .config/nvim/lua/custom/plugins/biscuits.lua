@@ -3,7 +3,7 @@ return {
 		"code-biscuits/nvim-biscuits",
 		opts = {
 			default_config = {
-				min_distance = 20,
+				min_distance = 15,
 				prefix_string = " 👁  ",
 			},
 			cursor_line_only = true,
