@@ -1,17 +1,39 @@
 #!/bin/bash
 
-session_name="home"
-counter=1
-new_session_name="${session_name}_${counter}"
+name="home"
+directory="$HOME"
+output="/dev/null"
 
-# Check if the session exists
-while tmux has-session -t "$new_session_name" 2>/dev/null; do
-    ((counter++))
-    new_session_name="${session_name}_${counter}"
-done
+debug() {
+    echo "$@" &>"$output"
+}
 
-# Create a new session
-tmux new-session -d -s "$new_session_name" -c ~
+no_tmux() {
+    [[ -z $TMUX ]]
+}
 
-# Attach to the session
-tmux attach-session -t "$new_session_name"
+has_session() {
+    tmux has-session -t "$1" &>/dev/null
+}
+
+new_session() {
+    tmux new-session -s "$1" -c "$2" "$3"
+}
+
+if no_tmux; then
+    if has_session $name; then
+        debug "Attach to tmux session $name"
+        tmux attach-session -t $name
+    else
+        debug "Create new session $name"
+        new_session $name "$directory"
+    fi
+else
+    if ! has_session $name; then
+        debug "Tmux active. Create new session $name"
+        new_session $name "$directory" -d
+    fi
+    debug "Switch to tmux session $name"
+    tmux switch-client -t $name
+fi
+

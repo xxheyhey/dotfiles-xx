@@ -5,8 +5,12 @@ set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 set({ "n", "v" }, "<CR>", "<Nop>", { silent = true })
 
 -- Diagnostics
-set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
-set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
+set("n", "[d", function()
+	vim.diagnostic.jump({ count = 1 })
+end, { desc = "Go to previous diagnostic message" })
+set("n", "]d", function()
+	vim.diagnostic.jump({ count = -1 })
+end, { desc = "Go to next diagnostic message" })
 set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
@@ -32,7 +36,7 @@ set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "'chmod + x' on current f
 -- tmux-sessionizer
 set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "Launch tmux-sessionizer script" })
 set("n", "<C-g>", "<cmd>silent !open-current-dir<CR>", { desc = "Launch open-current-dir script" })
-set("n", "<leader>gh", "<cmd>silent !open-home-dir<CR>", { desc = "Launch open-current-dir script" })
+set("n", "<leader>gh", "<cmd>silent !tmux neww tmux-home<CR>", { desc = "Launch open-current-dir script" })
 
 -- Format file
 set("n", "<leader>f", function()
