@@ -4,4 +4,4 @@
 sed -i 's/88/100/g' ~/.config/picom/picom.conf
 
 # Change alacritty background color
-sed -i s/#000000/\#1E1D23/g ~/.config/alacritty/themes/monokai_charcoal_custom.toml
+# sed -i s/#000000/\#1E1D23/g ~/.config/alacritty/themes/monokai_charcoal_custom.toml
