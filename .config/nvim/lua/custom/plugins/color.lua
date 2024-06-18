@@ -1,5 +1,5 @@
 -- theme customization
-Mycolor = "tokyonight" -- Change this to switch themes
+Mycolor = "rose-pine" -- Change this to switch themes
 
 -- This function sets the theme the right way
 function Color(color)
