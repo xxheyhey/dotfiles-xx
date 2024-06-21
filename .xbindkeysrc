@@ -15,11 +15,11 @@
    XF86AudioMicMute
 
 # Increase brightness
-"brightnessctl s 400+"
+"brightnessctl s 800+"
    XF86MonBrightnessUp
 
 # Decrease brightness
-"brightnessctl s 400-"
+"brightnessctl s 800-"
    XF86MonBrightnessDown
 
 # Open Flameshot screenshot utility
