@@ -1,3 +1,15 @@
+#[ environments
+# opam configuration
+test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+# Haskell
+[ -f "/home/vic/.ghcup/env" ] && . "/home/vic/.ghcup/env" # ghcup-env
+
+# Rust configuration
+. "$HOME/.cargo/env"
+#]
+
+#[ PATH
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -25,16 +37,9 @@ fi
 if [ -d"$HOME/go/bin" ] ; then
     PATH="$HOME/go/bin:$PATH"
 fi
+#]
 
+# startx
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
     exec startx
 fi
-
-# opam configuration
-test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-# Rust configuration
-. "$HOME/.cargo/env"
-
-# Haskell
-[ -f "/home/vic/.ghcup/env" ] && . "/home/vic/.ghcup/env" # ghcup-env

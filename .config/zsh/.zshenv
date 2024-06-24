@@ -1,4 +1,3 @@
-# Other variables
 export HISTSIZE=1000
 export SAVEHIST=2000
 export HISTFILE="/home/vic/.config/zsh/.zsh_history"
@@ -16,3 +15,4 @@ export FZF_DEFAULT_OPTS="
     --layout=reverse
     --border"
 export R_LIBS_USER="/home/vic/.local/R"
+export ZSH="$HOME/.oh-my-zsh"
