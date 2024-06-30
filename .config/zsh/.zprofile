@@ -1,20 +1,15 @@
 #[ environments
-# opam configuration
+# opam
 test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 # Haskell
 [ -f "/home/vic/.ghcup/env" ] && . "/home/vic/.ghcup/env" # ghcup-env
 
-# Rust configuration
+# Rust
 . "$HOME/.cargo/env"
 #]
 
 #[ PATH
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
@@ -34,8 +29,8 @@ if [ -d "$HOME/.local/ncbi-blast-2.15.0+/bin" ] ; then
     PATH="$HOME/.local/ncbi-blast-2.15.0+/bin:$PATH"
 fi
 
-if [ -d"$HOME/go/bin" ] ; then
-    PATH="$HOME/go/bin:$PATH"
+if [ -d"$HOME/.local/go/bin" ] ; then
+    PATH="$HOME/.local/go/bin:$PATH"
 fi
 #]
 
