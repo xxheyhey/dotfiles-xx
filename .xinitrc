@@ -12,14 +12,14 @@ setxkbmap -option "caps:swapescape"
 xbindkeys
 
 # Other startup apps/services
-picom &
-~/.fehbg &
-slstatus &
-nm-applet &
 dunst &
+picom &
+slstatus &
+~/.fehbg &
+nm-applet &
+blueman-applet &
 numlockx &
 flameshot &
-blueman-applet &
 
 # Launch window manager
 exec dwm
