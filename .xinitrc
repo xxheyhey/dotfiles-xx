@@ -1,3 +1,6 @@
+# blueman-applet fix
+systemctl --user import-environment DISPLAY
+
 # X related starup tasks
 xrandr --dpi 144
 xset r rate 300 30
@@ -16,6 +19,7 @@ nm-applet &
 dunst &
 numlockx &
 flameshot &
+blueman-applet &
 
 # Launch window manager
 exec dwm
