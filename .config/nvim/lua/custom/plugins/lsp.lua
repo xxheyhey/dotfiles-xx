@@ -64,17 +64,13 @@ return {
 			end
 
 			-- document existing key chains
-			require("which-key").register({
-				["<leader>wr"] = { name = "[R]ename", _ = "which_key_ignore" },
-				["<leader>ws"] = { name = "[S]earch", _ = "which_key_ignore" },
+			require("which-key").add({
+				{ "<leader>wr", group = "[R]ename" },
+				{ "<leader>wr_", hidden = true },
+				{ "<leader>ws", group = "[S]earch" },
+				{ "<leader>ws_", hidden = true },
+				{ "<leader>", group = "VISUAL <leader>", mode = "v" },
 			})
-			-- register which-key VISUAL mode
-			-- required for visual <leader>hs (hunk stage) to work
-			require("which-key").register({
-				["<leader>"] = { name = "VISUAL <leader>" },
-				["<leader>h"] = { "Git [H]unk" },
-			}, { mode = "v" })
-
 			-- mason-lspconfig requires that these setup functions are called in this order
 			-- before setting up the servers.
 			require("mason").setup()

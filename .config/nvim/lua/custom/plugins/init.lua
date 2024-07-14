@@ -8,10 +8,27 @@ return {
 	"mbbill/undotree",
 
 	-- Useful plugin to show you pending keybinds.
-	{ "folke/which-key.nvim", opts = {} },
 	{ "nvim-treesitter/nvim-treesitter-context", opts = { max_lines = 3 } },
 	{ "folke/persistence.nvim", event = "BufReadPre", opts = {} },
 	{ "folke/zen-mode.nvim", opts = { window = { width = 1.0 }, plugins = { tmux = { enabled = true } } } },
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+		keys = {
+			{
+				"<leader>?",
+				function()
+					require("which-key").show({ global = false })
+				end,
+				desc = "Buffer Local Keymaps (which-key)",
+			},
+		},
+	},
 	{
 		"nvim-pack/nvim-spectre",
 		opts = {

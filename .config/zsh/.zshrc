@@ -60,6 +60,3 @@ cd .
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
-
-# Thefuck init
-eval $(thefuck --alias)
