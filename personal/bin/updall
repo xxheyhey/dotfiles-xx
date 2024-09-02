@@ -11,6 +11,7 @@ updrust # Rust
 updalacritty # Alacritty
 conda update --all # Anaconda
 ghcup upgrade # Haskell GHCup update
+cabal update # Update Cabal index (Haskell lib installer)
 
 # General cleaning
 sudo apt autoremove -y
