@@ -35,7 +35,7 @@ return {
 			for _, idx in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }) do
 				vim.keymap.set("n", string.format("<leader>%d", idx), function()
 					harpoon:list():select(idx)
-				end)
+				end, { desc = string.format("Harpoon tab %d", idx) })
 			end
 
 			vim.keymap.set("n", "<leader>0", function()
