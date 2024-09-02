@@ -42,3 +42,5 @@
 .config/onlyoffice
 .config/pavucontrol.ini
 .config/htop
+.config/ghc/ghci_history
+.config/cabal
