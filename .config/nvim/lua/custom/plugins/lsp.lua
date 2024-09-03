@@ -154,6 +154,20 @@ return {
 					haskell = { "hlint" },
 				},
 			})
+
+			-- Customize the "injected" formatter (e.g. for md files)
+			require("conform").formatters.injected = {
+				options = {
+					-- Set individual option values
+					lang_to_ext = {
+						markdown = "md",
+						haskell = "hs",
+					},
+					lang_to_formatters = {
+						haskell = { "hlint" },
+					},
+				},
+			}
 		end,
 	},
 }
