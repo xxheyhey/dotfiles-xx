@@ -14,6 +14,9 @@ return {
 				markdown = {
 					disabled = true,
 				},
+				haskell = {
+					disabled = true,
+				},
 			},
 		},
 	},
