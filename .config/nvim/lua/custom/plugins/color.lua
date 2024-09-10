@@ -42,6 +42,11 @@ return {
 				},
 				dim_inactive = false,
 				transparent_mode = true,
+				overrides = {
+					["@variable"] = { fg = "#ffffff", bold = false },
+					["@function.call"] = { fg = "#d1832e", bold = true },
+					["@markup.italic"] = { italic = true },
+				},
 			})
 		end,
 	},
