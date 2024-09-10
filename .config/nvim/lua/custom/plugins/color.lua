@@ -1,5 +1,5 @@
 -- theme customization
-Mycolor = "rose-pine" -- Change this to switch themes
+Mycolor = "gruvbox" -- Change this to switch themes
 
 -- This function sets the theme the right way
 function Color(color)
@@ -18,6 +18,8 @@ end
 function ToggleColorScheme()
 	if Mycolor == "rose-pine" then
 		Mycolor = "tokyonight"
+	elseif Mycolor == "tokyonight" then
+		Mycolor = "gruvbox"
 	else
 		Mycolor = "rose-pine"
 	end
@@ -25,6 +27,24 @@ function ToggleColorScheme()
 end
 
 return {
+	{
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000,
+		config = function()
+			require("gruvbox").setup({
+				underline = false,
+				italic = {
+					strings = false,
+					emphasis = false,
+					comments = false,
+					operators = false,
+					folds = false,
+				},
+				dim_inactive = false,
+				transparent_mode = true,
+			})
+		end,
+	},
 	{
 		-- Nice theme
 		"rose-pine/neovim",
