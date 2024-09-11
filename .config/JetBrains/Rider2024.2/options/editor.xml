@@ -7,6 +7,10 @@
     <option name="SELECT_AUTOPOPUP_SUGGESTIONS_BY_CHARS" value="true" />
     <option name="AUTOCOMPLETE_ON_CODE_COMPLETION" value="false" />
     <option name="INSERT_BRACE_ON_ENTER" value="false" />
+    <option name="AUTOINSERT_PAIR_BRACKET" value="false" />
+    <option name="AUTOINSERT_PAIR_QUOTE" value="false" />
+    <option name="REFORMAT_BLOCK_ON_RBRACE" value="false" />
+    <option name="HIGHLIGHT_IDENTIFIER_UNDER_CARET" value="false" />
   </component>
   <component name="CodeVisionSettings">
     <option name="defaultPosition" value="Top" />
@@ -16,7 +20,6 @@
     <option name="STRIP_TRAILING_SPACES" value="None" />
     <option name="IS_CARET_BLINKING" value="false" />
     <option name="LINE_NUMERATION" value="RELATIVE" />
-    <option name="IS_BLOCK_CURSOR" value="true" />
     <option name="IS_WHEEL_FONTCHANGE_ENABLED" value="true" />
     <option name="IS_WHEEL_FONTCHANGE_PERSISTENT" value="true" />
     <option name="SHOW_INLINE_DIALOG" value="false" />

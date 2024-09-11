@@ -1,10 +1,28 @@
 <keymap version="1" name="Visual Studio 2022 copy" parent="Visual Studio 2022">
+  <action id="CodeCleanup" />
+  <action id="CollapsiblePanel-toggle" />
+  <action id="Console.TableResult.ColumnVisibility" />
+  <action id="EditSource">
+    <keyboard-shortcut first-keystroke="g" second-keystroke="d" />
+  </action>
+  <action id="FindInPath" />
+  <action id="FindSelectionInPath" />
   <action id="InsertInlineCompletionAction">
     <keyboard-shortcut first-keystroke="ctrl tab" />
+  </action>
+  <action id="QuickPreview" />
+  <action id="RecentLocations" />
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
   <action id="SearchEverywhere.CompleteCommand">
     <keyboard-shortcut first-keystroke="ctrl tab" />
   </action>
+  <action id="ShowErrorDescription">
+    <keyboard-shortcut first-keystroke="shift ctrl e" />
+  </action>
+  <action id="SilentCodeCleanup" />
+  <action id="SplitChooser.SplitCenter" />
   <action id="Switcher">
     <keyboard-shortcut first-keystroke="shift ctrl tab" />
   </action>

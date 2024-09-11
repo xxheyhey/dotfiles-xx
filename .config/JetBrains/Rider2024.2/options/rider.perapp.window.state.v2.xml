@@ -34,7 +34,8 @@
         {
           "id": "Problems View",
           "order": 2,
-          "anchor": "BOTTOM"
+          "anchor": "BOTTOM",
+          "weight": 0.5696517
         },
         {
           "id": "Terminal",
