@@ -2,6 +2,7 @@
   <component name="AdvancedSettings">
     <option name="settings">
       <map>
+        <entry key="editor.paste.line.copied.from.empty.selection" value="AT_CARET" />
         <entry key="floating.codeToolbar.hide" value="true" />
       </map>
     </option>

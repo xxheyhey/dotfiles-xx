@@ -7,8 +7,10 @@
           "id": "Project",
           "order": 0,
           "contentUiType": "COMBO",
+          "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.25019532
+          "weight": 0.25019532,
+          "sideWeight": 0.5011481
         },
         {
           "id": "Commit",
@@ -18,7 +20,10 @@
         {
           "id": "Structure",
           "order": 2,
+          "isActiveOnStart": true,
+          "isVisible": true,
           "weight": 0.25019532,
+          "sideWeight": 0.4988519,
           "isSplit": true
         },
         {
@@ -35,38 +40,40 @@
           "id": "Problems View",
           "order": 2,
           "anchor": "BOTTOM",
-          "weight": 0.5696517
+          "weight": 0.37420043
         },
         {
           "id": "Terminal",
           "order": 3,
-          "anchor": "BOTTOM"
+          "anchor": "BOTTOM",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.30597013
         },
         {
           "id": "Run",
           "order": 4,
           "anchor": "BOTTOM",
           "isShowStripeButton": false,
-          "weight": 0.5696517
+          "weight": 0.37420043
         },
         {
           "id": "Services",
           "order": 4,
           "anchor": "BOTTOM",
-          "weight": 0.5696517
+          "weight": 0.37420043
         },
         {
           "id": "Build",
           "order": 4,
           "anchor": "BOTTOM",
-          "weight": 0.5696517
+          "weight": 0.37420043
         },
         {
           "id": "Debug",
           "order": 4,
           "anchor": "BOTTOM",
-          "isShowStripeButton": false,
-          "weight": 0.33013505
+          "weight": 0.37420043
         },
         {
           "id": "Notifications",
@@ -102,7 +109,7 @@
       "unifiedWeights": {
         "top": 0.33,
         "left": 0.25019532,
-        "bottom": 0.5696517,
+        "bottom": 0.30597013,
         "right": 0.3298828
       }
     }

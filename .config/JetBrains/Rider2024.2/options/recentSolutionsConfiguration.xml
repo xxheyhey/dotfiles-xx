@@ -2,6 +2,30 @@
   <component name="SolutionConfigurationStore">
     <option name="configurations">
       <map>
+        <entry key="$USER_HOME$/Downloads/Tombola-master/Tombola/Tombola.sln">
+          <value>
+            <ConfigurationInfo>
+              <option name="activeConfiguration" value="Debug" />
+              <option name="activePlatform" value="Any CPU" />
+            </ConfigurationInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/Mandelbrot/Mandelbrot.sln">
+          <value>
+            <ConfigurationInfo>
+              <option name="activeConfiguration" value="Debug" />
+              <option name="activePlatform" value="Any CPU" />
+            </ConfigurationInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus.sln">
+          <value>
+            <ConfigurationInfo>
+              <option name="activeConfiguration" value="Debug" />
+              <option name="activePlatform" value="Any CPU" />
+            </ConfigurationInfo>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/ClassLibrary1/ClassLibrary1.sln">
           <value>
             <ConfigurationInfo>
@@ -16,6 +40,11 @@
               <option name="activeConfiguration" value="Debug" />
               <option name="activePlatform" value="Any CPU" />
             </ConfigurationInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Solution1/Solution1.sln">
+          <value>
+            <ConfigurationInfo />
           </value>
         </entry>
         <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp.sln">

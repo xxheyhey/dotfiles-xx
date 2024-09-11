@@ -1,33 +1,33 @@
 <application>
   <component name="DimensionService">
-    <size key="GridCell.Tab.0.left.0.0.2560.1440@144dpi" width="2436" height="737" />
-    <size key="GridCell.Tab.0.center.0.0.2560.1440@144dpi" width="2436" height="737" />
-    <size key="GridCell.Tab.0.right.0.0.2560.1440@144dpi" width="2436" height="737" />
-    <size key="GridCell.Tab.0.bottom.0.0.2560.1440@144dpi" width="2436" height="737" />
-    <size key="GridCell.Tab.1.left.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.1.center.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.1.right.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.1.bottom.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.2.left.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.2.center.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.2.right.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.2.bottom.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.3.left.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.3.center.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.3.right.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.3.bottom.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.4.left.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.4.center.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.4.right.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.4.bottom.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.5.left.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.5.center.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.5.right.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.5.bottom.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.6.left.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.6.center.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.6.right.0.0.2560.1440@144dpi" width="2436" height="400" />
-    <size key="GridCell.Tab.6.bottom.0.0.2560.1440@144dpi" width="2436" height="400" />
+    <size key="GridCell.Tab.0.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.0.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.0.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.0.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.1.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.1.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.1.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.1.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.2.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.2.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.2.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.2.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.3.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.3.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.3.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.3.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.4.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.4.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.4.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.4.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.5.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.5.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.5.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.5.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.6.left.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.6.center.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.6.right.0.0.2560.1440@144dpi" width="2436" height="462" />
+    <size key="GridCell.Tab.6.bottom.0.0.2560.1440@144dpi" width="2436" height="462" />
   </component>
   <component name="WindowManager">
     <frame x="0" y="33" width="2560" height="1407" />
@@ -37,6 +37,14 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="877" y="279" key="#HTTP_Proxy/0.0.2560.1440" timestamp="1726045562109" />
+    <state x="494" y="110" width="1977" height="1105" key="APPLICATION_WIDE_STORE_#rider.projectView.actions.properties.EditPropertiesDialogProject.ideScale=150" timestamp="1726056840055">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="494" y="110" width="1977" height="1105" key="APPLICATION_WIDE_STORE_#rider.projectView.actions.properties.EditPropertiesDialogProject.ideScale=150/0.0.2560.1440" timestamp="1726056840055" />
+    <state x="1177" y="486" width="975" height="522" key="APPLICATION_WIDE_STORE_#rider.projectView.actions.properties.EditPropertiesDialogSolution.ideScale=150" timestamp="1726056876135">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1177" y="486" width="975" height="522" key="APPLICATION_WIDE_STORE_#rider.projectView.actions.properties.EditPropertiesDialogSolution.ideScale=150/0.0.2560.1440" timestamp="1726056876135" />
     <state x="962" y="392" key="FileChooserDialogImpl" timestamp="1726047146034">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
