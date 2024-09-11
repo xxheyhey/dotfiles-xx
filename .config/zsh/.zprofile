@@ -36,8 +36,8 @@ if [ -d"$HOME/.local/go/bin" ] ; then
 fi
 
 # set PATH so it includes jetbrains rider if it exists
-if [ -d"$HOME/.local/JetBrains Rider-2024.2.4/bin/" ] ; then
-    PATH="$HOME/.local/JetBrains Rider-2024.2.4/bin/:$PATH"
+if [ -d"$HOME/.local/JetBrains Rider-2024.2.4/bin" ] ; then
+    PATH="$HOME/.local/JetBrains Rider-2024.2.4/bin:$PATH"
 fi
 #]
 

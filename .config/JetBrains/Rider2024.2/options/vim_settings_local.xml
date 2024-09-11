@@ -1,0 +1,101 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search />
+      <history-cmd>
+        <entry encoding="base64">Vw==</entry>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="OOBasics_ToetsSysteem-8a765675">
+      <jump line="3" column="6" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="9" column="11" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="19" column="4" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="13" column="16" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="10" column="21" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="8" column="19" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="33" column="4" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+      <jump line="18" column="4" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" protocol="file" />
+    </project>
+    <project id="TestApp-9bbade39">
+      <jump line="4" column="4" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/nice.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
+      <jump line="2" column="14" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
+    </project>
+    <project id="ClassLibrary1-e0d654b7">
+      <jump line="0" column="0" filename="/usr/share/dotnet/sdk/8.0.401/NuGet.props" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/ClassLibrary1/ClassLibrary1/Class1.cs" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/ClassLibrary1/ClassLibrary1/Class1.cs" protocol="file" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/ClassLibrary1/ClassLibrary1/Class1.cs" timestamp="1726049084436">
+        <mark key="&quot;" line="4" column="0" />
+      </file>
+      <file name="/Immediate Window" timestamp="1726048424434">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs" timestamp="1726048997947">
+        <mark key="&quot;" line="18" column="4" />
+        <mark key="[" line="19" column="0" />
+        <mark key="]" line="19" column="0" />
+        <mark key="." line="19" column="0" />
+      </file>
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/nice.cs" timestamp="1726049016925">
+        <mark key="&quot;" line="4" column="4" />
+      </file>
+      <file name="/" timestamp="1726048204323">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" timestamp="1726049054227">
+        <mark key="&quot;" line="2" column="19" />
+      </file>
+      <file name="/usr/share/dotnet/sdk/8.0.401/NuGet.props" timestamp="1726049065397">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkIjQgVHJ1ZToge3RocmVlLkNoZWNrQW5zd2VyKCJ0cnVlIil9Iik7Cg==</text>
+      </register>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkIjQgVHJ1ZToge3RocmVlLkNoZWNrQW5zd2VyKCJ0cnVlIil9Iik7Cg==</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgpOgo=</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaWVMaW5lKCJuaWNlIik7Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgpOwo=</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">dw==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">Q29uc29sZS5Xcml0ZUxpbmUoJCI0IFRydWU6IHt0aHJlZS5DaGVja0Fuc3dlcigidHJ1ZSIpfSIpOw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-offset encoding="base64" />
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

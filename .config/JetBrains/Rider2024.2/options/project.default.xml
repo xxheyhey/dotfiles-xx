@@ -2,6 +2,37 @@
   <component name="ProjectManager">
     <defaultProject>
       <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+      <component name="VcsDirectoryMappings" defaultProject="true" />
+      <component name="WindowStateProjectService">
+        <state x="1107" y="416" key="FileChooserDialogImpl" timestamp="1726046998313">
+          <screen x="0" y="0" width="2560" height="1440" />
+        </state>
+        <state x="1107" y="416" key="FileChooserDialogImpl/0.0.2560.1440" timestamp="1726046998313" />
+        <state x="684" y="235" key="SettingsEditor" timestamp="1726047124625">
+          <screen x="0" y="0" width="2560" height="1440" />
+        </state>
+        <state x="684" y="235" key="SettingsEditor/0.0.2560.1440" timestamp="1726047124625" />
+      </component>
+      <component name="masterDetails">
+        <states>
+          <state key="ScopeChooserConfigurable.UI">
+            <settings>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+        </states>
+      </component>
     </defaultProject>
   </component>
 </application>

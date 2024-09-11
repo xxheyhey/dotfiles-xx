@@ -1,0 +1,12 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/ClassLibrary1" value="true" />
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem" value="true" />
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/OOBasics_ToetsSysteem/.idea/.idea.OOBasics_ToetsSysteem" value="true" />
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp" value="true" />
+      </map>
+    </option>
+  </component>
+</application>
