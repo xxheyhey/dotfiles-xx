@@ -1,0 +1,16 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.OtherOptions">
+      <i c="1" l="1726045598398" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.SkipImportAction">
+      <i c="1" l="1726045600655" />
+    </e>
+    <e n="com.intellij.ide.v.w.C">
+      <i c="1" l="1726045559849" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="2" l="1726045610485" />
+    </e>
+  </component>
+</application>

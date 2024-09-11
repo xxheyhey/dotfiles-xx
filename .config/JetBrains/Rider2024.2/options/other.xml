@@ -1,0 +1,43 @@
+<application>
+  <component name="LangManager">
+    <option name="languageName" value="C#" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="12.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService">{
+  &quot;keyToString&quot;: {
+    &quot;Debug.Allow.Typing&quot;: &quot;true&quot;,
+    &quot;RD.Init.Cfg.2&quot;: &quot;true&quot;,
+    &quot;RD.Init.DialogShown.Ide&quot;: &quot;true&quot;,
+    &quot;Rider.Last.Observed.New.UI.State&quot;: &quot;true&quot;,
+    &quot;Rider.Last.Started.IDE.Build&quot;: &quot;RD-242.21829.210&quot;,
+    &quot;ask.about.ctrl.y.shortcut.v2&quot;: &quot;true&quot;,
+    &quot;evlsprt3.242&quot;: &quot;4&quot;,
+    &quot;experimental.ui.on.first.startup&quot;: &quot;true&quot;,
+    &quot;experimental.ui.used.version&quot;: &quot;242.21829.210&quot;,
+    &quot;fileTypeChangedCounter&quot;: &quot;2&quot;,
+    &quot;fontSizeToResetConsole&quot;: &quot;19.5&quot;,
+    &quot;fontSizeToResetEditor&quot;: &quot;19.5&quot;,
+    &quot;input.method.disabler.muted&quot;: &quot;true&quot;,
+    &quot;migrated.non.roamable.values.from.general.settings&quot;: &quot;true&quot;,
+    &quot;previousColorScheme&quot;: &quot;_@user_Rider Dark&quot;,
+    &quot;promo.ignore.ultimate.edition&quot;: &quot;true&quot;,
+    &quot;registry.to.advanced.settings.migration.build&quot;: &quot;RD-242.21829.210&quot;,
+    &quot;toolwindow.stripes.buttons.info.shown&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;fileTypeDetectors&quot;: [
+      &quot;com.intellij.ide.scratch.ScratchFileServiceImpl$Detector&quot;,
+      &quot;com.jetbrains.rider.cpp.fileType.CppHeaderFileTypeDetector&quot;,
+      &quot;com.intellij.docker.dockerFile.DockerFileTypeDetector&quot;,
+      &quot;com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector&quot;,
+      &quot;com.intellij.database.vfs.DbStorageFileType$Detector&quot;,
+      &quot;com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector&quot;,
+      &quot;com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector&quot;,
+      &quot;org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector&quot;
+    ]
+  }
+}</component>
+</application>

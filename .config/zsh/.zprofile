@@ -25,12 +25,19 @@ if [ -d "$HOME/Git/alacritty/target/release" ] ; then
     PATH="$HOME/Git/alacritty/target/release:$PATH"
 fi
 
+# set PATH so it includes ncbi-blast if it exists
 if [ -d "$HOME/.local/ncbi-blast-2.15.0+/bin" ] ; then
     PATH="$HOME/.local/ncbi-blast-2.15.0+/bin:$PATH"
 fi
 
+# set PATH so it includes go if it exists
 if [ -d"$HOME/.local/go/bin" ] ; then
     PATH="$HOME/.local/go/bin:$PATH"
+fi
+
+# set PATH so it includes jetbrains rider if it exists
+if [ -d"$HOME/.local/JetBrains Rider-2024.2.4/bin/" ] ; then
+    PATH="$HOME/.local/JetBrains Rider-2024.2.4/bin/:$PATH"
 fi
 #]
 
