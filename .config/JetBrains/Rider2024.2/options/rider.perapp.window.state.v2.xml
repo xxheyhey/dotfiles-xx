@@ -20,8 +20,6 @@
         {
           "id": "Structure",
           "order": 2,
-          "isActiveOnStart": true,
-          "isVisible": true,
           "weight": 0.1841797,
           "sideWeight": 0.04879449,
           "isSplit": true
@@ -46,16 +44,13 @@
           "id": "Terminal",
           "order": 3,
           "anchor": "BOTTOM",
-          "isActiveOnStart": true,
-          "isVisible": true,
           "weight": 0.30597013
         },
         {
           "id": "Run",
           "order": 4,
           "anchor": "BOTTOM",
-          "isShowStripeButton": false,
-          "weight": 0.37420043
+          "weight": 0.35714287
         },
         {
           "id": "Services",
@@ -73,7 +68,8 @@
           "id": "Debug",
           "order": 4,
           "anchor": "BOTTOM",
-          "weight": 0.37420043
+          "isVisible": true,
+          "weight": 0.35714287
         },
         {
           "id": "Notifications",
@@ -118,7 +114,7 @@
       "unifiedWeights": {
         "top": 0.33,
         "left": 0.1841797,
-        "bottom": 0.30597013,
+        "bottom": 0.35714287,
         "right": 0.3298828
       }
     }

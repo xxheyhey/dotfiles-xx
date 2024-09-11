@@ -99,7 +99,7 @@
         </entry>
         <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/Mandelbrot/Mandelbrot.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Mandelbrot – Mandelbrot.cs" opened="true" projectWorkspaceId="2lvWf68lWH01fUofMrU81X1omsi">
+            <RecentProjectMetaInfo frameTitle="Mandelbrot – Mandelbrot.cs" projectWorkspaceId="2lvWf68lWH01fUofMrU81X1omsi">
               <option name="activationTimestamp" value="1726061270247" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.21829.210" />
@@ -113,8 +113,24 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/TableGames/TableGames.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="TableGames – IScorable.cs" opened="true" projectWorkspaceId="2lvYEAYZAAU4R2KdlqrlV2JVhbX">
+              <option name="activationTimestamp" value="1726064311300" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.21829.210" />
+              <option name="buildTimestamp" value="1725634200000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="0" y="33" width="2560" height="1407" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726061902746" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/Mandelbrot/Mandelbrot.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Exercises/TableGames/TableGames.sln" />
   </component>
 </application>

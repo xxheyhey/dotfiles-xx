@@ -24,6 +24,9 @@
     <option name="IS_WHEEL_FONTCHANGE_PERSISTENT" value="true" />
     <option name="SHOW_INLINE_DIALOG" value="false" />
   </component>
+  <component name="InlineCompletionOnboarding">
+    <option name="onboardingFinished" value="true" />
+  </component>
   <component name="JsonEditorOptions">
     <option name="COMMA_ON_ENTER" value="false" />
     <option name="COMMA_ON_MATCHING_BRACES" value="false" />
