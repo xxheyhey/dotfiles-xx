@@ -11,8 +11,8 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="957">
-              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="594">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -23,8 +23,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 7,
-      "lastUsed": 1726049084571
+      "usageCount": 8,
+      "lastUsed": 1726049207474
     },
     "WebPreview": {
       "usageCount": 1,
@@ -51,7 +51,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="7" lastUsage="1726049084572" />
+      <summary usageCount="8" lastUsage="1726049207477" />
     </language>
   </component>
   <component name="ProjectView">
@@ -224,10 +224,6 @@
     </layoutV2>
     <recentWindows>
       <value>Project</value>
-      <value>Notifications</value>
-      <value>Services</value>
-      <value>Build</value>
-      <value>Structure</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
@@ -375,8 +371,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OOBasics_ToetsSysteem/OOBasics_ToetsSysteem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="594">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
