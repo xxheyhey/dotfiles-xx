@@ -12,8 +12,8 @@
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
     "Debug.Allow.Typing": "true",
-    "InstalledPluginsSearchHistory": "paste\nterminal\nmono\nhardware\nhardwa",
-    "KEYMAP": "copy\nformat\npop\ncomplet",
+    "InstalledPluginsSearchHistory": "brace\npaste\nterminal\nmono\nhardware",
+    "KEYMAP": "split\ncopy\nformat\npop\ncomplet",
     "LAST_CALCULATED_COLOR_INDEX_KEY": "4",
     "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "RD-242.21829.210",
     "MarketplacePluginsSearchHistory": "/tag:\"Editor Color Schemes\"\ngruvbox\n/tag:Keymap\n/tag:Keymap vim\n/tag:Keymap neovi",
@@ -24,7 +24,7 @@
     "Rider.Last.Started.IDE.Build": "RD-242.21829.210",
     "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
     "RunOnceActivity.llm.installer.activate.toolwindow": "true",
-    "SettingsSearchHistory": "paste\nterminal\nmono\ntypo\nhighlight",
+    "SettingsSearchHistory": "brace\npaste\nterminal\nmono\ntypo",
     "ask.about.ctrl.y.shortcut.v2": "true",
     "evlsprt3.242": "4",
     "experimental.ui.on.first.startup": "true",
@@ -45,6 +45,7 @@
     "previousColorScheme": "_@user_Gruvbox Dark Hard",
     "promo.ignore.ultimate.edition": "true",
     "registry.to.advanced.settings.migration.build": "RD-242.21829.210",
+    "selected.color.option.type": "ReSharper.CSHARP_STATIC_METHOD_IDENTIFIER",
     "toolwindow.stripes.buttons.info.shown": "true",
     "ts.lib.d.ts.version": "5.4.3",
     "whats.new.last.shown.version": "2024-2.4-21829-7890de2744a5f60a239878afaffeaa01425f5c54"

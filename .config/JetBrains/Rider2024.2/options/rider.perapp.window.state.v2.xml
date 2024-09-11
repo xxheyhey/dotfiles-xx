@@ -9,8 +9,8 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.25019532,
-          "sideWeight": 0.5011481
+          "weight": 0.1841797,
+          "sideWeight": 0.9512055
         },
         {
           "id": "Commit",
@@ -22,8 +22,8 @@
           "order": 2,
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.25019532,
-          "sideWeight": 0.4988519,
+          "weight": 0.1841797,
+          "sideWeight": 0.04879449,
           "isSplit": true
         },
         {
@@ -40,7 +40,7 @@
           "id": "Problems View",
           "order": 2,
           "anchor": "BOTTOM",
-          "weight": 0.37420043
+          "weight": 0.30597013
         },
         {
           "id": "Terminal",
@@ -61,13 +61,13 @@
           "id": "Services",
           "order": 4,
           "anchor": "BOTTOM",
-          "weight": 0.37420043
+          "weight": 0.30597013
         },
         {
           "id": "Build",
           "order": 4,
           "anchor": "BOTTOM",
-          "weight": 0.37420043
+          "weight": 0.30597013
         },
         {
           "id": "Debug",
@@ -79,12 +79,14 @@
           "id": "Notifications",
           "order": 0,
           "anchor": "RIGHT",
+          "isShowStripeButton": false,
           "weight": 0.3298828
         },
         {
           "id": "AIAssistant",
           "order": 1,
           "anchor": "RIGHT",
+          "isShowStripeButton": false,
           "weight": 0.3298828
         },
         {
@@ -104,11 +106,18 @@
           "order": 4,
           "anchor": "RIGHT",
           "weight": 0.25
+        },
+        {
+          "id": "Hierarchy",
+          "order": 4,
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "weight": 0.3298828
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.25019532,
+        "left": 0.1841797,
         "bottom": 0.30597013,
         "right": 0.3298828
       }

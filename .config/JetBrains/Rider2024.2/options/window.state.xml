@@ -52,6 +52,10 @@
     <state x="640" y="736" width="1280" height="1407" key="WELCOME_SCREEN" timestamp="1726047155178">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="1280" y="736" width="2560" height="1407" key="WELCOME_SCREEN.ideScale=150" timestamp="1726061128144">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1280" y="736" width="2560" height="1407" key="WELCOME_SCREEN.ideScale=150/0.0.2560.1440" timestamp="1726061128144" />
     <state x="640" y="736" width="1280" height="1407" key="WELCOME_SCREEN/0.0.2560.1440" timestamp="1726047155178" />
   </component>
 </application>

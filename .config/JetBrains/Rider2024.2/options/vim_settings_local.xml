@@ -7,8 +7,9 @@
         <entry encoding="base64">bWFha0tsZXVyZW4=</entry>
       </history-search>
       <history-cmd>
-        <entry encoding="base64">Vw==</entry>
         <entry encoding="base64">dw==</entry>
+        <entry encoding="base64">Vw==</entry>
+        <entry encoding="base64">cQ==</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -52,7 +53,6 @@
     <project id="TestApp-9bbade39">
       <jump line="4" column="4" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/nice.cs" protocol="file" />
       <jump line="2" column="14" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
       <jump line="3" column="22" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
       <jump line="7" column="47" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
       <jump line="11" column="15" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
@@ -62,6 +62,10 @@
       <jump line="4" column="38" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
       <jump line="10" column="4" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
+      <jump line="26" column="2" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" protocol="file" />
+      <jump line="4" column="13" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
+      <jump line="29" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" protocol="file" />
     </project>
     <project id="ClassLibrary1-e0d654b7">
       <jump line="0" column="0" filename="/usr/share/dotnet/sdk/8.0.401/NuGet.props" protocol="file" />
@@ -83,7 +87,6 @@
       <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsPlus.csproj" protocol="file" />
       <jump line="13" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsPlus.csproj" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Kleuren.txt" protocol="file" />
-      <jump line="9" column="35" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsPlus.csproj" protocol="file" />
       <jump line="0" column="6" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsEditor.cs" protocol="file" />
       <jump line="48" column="26" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsEditor.cs" protocol="file" />
       <jump line="7" column="13" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsWin.cs" protocol="file" />
@@ -93,7 +96,11 @@
       <jump line="400" column="55" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsWin.cs" protocol="file" />
       <jump line="288" column="47" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsWin.cs" protocol="file" />
       <jump line="49" column="16" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsEditor.cs" protocol="file" />
-      <jump line="1" column="25" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Program.cs" protocol="file" />
+      <jump line="10" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Program.cs" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Program.cs" protocol="file" />
+      <jump line="9" column="35" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsPlus.csproj" protocol="file" />
+      <jump line="1" column="15" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Program.cs" protocol="file" />
+      <jump line="4" column="0" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Program.cs" protocol="file" />
     </project>
     <project id="Solution1-b09bef0b">
       <jump line="23" column="1" filename="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Solution1/ConsoleApp1/Program.cs" protocol="file" />
@@ -118,7 +125,7 @@
         <mark key="^" line="0" column="11" />
         <mark key="." line="0" column="10" />
       </file>
-      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsPlus.csproj" timestamp="1726058817890">
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/SchetsPlus.csproj" timestamp="1726059301408">
         <mark key="&quot;" line="9" column="35" />
         <mark key="[" line="9" column="32" />
         <mark key="]" line="9" column="36" />
@@ -138,25 +145,28 @@
       <file name="/usr/share/dotnet/sdk-manifests/8.0.100/microsoft.net.workload.mono.toolchain.net7/8.0.8/WorkloadManifest.targets" timestamp="1726056972173">
         <mark key="&quot;" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" timestamp="1726058418447">
-        <mark key="&quot;" line="10" column="4" />
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/TestApp.csproj" timestamp="1726060903994">
+        <mark key="&quot;" line="0" column="0" />
         <mark key="[" line="10" column="0" />
         <mark key="]" line="10" column="0" />
         <mark key="^" line="4" column="39" />
         <mark key="." line="10" column="0" />
       </file>
-      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" timestamp="1726058418442">
-        <mark key="&quot;" line="0" column="0" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="^" line="23" column="1" />
-        <mark key="." line="0" column="0" />
+      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/Program.cs" timestamp="1726061017775">
+        <mark key="&quot;" line="29" column="42" />
+        <mark key="[" line="28" column="5" />
+        <mark key="]" line="29" column="43" />
+        <mark key="." line="29" column="42" />
+        <mark key="^" line="29" column="43" />
       </file>
       <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus/Element.cs" timestamp="1726057014702">
         <mark key="&quot;" line="13" column="21" />
       </file>
       <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/Solution1/ConsoleApp1/Program.cs" timestamp="1726057685033">
         <mark key="&quot;" line="13" column="13" />
+      </file>
+      <file name="/" timestamp="1726060739757">
+        <mark key="&quot;" line="32" column="21" />
       </file>
       <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/ClassLibrary1/ClassLibrary1/Class1.cs" timestamp="1726049084436">
         <mark key="&quot;" line="4" column="0" />
@@ -191,9 +201,6 @@
         <mark key="." line="25" column="40" />
         <mark key="^" line="25" column="41" />
       </file>
-      <file name="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp/nice.cs" timestamp="1726049016925">
-        <mark key="&quot;" line="4" column="4" />
-      </file>
       <file name="/usr/share/dotnet/sdk/8.0.401/NuGet.props" timestamp="1726049065397">
         <mark key="&quot;" line="0" column="0" />
       </file>
@@ -201,47 +208,47 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">S2xldXJlbg==</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ewogICAgewogICAgICAgIAogICAgCn0K</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
         <text encoding="base64">S2xldXJlbg==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">Lg==</text>
+        <text encoding="base64">Q29uc29vbGUuV3JpdGVMaW5lKCJOaWNlIENsaWNrZWQhIik7</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">bWFha0tsZXVyZW4=</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ewogICAgewogICAgICAgIAogICAgCn0K</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgIDxJdGVtR3JvdXA+CiAgICAgICAgPFJlZmVyZW5jZSBJbmNsdWRlPSJTeXN0ZW0uRHJhd2luZyIgLz4KICAgIDwvSXRlbUdyb3VwPgo=</text>
-      </register>
-      <register name="3" type="LINE_WISE">
-        <text encoding="base64">dXNpbmcgU3lzdGVtOwp1c2luZyBTeXN0ZW0uRHJhd2luZzsKdXNpbmcgU3lzdGVtLldpbmRvd3MuRm9ybXM7CiAK</text>
-      </register>
-      <register name="4" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
       </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgIDxJdGVtR3JvdXA+CiAgICAgICAgPFJlZmVyZW5jZSBJbmNsdWRlPSJTeXN0ZW0uRHJhd2luZyIgLz4KICAgIDwvSXRlbUdyb3VwPgo=</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">dXNpbmcgU3lzdGVtOwp1c2luZyBTeXN0ZW0uRHJhd2luZzsKdXNpbmcgU3lzdGVtLldpbmRvd3MuRm9ybXM7CiAK</text>
+      </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgibmljZSIpOwo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">Cm5hbWVzcGFjZSBPT0Jhc2ljc19Ub2V0c1N5c3RlZW0K</text>
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgibmljZSIpOwo=</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">dXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7Cg==</text>
+        <text encoding="base64">Cm5hbWVzcGFjZSBPT0Jhc2ljc19Ub2V0c1N5c3RlZW0K</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkIjQgVHJ1ZToge3RocmVlLkNoZWNrQW5zd2VyKCJ0cnVlIil9Iik7Cg==</text>
+        <text encoding="base64">dXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7Cg==</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgpOgo=</text>
+        <text encoding="base64">ICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkIjQgVHJ1ZToge3RocmVlLkNoZWNrQW5zd2VyKCJ0cnVlIil9Iik7Cg==</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
-        <text encoding="base64">dw==</text>
+        <text encoding="base64">cQ==</text>
       </register>
     </registers>
   </component>

@@ -65,42 +65,10 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="TestApp – Program.cs" projectWorkspaceId="2lvPk7eke9rmfx0IK0FhTxzMavz">
-              <option name="activationTimestamp" value="1726058416895" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-242.21829.210" />
-              <option name="buildTimestamp" value="1725634200000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="8" />
-              </option>
-              <frame x="0" y="33" width="2560" height="1407" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1726057716577" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/Mandelbrot/Mandelbrot.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Mandelbrot" projectWorkspaceId="2lvRAKwqnk9sYGRxuMbzfGAbvij">
-              <option name="activationTimestamp" value="1726058760581" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-242.21829.210" />
-              <option name="buildTimestamp" value="1725634200000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="4" />
-              </option>
-              <frame x="0" y="33" width="2560" height="1407" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1726058418535" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="SchetsPlus – SchetsPlus.csproj" opened="true" projectWorkspaceId="2lvJZzMPRdQZWAfg85H3B7PT4DV">
-              <option name="activationTimestamp" value="1726059072565" />
+            <RecentProjectMetaInfo frameTitle="SchetsPlus – Program.cs" projectWorkspaceId="2lvJZzMPRdQZWAfg85H3B7PT4DV">
+              <option name="activationTimestamp" value="1726059325558" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.21829.210" />
               <option name="buildTimestamp" value="1725634200000" />
@@ -113,8 +81,40 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Systeemontwikkeling/TestApp/TestApp.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="TestApp" projectWorkspaceId="2lvTsdQrpQhEXOtpDwwemm5EWnE">
+              <option name="activationTimestamp" value="1726060966300" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.21829.210" />
+              <option name="buildTimestamp" value="1725634200000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="0" y="33" width="2560" height="1407" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726059758285" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/Mandelbrot/Mandelbrot.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Mandelbrot – Mandelbrot.cs" opened="true" projectWorkspaceId="2lvWf68lWH01fUofMrU81X1omsi">
+              <option name="activationTimestamp" value="1726061270247" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.21829.210" />
+              <option name="buildTimestamp" value="1725634200000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="0" y="33" width="2560" height="1407" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726061131068" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/SchetsPlus/SchetsPlus.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/personal/Eskol/MinorInformatica(2023-2024)/Modelleren-Programmeren/Projects/Mandelbrot/Mandelbrot.sln" />
   </component>
 </application>

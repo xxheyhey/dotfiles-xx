@@ -9,6 +9,24 @@
     <e n="ActivateBuildToolWindow">
       <i c="1" l="1726049097943" />
     </e>
+    <e n="ActivateHierarchyToolWindow">
+      <i c="1" l="1726060813239" />
+    </e>
+    <e n="ActivateStructureToolWindow">
+      <i c="1" l="1726060943631" />
+    </e>
+    <e n="CheckForUpdate">
+      <i c="1" l="1726059565782" />
+    </e>
+    <e n="ConfigureFilesNestingAction">
+      <i c="1" l="1726060863610" />
+    </e>
+    <e n="ConfigureScratchesAction">
+      <i c="1" l="1726060872430" />
+    </e>
+    <e n="CreateDesktopEntry">
+      <i c="2" l="1726059555895" />
+    </e>
     <e n="Debug">
       <i c="3" l="1726057950765" />
     </e>
@@ -16,25 +34,28 @@
       <i c="2" l="1726056715171" />
     </e>
     <e n="EditSource">
-      <i c="2" l="1726057722386" />
+      <i c="3" l="1726059289907" />
     </e>
     <e n="EditorBackSpace">
-      <i c="151" l="1726059028659" />
+      <i c="167" l="1726060990264" />
     </e>
     <e n="EditorDeleteToWordStart">
       <i c="2" l="1726053125617" />
     </e>
     <e n="EditorEnter">
-      <i c="13" l="1726057898160" />
+      <i c="86" l="1726060988100" />
     </e>
     <e n="EditorEscape">
-      <i c="70" l="1726059065023" />
+      <i c="79" l="1726060992714" />
     </e>
     <e n="EditorPaste">
       <i c="1" l="1726057859134" />
     </e>
     <e n="EditorTab">
       <i c="1" l="1726052894940" />
+    </e>
+    <e n="EditorTabsEntryPoint">
+      <i c="1" l="1726060823741" />
     </e>
     <e n="FileChooser.GotoHome">
       <i c="1" l="1726047131930" />
@@ -49,7 +70,10 @@
       <i c="1" l="1726052437950" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="3" l="1726053124442" />
+      <i c="4" l="1726060992357" />
+    </e>
+    <e n="LocalHistory.ShowLocalHistory">
+      <i c="1" l="1726060839548" />
     </e>
     <e n="MoreRunToolbarActions">
       <i c="5" l="1726056902309" />
@@ -63,6 +87,9 @@
     <e n="OpenFile">
       <i c="4" l="1726058524719" />
     </e>
+    <e n="OpenProjectFilesWithSingleClick">
+      <i c="1" l="1726060894762" />
+    </e>
     <e n="PasteMultiple">
       <i c="8" l="1726057773403" />
     </e>
@@ -73,7 +100,10 @@
       <i c="16" l="1726057981580" />
     </e>
     <e n="ReformatCode">
-      <i c="14" l="1726057758787" />
+      <i c="15" l="1726060987212" />
+    </e>
+    <e n="RiderEditSourceInRightSplit">
+      <i c="2" l="1726060758728" />
     </e>
     <e n="RiderNewSolution">
       <i c="6" l="1726057689289" />
@@ -102,8 +132,11 @@
     <e n="ShowErrorDescription">
       <i c="9" l="1726053342353" />
     </e>
+    <e n="ShowProjectImports">
+      <i c="4" l="1726060876864" />
+    </e>
     <e n="ShowSettings">
-      <i c="43" l="1726058182148" />
+      <i c="48" l="1726060622260" />
     </e>
     <e n="ShowSolutionPropertiesAction">
       <i c="2" l="1726056865919" />
@@ -111,8 +144,14 @@
     <e n="Stop">
       <i c="1" l="1726057981063" />
     </e>
+    <e n="TemplateProjectPropertiesAction">
+      <i c="1" l="1726059570592" />
+    </e>
     <e n="ToggleReadOnlyAttribute">
       <i c="2" l="1726051885305" />
+    </e>
+    <e n="ViewInplaceComments">
+      <i c="7" l="1726060875078" />
     </e>
     <e n="WelcomeScreen.Settings">
       <i c="4" l="1726046947391" />
@@ -142,28 +181,37 @@
       <i c="1" l="1726045559849" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="150" l="1726059091353" />
+      <i c="166" l="1726060990263" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
+      <i c="1" l="1726060951855" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction">
       <i c="2" l="1726055826962" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="9" l="1726058817886" />
+      <i c="12" l="1726060903989" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$AddAbbreviationAction">
       <i c="1" l="1726052305529" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$AddKeyboardShortcutAction">
-      <i c="13" l="1726058221834" />
+      <i c="15" l="1726060641673" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$ClearFilteringAction">
+      <i c="1" l="1726060632744" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$EditShortcutAction">
+      <i c="1" l="1726060614410" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$FindByShortcutAction">
-      <i c="3" l="1726052242629" />
+      <i c="8" l="1726060624159" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$RemoveAllShortcuts">
       <i c="1" l="1726052002903" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$RemoveShortcutAction">
-      <i c="28" l="1726058220156" />
+      <i c="30" l="1726060615938" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$ResetShortcutsAction">
       <i c="1" l="1726057834702" />
@@ -177,20 +225,26 @@
     <e n="com.intellij.openapi.vfs.encoding.ChooseFileEncodingAction$1">
       <i c="1" l="1726058849175" />
     </e>
+    <e n="com.intellij.openapi.wm.impl.HideAction">
+      <i c="3" l="1726060828824" />
+    </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="18" l="1726058426522" />
+      <i c="32" l="1726061135601" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
-      <i c="50" l="1726058181565" />
+      <i c="57" l="1726060936944" />
     </e>
     <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
-      <i c="5" l="1726046945587" />
+      <i c="9" l="1726059568813" />
     </e>
     <e n="com.intellij.toolWindow.ShowMoreToolWindowsAction">
-      <i c="3" l="1726055686705" />
+      <i c="6" l="1726060844461" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
-      <i c="9" l="1726056901295" />
+      <i c="13" l="1726060816075" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="3" l="1726060866189" />
     </e>
     <e n="com.intellij.ui.CommonActionsPanel$AddButton">
       <i c="1" l="1726055203620" />
@@ -205,7 +259,7 @@
       <i c="2" l="1726045610485" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderActionUpdateInterceptor$RiderBackendCompositeAction">
-      <i c="16" l="1726057758786" />
+      <i c="19" l="1726060987210" />
     </e>
     <e n="com.jetbrains.rider.intentions.gutterWrappers.BackendGutterMarkWrapper$getClickAction$1">
       <i c="2" l="1726048222565" />
@@ -220,7 +274,7 @@
       <i c="2" l="1726052279011" />
     </e>
     <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
-      <i c="58" l="1726059099081" />
+      <i c="61" l="1726061017725" />
     </e>
     <e n="editRunConfigurations">
       <i c="12" l="1726057982121" />

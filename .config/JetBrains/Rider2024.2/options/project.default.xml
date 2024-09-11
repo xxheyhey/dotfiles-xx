@@ -2,11 +2,16 @@
   <component name="ProjectManager">
     <defaultProject>
       <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
-      <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "settings.editor.selected.configurable": "advanced.settings"
+      <component name="ProjectViewState">
+        <option name="autoscrollToSource" value="true" />
+        <option name="hideEmptyMiddlePackages" value="true" />
+        <option name="showLibraryContents" value="true" />
+      </component>
+      <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
       <component name="VcsDirectoryMappings" defaultProject="true" />
       <component name="WindowStateProjectService">
         <state x="1107" y="416" key="FileChooserDialogImpl" timestamp="1726046998313">
@@ -16,6 +21,10 @@
         <state x="684" y="235" key="SettingsEditor" timestamp="1726047124625">
           <screen x="0" y="0" width="2560" height="1440" />
         </state>
+        <state x="684" y="235" key="SettingsEditor.ideScale=150" timestamp="1726059573676">
+          <screen x="0" y="0" width="2560" height="1440" />
+        </state>
+        <state x="684" y="235" key="SettingsEditor.ideScale=150/0.0.2560.1440" timestamp="1726059573676" />
         <state x="684" y="235" key="SettingsEditor/0.0.2560.1440" timestamp="1726047124625" />
       </component>
       <component name="masterDetails">

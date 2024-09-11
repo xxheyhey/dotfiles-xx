@@ -21,6 +21,7 @@
   <action id="Editor Paste">
     <keyboard-shortcut first-keystroke="shift ctrl v" />
   </action>
+  <action id="EditorChooseLookupItem" />
   <action id="EditorPasteFromX11" />
   <action id="EditorPasteSimple" />
   <action id="FindInPath" />
