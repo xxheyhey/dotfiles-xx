@@ -45,8 +45,4 @@
 .config/ghc/ghci_history
 .config/cabal
 .config/spotify
-.config/JetBrains/Rider2024.2/app-internal-state.db
-.config/JetBrains/Rider2024.2/resharper-host
-.config/JetBrains/Rider2024.2/settingsSync
-.config/JetBrains/Rider2024.2/workspace
-.config/JetBrains/Rider2024.2/.lock
+.config/JetBrains

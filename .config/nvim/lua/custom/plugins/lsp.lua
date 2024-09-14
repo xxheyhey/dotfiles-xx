@@ -151,7 +151,7 @@ return {
 			require("conform").setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
-					haskell = { "hlint" },
+					haskell = { "ormolu" },
 				},
 			})
 
@@ -164,7 +164,7 @@ return {
 						haskell = "hs",
 					},
 					lang_to_formatters = {
-						haskell = { "hlint" },
+						haskell = { "ormolu" },
 					},
 				},
 			}
