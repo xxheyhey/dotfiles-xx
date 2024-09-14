@@ -151,23 +151,8 @@ return {
 			require("conform").setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
-					haskell = { "ormolu" },
 				},
 			})
-
-			-- Customize the "injected" formatter (e.g. for md files)
-			require("conform").formatters.injected = {
-				options = {
-					-- Set individual option values
-					lang_to_ext = {
-						markdown = "md",
-						haskell = "hs",
-					},
-					lang_to_formatters = {
-						haskell = { "ormolu" },
-					},
-				},
-			}
 		end,
 	},
 }

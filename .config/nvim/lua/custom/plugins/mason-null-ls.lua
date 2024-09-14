@@ -44,6 +44,17 @@ return {
 							},
 						}))
 					end,
+					ormolu = function(source_name, methods)
+						null_ls.register(null_ls.builtins.formatting.ormolu.with({
+							-- Add more arguments to a source's defaults
+							-- Default: { "--enable-outside-detected-project", "--name", "$FILENAME", "-" }
+							-- Type `ocamlformat --help` in your terminal to check more args
+							extra_args = {
+								"--mode",
+								"inplace",
+							},
+						}))
+					end,
 				},
 			})
 
