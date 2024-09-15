@@ -60,4 +60,5 @@ return {
 		},
 		lazy = false,
 	},
+	{ "echasnovski/mini.icons", version = false, opts = {} },
 }

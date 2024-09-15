@@ -40,13 +40,13 @@ return {
 					operators = false,
 					folds = false,
 				},
-				dim_inactive = false,
-				transparent_mode = true,
 				overrides = {
 					["@function.call"] = { fg = "#d1832e", bold = false },
 					["@variable"] = { fg = "#ebdbb2", bold = false },
 					["@markup.italic"] = { italic = true },
 				},
+				dim_inactive = true,
+				transparent_mode = true,
 			})
 		end,
 	},
