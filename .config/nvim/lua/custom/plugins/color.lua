@@ -45,7 +45,7 @@ return {
 					["@variable"] = { fg = "#ebdbb2", bold = false },
 					["@markup.italic"] = { italic = true },
 				},
-				dim_inactive = true,
+				dim_inactive = false,
 				transparent_mode = true,
 			})
 		end,
