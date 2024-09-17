@@ -6,6 +6,7 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
 			local harpoon = require("harpoon")
+			local set = vim.keymap.set
 
 			-- REQUIRED
 			harpoon:setup({
@@ -14,33 +15,30 @@ return {
 					sync_on_ui_close = true,
 				},
 			})
-			-- REQUIRED
-			vim.keymap.set("n", "<leader>a", function()
+
+			-- keymaps
+			set("n", "<leader>a", function()
 				harpoon:list():add()
 			end, { desc = "Add to Harpoon list" })
-			vim.keymap.set("n", "<C-e>", function()
+			set("n", "<C-e>", function()
 				harpoon.ui:toggle_quick_menu(harpoon:list())
 			end, { desc = "Open Harpoon list" })
 
-			vim.keymap.set("n", "<C-b>", function()
+			set("n", "<C-b>", function()
 				harpoon:list():select(1)
-			end)
-			vim.keymap.set("n", "<C-n>", function()
+			end, { desc = "Harpoon tab 1" })
+			set("n", "<C-n>", function()
 				harpoon:list():select(2)
-			end)
-			vim.keymap.set("n", "<C-m>", function()
+			end, { desc = "Harpoon tab 2" })
+			set("n", "<C-m>", function()
 				harpoon:list():select(3)
-			end)
+			end, { desc = "Harpoon tab 3" })
 
-			for _, idx in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }) do
-				vim.keymap.set("n", string.format("<leader>%d", idx), function()
+			for _, idx in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }) do
+				set("n", string.format("<leader>%d", idx), function()
 					harpoon:list():select(idx)
 				end, { desc = string.format("Harpoon tab %d", idx) })
 			end
-
-			vim.keymap.set("n", "<leader>0", function()
-				harpoon:list():select(10)
-			end)
 		end,
 	},
 }
