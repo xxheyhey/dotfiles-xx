@@ -25,14 +25,15 @@ alias f="fd --type f --hidden --exclude anaconda3 --exclude R --exclude x86_64-p
 alias prime-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias nvidiaoff="sudo envycontrol -s integrated"
 alias nvidiahybrid="sudo envycontrol -s hybrid"
-# Shutdown/reboot (+ syncing with Onedrive)
+# Shutdown/reboot
 alias shutdown="sudo shutdown"
 alias poweroff="sudo shutdown now"
 alias off="sudo shutdown now"
 alias reboot="sudo reboot"
-alias syncy="onedrive --synchronize"
-alias syncoff="onedrive --synchronize && poweroff"
-alias syncreboot="onedrive --synchronize && reboot"
+# syncing with Onedrive
+alias syncy="onedrive --sync"
+alias syncoff="onedrive --sync && poweroff"
+alias syncreboot="onedrive --sync && reboot"
 # Gammastep (blue light filter)
 alias night="gammastep -m randr -P -O"
 alias nighty="gammastep -m randr -P -O 2800"
