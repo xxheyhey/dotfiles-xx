@@ -9,6 +9,7 @@ function Color(color)
 	-- Highlight groups
 	vim.api.nvim_set_hl(0, "BiscuitColor", { fg = "#494c57" })
 	vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#333033" })
+	vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { fg = "#999099", bg = "#333033" })
 	-- The following is needed for some themes to fix the background
 	-- of some windows or parts of the screen
 	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
