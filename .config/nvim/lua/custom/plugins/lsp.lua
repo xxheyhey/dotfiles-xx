@@ -128,6 +128,13 @@ return {
 						"ocaml.cram",
 					},
 				},
+				hls = {
+					haskell = {
+						plugin = {
+							rename = { config = { crossModule = true } },
+						},
+					},
+				},
 			}
 
 			-- Setup neovim lua configuration
