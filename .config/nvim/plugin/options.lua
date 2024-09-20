@@ -63,7 +63,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.colorcolumn = "80"
-vim.diagnostic.config({ virtual_text = true })
+vim.diagnostic.config({ virtual_text = false, virtual_lines = false })
 
 -- Highlight on yank
 -- See `:help vim.highlight.on_yank()`

@@ -13,6 +13,7 @@ set("n", "]d", function()
 end, { desc = "Go to next diagnostic message" })
 set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
+set("n", "<Leader>l", require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })
 
 -- Open the Oil file explorer
 set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
