@@ -18,12 +18,14 @@ end
 
 -- Function to cycle between themes
 function ToggleColorScheme()
-	if Mycolor == "rose-pine" then
+	if Mycolor == "gruvbox" then
+		Mycolor = "vague"
+    elseif Mycolor == "vague" then
+        Mycolor = "rose-pine"
+	elseif Mycolor == "rose-pine" then
 		Mycolor = "tokyonight"
-	elseif Mycolor == "tokyonight" then
-		Mycolor = "gruvbox"
-	else
-		Mycolor = "rose-pine"
+    else
+        Mycolor = "gruvbox"
 	end
 	Color()
 end
@@ -49,6 +51,29 @@ return {
 				},
 				dim_inactive = false,
 				transparent_mode = true,
+			})
+		end,
+	},
+	{
+        -- Copied from Coding with Sphere (youtube)
+		"vague2k/vague.nvim",
+		config = function()
+			require("vague").setup({
+				style = {
+					comments = "none",
+					strings = "none",
+				},
+				colors = {
+					func = "#bc96b0",
+					keyword = "#787bab",
+					-- string = "#d4bd98",
+					string = "#8a739a",
+					-- string = "#f2e6ff",
+					-- number = "#f2e6ff",
+					-- string = "#d8d5b1",
+					number = "#8f729e",
+					-- type = "#dcaed7",
+				},
 			})
 		end,
 	},
