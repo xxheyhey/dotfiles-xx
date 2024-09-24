@@ -7,6 +7,14 @@ return {
 	end,
 	ft = { "markdown" },
 	config = function()
-		vim.keymap.set("n", "<leader>md", ":MarkdownPreview<CR>")
+		vim.keymap.set("n", "<leader>mdl", function()
+			vim.g.mkdp_theme = "light"
+			vim.cmd("MarkdownPreview")
+		end)
+		vim.keymap.set("n", "<leader>mdd", function()
+			vim.g.mkdp_theme = "dark"
+			vim.cmd("MarkdownPreview")
+		end)
+		vim.g.mkdp_preview_options = { disable_sync_scroll = 1 }
 	end,
 }
