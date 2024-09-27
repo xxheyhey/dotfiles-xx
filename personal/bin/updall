@@ -18,10 +18,7 @@ sudo apt autoremove -y
 sudo apt clean
 sudo apt autoclean -y
 
-printf "\n\n\nYou might want to run the 'signmodules' command if nvidia drivers updated.\n\n\n"
-
-echo "You should run 'omz update' to update Oh My Zsh"
-echo
-echo "Check for a newer LocalSend version: https://github.com/localsend/localsend"
-
-# Check for new Envycontrol version on Github
+printf "\nYou might want to run the 'signmodules' command if nvidia drivers updated.\n"
+printf "\nYou should run 'omz update' to update Oh My Zsh\n"
+printf "\nCheck for a newer LocalSend version: https://github.com/localsend/localsend\n"
+printf "\nCheck for new Envycontrol version on Github\n"
