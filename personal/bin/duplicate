@@ -1,7 +1,5 @@
 #!/bin/bash
 
-xrandr --output HDMI-1-0 --same-as eDP-1
-xrandr --output eDP-1 --scale-from 3840x2160
-xrandr --output HDMI-1-0 --scale-from 3840x2160
+xrandr --fb 1920x1080 --output eDP-1 --mode 1920x1080 --scale-from 1920x1080 --output HDMI-1-0 --mode 1920x1080 --scale 1x1 --same-as eDP-1
 
 ~/.fehbg
