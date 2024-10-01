@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo echo -n
+
+if [ -d ~/Git/envycontrol ]; then
+    cd ~/Git/envycontrol
+    git pull
+else
+    git clone https://github.com/bayasdev/envycontrol.git ~/Git/envycontrol
+    cd ~/Git/envycontrol
+fi
+
+sudo pip install . --break-system-packages
