@@ -33,6 +33,7 @@ alias shutdown="sudo shutdown"
 alias poweroff="sudo shutdown now"
 alias off="sudo shutdown now"
 alias reboot="sudo reboot"
+alias suspend="systemctl suspend &"
 # syncing with Onedrive
 alias syncy="onedrive --sync"
 alias syncoff="onedrive --sync && poweroff"
