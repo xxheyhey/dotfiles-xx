@@ -103,21 +103,21 @@ return {
 			})
 		end,
 	},
-	{
-		"MeanderingProgrammer/render-markdown.nvim",
-		opts = {},
-		-- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
-		dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" }, -- if you use standalone mini plugins
-		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-		config = function()
-			require("render-markdown").setup({
-				vim.keymap.set(
-					"n",
-					"<leader>mdr",
-					require("render-markdown").toggle,
-					{ desc = "Markdown Render toggle" }
-				),
-			})
-		end,
-	},
+	-- {
+	-- 	"MeanderingProgrammer/render-markdown.nvim",
+	-- 	opts = {},
+	-- 	-- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
+	-- 	dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" }, -- if you use standalone mini plugins
+	-- 	-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+	-- 	config = function()
+	-- 		require("render-markdown").setup({
+	-- 			vim.keymap.set(
+	-- 				"n",
+	-- 				"<leader>mdr",
+	-- 				require("render-markdown").toggle,
+	-- 				{ desc = "Markdown Render toggle" }
+	-- 			),
+	-- 		})
+	-- 	end,
+	-- },
 }
