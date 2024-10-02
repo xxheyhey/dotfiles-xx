@@ -39,6 +39,16 @@ chars = "\u001B[13;6u"
 key = "Return"
 mods = "Control|Shift"
 
+[[keyboard.bindings]]
+chars = "\u25C6"
+key = "I"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u25B6"
+key = "M"
+mods = "Control"
+
 [window]
 opacity = 1
 
