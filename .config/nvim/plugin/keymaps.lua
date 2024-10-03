@@ -45,6 +45,12 @@ set("n", "<leader>f", function()
 	require("conform").format({ lsp_fallback = true, quiet = true })
 end, { desc = "Format file" })
 
+set("n", "<leader>mdf", function()
+	if vim.o.filetype == "markdown" then
+		vim.cmd([[:%s/\\[(w)\\]/[\1]/g]])
+	end
+end, { desc = "Remove bracket escapes in markdown" })
+
 -- Quickfix list
 set("n", "<C-k>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
 set("n", "<C-j>", "<cmd>cprev<CR>zz", { desc = "Quickfix list previous" })
