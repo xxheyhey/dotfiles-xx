@@ -20,6 +20,7 @@ nm-applet &
 blueman-applet &
 numlockx &
 flameshot &
+volctl &
 
 # Launch window manager
 exec dwm

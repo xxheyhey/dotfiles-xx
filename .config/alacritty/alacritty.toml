@@ -1,4 +1,4 @@
-import = ["/home/vic/.config/alacritty/themes/monokai_charcoal_custom.toml"]
+general.import = ["/home/vic/.config/alacritty/themes/monokai_charcoal_custom.toml"]
 
 [colors.cursor]
 cursor = "0xFFFFFF"
