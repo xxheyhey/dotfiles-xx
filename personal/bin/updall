@@ -10,6 +10,7 @@ updocaml # OCaml/Opam
 updrust # Rust
 updalacritty # Alacritty
 updenvycontrol # Enycontrol
+updvolctl # volctl
 conda update --all # Anaconda
 ghcup upgrade # Haskell GHCup update
 cabal update # Update Cabal index (Haskell lib installer)
