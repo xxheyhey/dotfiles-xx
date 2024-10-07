@@ -47,7 +47,7 @@ end, { desc = "Format file" })
 
 set("n", "<leader>mdf", function()
 	if vim.o.filetype == "markdown" then
-		vim.cmd([[:%s/\\[(w)\\]/[\1]/g]])
+		vim.cmd([[:%s/\\\[\(\w\+\)\\\]/[\1]/g]])
 	end
 end, { desc = "Remove bracket escapes in markdown" })
 
