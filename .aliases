@@ -19,6 +19,7 @@ alias background="feh --no-fehbg --bg-fill"
 alias backgroundscale="feh --no-fehbg --bg-scale"
 alias silev="silent evince"
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
+alias cabalclean="rm -r dist-newstyle"
 # Monitor
 alias monitor="mons"
 # Finding files
