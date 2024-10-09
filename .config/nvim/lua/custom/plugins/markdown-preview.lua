@@ -15,6 +15,6 @@ return {
 			vim.g.mkdp_theme = "dark"
 			vim.cmd("MarkdownPreview")
 		end, { desc = "Markdown Preview dark" })
-		vim.g.mkdp_preview_options = { disable_sync_scroll = 1 }
+		-- vim.g.mkdp_preview_options = { disable_sync_scroll = 1 }
 	end,
 }
