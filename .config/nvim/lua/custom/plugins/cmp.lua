@@ -23,24 +23,18 @@ return {
 			local cmp = require("cmp")
 
 			cmp.setup({
-				sources = {
+				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
 					{ name = "path" },
 					{ name = "buffer" },
 					{ name = "cmp_nvim_r" },
 					{ name = "luasnip" },
-				},
-				mapping = {
-					["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-					["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
-					["<C-Tab>"] = cmp.mapping(
-						cmp.mapping.confirm({
-							behavior = cmp.ConfirmBehavior.Insert,
-							select = true,
-						}),
-						{ "i", "c" }
-					),
-				},
+				}),
+				mapping = cmp.mapping.preset.insert({
+					["<C-n>"] = cmp.mapping.select_next_item(),
+					["<C-p>"] = cmp.mapping.select_prev_item(),
+					["<C-y>"] = cmp.mapping.confirm({ select = true }),
+				}),
 
 				-- Enable luasnip to handle snippet expansion for nvim-cmp
 				snippet = {
