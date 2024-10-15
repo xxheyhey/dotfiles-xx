@@ -32,6 +32,7 @@ eval $(opam env)
 bindkey -s ^f "tmux-sessionizer\n"
 bindkey -s ^t "tmux attach\n"
 bindkey -s ^g "open-current-dir\n"
+bindkey -s ^h "tmux-home\n"
 
 # Completion
 autoload -Uz compinit

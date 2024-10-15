@@ -17,7 +17,7 @@ has_session() {
 }
 
 new_session() {
-    tmux new-session -s "$1" -c "$2" "$3"
+    tmux new-session -s "$name" -c "$directory"
 }
 
 if no_tmux; then
