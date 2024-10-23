@@ -105,8 +105,8 @@ set(
 )
 
 -- Diffview
-set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "DiffviewOpen", silent = true })
-set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "DiffviewClose", silent = true })
+set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "Git Diffview Open", silent = true })
+set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "Git Diffview Close", silent = true })
 
 -- Search through all keymaps with Telescope
 set("n", "<leader>key", "<cmd>Telescope keymaps<CR>", { desc = "Search through keymaps", silent = true })
