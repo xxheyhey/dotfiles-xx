@@ -103,4 +103,5 @@ return {
 			})
 		end,
 	},
+	{ "lommix/godot.nvim" },
 }

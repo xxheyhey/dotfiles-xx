@@ -59,6 +59,7 @@ alias i='nvim'
 alias sv='sudo nvim'
 alias svi='sudo nvim'
 alias svim='sudo nvim'
+alias gvim="nvim --listen ~/.cache/nvim/godot.pipe ."
 # Git
 alias g="git"
 alias gs="git status"

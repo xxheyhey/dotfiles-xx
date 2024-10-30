@@ -40,6 +40,12 @@ if [ -d"$HOME/.local/JetBrains Rider-2024.2.4/bin" ] ; then
     PATH="$HOME/.local/JetBrains Rider-2024.2.4/bin:$PATH"
 fi
 #]
+#
+# set PATH so it includes godot if it exists
+if [ -d"$HOME/.local/godot" ] ; then
+    PATH="$HOME/.local/godot:$PATH"
+fi
+#]
 
 # startx
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
