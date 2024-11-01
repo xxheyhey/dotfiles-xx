@@ -13,7 +13,7 @@ no_tmux() {
 }
 
 has_session() {
-    tmux has-session -t "$1" &>/dev/null
+    tmux has-session -t "$name" &>/dev/null
 }
 
 new_session() {
