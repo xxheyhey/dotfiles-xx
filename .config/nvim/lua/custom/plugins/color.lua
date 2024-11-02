@@ -25,11 +25,11 @@ end
 -- Function to cycle between themes
 function ToggleColorScheme()
 	if Mycolor == "gruvbox" then
-		Mycolor = "vague"
-    elseif Mycolor == "vague" then
+		Mycolor = "tokyonight"
+    elseif Mycolor == "tokyonight" then
         Mycolor = "rose-pine"
 	elseif Mycolor == "rose-pine" then
-		Mycolor = "tokyonight"
+		Mycolor = "vague"
     else
         Mycolor = "gruvbox"
 	end
