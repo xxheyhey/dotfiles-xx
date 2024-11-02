@@ -47,7 +47,11 @@ return {
 				},
 			})
 
-			null_ls.setup()
+			null_ls.setup({
+				sources = {
+					null_ls.builtins.formatting.gdformat,
+				},
+			})
 		end,
 	},
 }

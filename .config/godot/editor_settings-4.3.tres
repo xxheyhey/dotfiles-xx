@@ -1,13 +1,8 @@
-[gd_resource type="EditorSettings" load_steps=2 format=3]
-
-[sub_resource type="InputEventKey" id="InputEventKey_ekgw7"]
-command_or_control_autoremap = true
-alt_pressed = true
-keycode = 75
-unicode = 75
+[gd_resource type="EditorSettings" format=3]
 
 [resource]
 interface/editor/display_scale = 3
+interface/editor/single_window_mode = true
 interface/theme/base_color = Color(0.21, 0.24, 0.29, 1)
 interface/theme/accent_color = Color(0.44, 0.73, 0.98, 1)
 interface/theme/contrast = 0.3
@@ -95,7 +90,7 @@ editors/bone_mapper/handle_colors/missing = Color(0.8, 0.2, 0.8, 1)
 editors/bone_mapper/handle_colors/error = Color(0.8, 0.2, 0.2, 1)
 network/debug_adapter/remote_port = 6006
 network/debug_adapter/request_timeout = 1000
-network/debug_adapter/sync_breakpoints = false
+network/debug_adapter/sync_breakpoints = true
 editors/3d_gizmos/gizmo_settings/path3d_tilt_disk_size = 0.8
 editors/3d_gizmos/gizmo_colors/path_tilt = Color(1, 1, 0.4, 0.9)
 editors/3d_gizmos/gizmo_colors/skeleton = Color(1, 0.8, 0.4, 1)
@@ -111,7 +106,7 @@ export/ssh/scp = ""
 network/language_server/remote_host = "127.0.0.1"
 network/language_server/remote_port = 6005
 network/language_server/enable_smart_resolve = true
-network/language_server/show_native_symbols_in_editor = false
+network/language_server/show_native_symbols_in_editor = true
 network/language_server/use_thread = false
 network/language_server/poll_limit_usec = 100000
 dotnet/editor/external_editor = 0
@@ -148,10 +143,6 @@ editors/3d_gizmos/gizmo_colors/lightprobe_lines = Color(0.5, 0.6, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_a = Color(0.6, 0.8, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_b = Color(0.6, 0.9, 1, 1)
 editors/3d_gizmos/gizmo_colors/fog_volume = Color(0.5, 0.7, 1, 1)
-shortcuts = [{
-"name": "editor/clear_output",
-"shortcuts": [SubResource("InputEventKey_ekgw7")]
-}]
 metadata/script_setup_templates_dictionary = {
 "CharacterBody2D": "0CharacterBody2DBasic Movement"
 }
