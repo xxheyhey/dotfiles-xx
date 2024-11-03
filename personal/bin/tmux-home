@@ -13,11 +13,11 @@ no_tmux() {
 }
 
 has_session() {
-    tmux has-session -t "$name" &>/dev/null
+    tmux has-session -t "$1" &>/dev/null
 }
 
 new_session() {
-    tmux new-session -s "$name" -c "$directory"
+    tmux new-session -s "$1" -c "$2" "$3"
 }
 
 if no_tmux; then
