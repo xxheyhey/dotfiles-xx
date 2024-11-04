@@ -24,4 +24,4 @@ printf "\nYou should run 'omz update' to update Oh My Zsh\n"
 printf "\nCheck for a newer LocalSend version: https://github.com/localsend/localsend\n"
 printf "\nCheck for a newer Nvidia driver: at https://www.nvidia.com/en-us/drivers/\n"
 printf "current version:"
-nvidia-persistenced --version
+nvidia-persistenced --version | grep "version" | sed 's/.*version \([0-9.]*\)/\1/'
