@@ -26,3 +26,4 @@ image/jpeg=qimgv.desktop;
 application/octet-stream=nvim.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
 image/bmp=qimgv.desktop;
+inode/directory=vlc.desktop;
