@@ -13,7 +13,7 @@ xbindkeys
 
 # Other startup apps/services
 dunst &
-picom &
+~/Git/picom/build/src/picom &
 slstatus &
 ~/.fehbg &
 nm-applet &
