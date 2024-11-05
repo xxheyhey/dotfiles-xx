@@ -46,12 +46,6 @@ set("n", "<leader>f", function()
 	require("conform").format({ lsp_fallback = true, quiet = true })
 end, { desc = "Format file" })
 
-set("n", "<leader>mdf", function()
-	if vim.o.filetype == "markdown" then
-		vim.cmd([[:%s/\\\[\(.*\)\\\]/[\1]/g]])
-	end
-end, { desc = "Remove bracket escapes in markdown" })
-
 -- Quickfix list
 set("n", "<C-k>", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
 set("n", "<C-j>", "<cmd>cprev<CR>zz", { desc = "Quickfix list previous" })
@@ -94,8 +88,8 @@ set(
 )
 
 -- Simpler search and replace than nvim-spectre:
--- Search and replace in regex mode, '\(' means match bracket and not open atom
-set("n", "<leader>sr", ":%s/\\v", { desc = "Search and replace" })
+-- Search and replace in regex mode, '[]' means match bracket and not open atom
+set("n", "<leader>sr", ":%s/[]v", { desc = "Search and replace" })
 -- Search and replace current word
 set(
 	"n",
