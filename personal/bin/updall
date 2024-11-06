@@ -1,21 +1,37 @@
 #!/bin/bash
 
+sudo echo -n
+
+printf "\napt upgrade\n"
+
 sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo apt full-upgrade -y
 
+printf "\nNeovim upgrade\n"
 updvim # Neovim
+printf "\nOCaml upgrade\n"
 updocaml # OCaml/Opam
+printf "\nRust upgrade\n"
 updrust # Rust
+printf "\nAlacritty upgrade\n"
 updalacritty # Alacritty
+printf "\nEnvycontrol upgrade\n"
 updenvycontrol # Enycontrol
+printf "\nOvolctl upgrade\n"
 updvolctl # volctl
+printf "\nPicom upgrade\n"
+updpicom # Picom
+printf "\nAnaconda upgrade\n"
 conda update --all # Anaconda
+printf "\nGHCup upgrade\n"
 ghcup upgrade # Haskell GHCup update
+printf "\nCabal upgrade\n"
 cabal update # Update Cabal index (Haskell lib installer)
 
 # General cleaning
+printf "\napt cleaning\n"
 sudo apt autoremove -y
 sudo apt clean
 sudo apt autoclean -y

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo echo -n
+
+if [ -d ~/Git/picom ]; then
+    cd ~/Git/picom
+    git pull
+else
+    git clone https://github.com/yshui/picom.git ~/Git/picom
+    cd ~/Git/picom
+fi
+
+meson setup --buildtype=release -Dregex=false build
+ninja -C build
+sudo ninja -C build install
