@@ -10,7 +10,7 @@ else
     cd ~/Git/volctl
 fi
 
-sudo ./setup.py install
+sudo python3 ./setup.py install
 sudo cp ./data/apps.volctl.gschema.xml /usr/share/glib-2.0/schemas/apps.volctl.gschema.xml
 sudo update-desktop-database
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
