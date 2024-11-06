@@ -21,6 +21,7 @@
 .config/Thunar
 .config/vlc
 .config/xfce4
+.config/onedrive/.config.backup
 .config/onedrive/.config.hash
 .config/onedrive/refresh_token
 .config/onedrive/items.sqlite3

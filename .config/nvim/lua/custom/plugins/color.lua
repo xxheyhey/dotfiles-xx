@@ -50,7 +50,7 @@ return {
 					operators = false,
 					folds = false,
 				},
-                -- inverse = false, -- might be needed to fix some color issues
+                inverse = false, -- might be needed to fix some color issues
 				overrides = {
 					["@function.call"] = { fg = "#d1832e", bold = false },
 					["@variable"] = { fg = "#ebdbb2", bold = false },
