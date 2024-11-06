@@ -49,6 +49,11 @@ chars = "\u25B6"
 key = "M"
 mods = "Control"
 
+[[keyboard.bindings]]
+key = "["
+mods = "Control"
+action = "ToggleViMode"
+
 [window]
 opacity = 1
 
