@@ -10,6 +10,7 @@ else
     cd ~/Git/picom
 fi
 
+sudo rm -r build
 meson setup --buildtype=release -Dregex=false build
 ninja -C build
 sudo ninja -C build install
