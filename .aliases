@@ -24,10 +24,7 @@ alias cabalclean="rm -r dist-newstyle"
 alias exp="thunar"
 # Monitor
 alias monitor="mons"
-# Finding files
-alias fa="fd --type f --hidden --exclude anaconda3 --exclude R --exclude x86_64-pc-linux-gnu-library --exclude go --exclude .TinyTex --exclude .local --exclude .config/google-chrome --exclude .opam --exclude .cargo --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm --base-directory $HOME --search-path $HOME | fzf --print0 | xargs -0 -o nvim"
-alias f="fd --type f --hidden --exclude anaconda3 --exclude R --exclude x86_64-pc-linux-gnu-library --exclude go --exclude .TinyTex --exclude .local --exclude .config/google-chrome --exclude .opam --exclude .cargo --exclude .local/share --exclude .cache --exclude .local/pipx --exclude .git --exclude .npm --exclude .nvm | fzf --print0 | xargs -0 -o nvim"
-# GPU
+# nvidia
 alias prime-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias nvidiaoff="sudo envycontrol -s integrated"
 alias nvidiahybrid="sudo envycontrol -s hybrid"
@@ -76,11 +73,13 @@ alias glo="git log --pretty=oneline"
 alias dotgit="/usr/bin/git --git-dir=$HOME/Git/dotfiles-xx/ --work-tree=$HOME"
 alias d="dotgit"
 alias ds="dotgit status"
-alias da="dotgit add"
-alias dc="dotgit commit --verbose"
 alias dp="dotgit push"
 alias dpom="dotgit push origin master"
-alias dpu="dotgit pull"
+alias dpu="dotgit pull --rebase"
+alias da="dotgit add"
+alias daa="dotgit add --all"
+alias dc="dotgit commit --verbose"
+alias dlo="dotgit log --pretty=oneline"
 # Tmux
 alias t="tmux"
 alias ta="tmux attach"
@@ -100,8 +99,10 @@ alias upg="sudo apt upgrade"
 alias aptin="sudo apt install"
 alias aptupg="apt list --upgradable"
 alias clean="sudo apt autoremove -y"
-# Neofetch with lolcat
+# Neofetch
+alias nf="neofetch"
 alias neofetchlol="neofetch | lolcat"
+alias nfl="neofetch | lolcat"
 # Starting Express app
 alias express-start="DEBUG=$(basename $PWD):* npm start"
 alias express-devstart="DEBUG=$(basename $PWD):* npm run devstart"
