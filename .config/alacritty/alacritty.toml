@@ -20,6 +20,11 @@ family = "UbuntuMono Nerd Font"
 style = "Italic"
 
 [[keyboard.bindings]]
+key = "["
+mods = "Control"
+action = "ToggleViMode"
+
+[[keyboard.bindings]]
 chars = "\u001B[13;5u"
 key = "Return"
 mods = "Control"
@@ -50,9 +55,9 @@ key = "M"
 mods = "Control"
 
 [[keyboard.bindings]]
-key = "["
+chars = "\u2605"
+key = ","
 mods = "Control"
-action = "ToggleViMode"
 
 [window]
 opacity = 1

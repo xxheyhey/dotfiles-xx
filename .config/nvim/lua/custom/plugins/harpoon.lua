@@ -33,6 +33,9 @@ return {
 			set("n", "▶", function()
 				harpoon:list():select(3)
 			end, { desc = "Harpoon tab 3", noremap = true })
+			set("n", "★", function()
+				harpoon:list():select(4)
+			end, { desc = "Harpoon tab 3", noremap = true })
 
 			for _, idx in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }) do
 				set("n", string.format("<leader>%d", idx), function()
