@@ -45,8 +45,8 @@ return {
 				callback = function()
 					-- Keymaps
 					local set = vim.keymap.set
-					set("v", "<C-CR>", ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
-					set("n", "<C-CR>", ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
+					set("v", "✗", ':call SendSelectionToR("echo", "stay")<CR>', { silent = true }) -- Run selected line
+					set("n", "✗", ':call SendLineToR("down")<CR>', { silent = true }) -- Run selected line
 					set("n", "<C-S-CR>", ':call b:SendChunkToR("echo", "down")<CR>', { silent = true }) -- Run selected R chunk
 					set("n", "<leader>R", ":RSend ")
 					set("n", "<LocalLeader>q", ":RStop<CR>")

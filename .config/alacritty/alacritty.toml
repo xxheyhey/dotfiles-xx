@@ -25,7 +25,7 @@ mods = "Control"
 action = "ToggleViMode"
 
 [[keyboard.bindings]]
-chars = "\u001B[13;5u"
+chars = "\u2717"
 key = "Return"
 mods = "Control"
 
