@@ -40,7 +40,7 @@ key = "Return"
 mods = "Shift"
 
 [[keyboard.bindings]]
-chars = "\u001B[13;6u"
+chars = "\u2713"
 key = "Return"
 mods = "Control|Shift"
 
