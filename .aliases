@@ -22,6 +22,7 @@ alias thu="silent thunar ."
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias cabalclean="rm -r dist-newstyle"
 alias exp="thunar"
+alias R="R --no-save --quiet"
 # Monitor
 alias monitor="mons"
 # nvidia

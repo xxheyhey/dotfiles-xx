@@ -22,6 +22,10 @@ return {
 						"vimdoc",
 						"vim",
 						"bash",
+						"r",
+						"markdown",
+						"rnoweb",
+						"yaml",
 					},
 
 					-- Install parsers synchronously (only applied to `ensure_installed`)

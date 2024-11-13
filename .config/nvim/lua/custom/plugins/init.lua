@@ -9,6 +9,7 @@ return {
 
 	-- Useful plugin to show you pending keybinds.
 	{ "nvim-treesitter/nvim-treesitter-context", opts = { max_lines = 3 } },
+
 	{ "folke/persistence.nvim", event = "BufReadPre", opts = {} },
 	{ "folke/zen-mode.nvim", opts = { window = { width = 1.0 }, plugins = { tmux = { enabled = true } } } },
 	{
@@ -92,15 +93,5 @@ return {
 				suffix_next = "n", -- Suffix to search with "next" method
 			},
 		},
-	},
-	{
-		"Wansmer/treesj",
-		dependencies = { "nvim-treesitter/nvim-treesitter" },
-		config = function()
-			require("treesj").setup({
-				use_default_keymaps = false,
-				vim.keymap.set("n", "<leader>mt", require("treesj").toggle, { desc = "Treesj toggle" }),
-			})
-		end,
 	},
 }

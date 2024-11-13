@@ -11,7 +11,7 @@ return {
 			"hrsh7th/cmp-buffer",
 			{ "L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp" },
 			"saadparwaiz1/cmp_luasnip",
-			"jalvesaq/cmp-nvim-r",
+            "R-nvim/cmp-r",
 		},
 		config = function()
 			vim.opt.completeopt = { "menu", "menuone", "noselect" }
@@ -27,7 +27,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "path" },
 					{ name = "buffer" },
-					{ name = "cmp_nvim_r" },
+					{ name = "cmp_r" },
 					{ name = "luasnip" },
 				}),
 				mapping = cmp.mapping.preset.insert({
