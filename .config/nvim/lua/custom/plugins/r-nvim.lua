@@ -26,7 +26,7 @@ return {
 			rconsole_width = 60,
 			auto_start = "always",
 			objbr_auto_start = true,
-			objbr_place = "console,above",
+			objbr_place = "console,below",
 			objbr_opendf = true,
 			objbr_openlist = false,
 			config_tmux = false,
