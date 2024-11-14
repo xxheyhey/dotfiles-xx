@@ -50,5 +50,8 @@
 .config/JetBrains
 .config/gtk-3.0/bookmarks
 .config/jgit
-.config/godot
+.config/godot/recent_dirs
+.config/godot/feature_profiles
+.config/godot/script_templates
+.config/godot/text_editor_themes
 .config/aseprite
