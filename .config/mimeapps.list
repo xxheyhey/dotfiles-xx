@@ -14,6 +14,7 @@ text/plain=nvim.desktop
 application/octet-stream=nvim.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop
 image/bmp=qimgv.desktop
+video/x-matroska=mpv.desktop
 
 [Added Associations]
 image/png=google-chrome.desktop;display-im6.q16.desktop;feh.desktop;qimgv.desktop;
@@ -27,3 +28,4 @@ application/octet-stream=nvim.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
 image/bmp=qimgv.desktop;
 inode/directory=thunar.desktop;vlc.desktop;
+video/x-matroska=mpv.desktop;
