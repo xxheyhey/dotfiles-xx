@@ -1,5 +1,16 @@
 general.import = ["/home/vic/.config/alacritty/themes/monokai_charcoal_custom.toml"]
 
+[keyboard]
+bindings = [
+{ key = "[", mods = "Control", action = "ToggleViMode" },
+{ chars = "\u2717", key = "Return", mods = "Control" },
+{ chars = "\u2713", key = "Return", mods = "Control|Shift" },
+{ chars = "\u25C6", key = "I", mods = "Control" },
+{ chars = "\u25B6", key = "M", mods = "Control" },
+{ chars = "\u2605", key = ",", mods = "Control" },
+{ chars = "\u2606", key = "Backspace", mods = "Control" }
+]
+
 [colors.cursor]
 cursor = "0xFFFFFF"
 text = "0x000000"
@@ -18,36 +29,6 @@ style = "Bold"
 [font.italic]
 family = "UbuntuMono Nerd Font"
 style = "Italic"
-
-[[keyboard.bindings]]
-key = "["
-mods = "Control"
-action = "ToggleViMode"
-
-[[keyboard.bindings]]
-chars = "\u2717"
-key = "Return"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\u2713"
-key = "Return"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-chars = "\u25C6"
-key = "I"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\u25B6"
-key = "M"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\u2605"
-key = ","
-mods = "Control"
 
 [window]
 opacity = 1
