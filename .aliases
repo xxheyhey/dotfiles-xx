@@ -46,6 +46,7 @@ alias night="gammastep -m randr -P -O"
 alias nighty="gammastep -m randr -P -O 2800"
 alias nightmax="gammastep -m randr -P -O 1000"
 alias nightlight="gammastep -m randr -P -O 4100"
+alias nightlighter="gammastep -m randr -P -O 5500"
 alias nightoff="gammastep -m randr -P -O 6500"
 # Dotnet
 alias bld="dotnet msbuild"
