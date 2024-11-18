@@ -8,7 +8,7 @@ bindings = [
 { chars = "\u25C6", key = "I", mods = "Control" },
 { chars = "\u25B6", key = "M", mods = "Control" },
 { chars = "\u2605", key = ",", mods = "Control" },
-{ chars = "\u2606", key = "Backspace", mods = "Control" }
+{ key = "Backspace", mods = "Control", action = "None" }
 ]
 
 [colors.cursor]
