@@ -2,12 +2,12 @@
 
 sudo echo -n
 
-if [ -d ~/Git/volctl ]; then
-    cd ~/Git/volctl
+if [ -d ~/Git/web/volctl ]; then
+    cd ~/Git/web/volctl
     git pull
 else
-    git clone git clone https://github.com/buzz/volctl.git ~/Git/volctl
-    cd ~/Git/volctl
+    git clone git clone https://github.com/buzz/volctl.git ~/Git/web/volctl
+    cd ~/Git/web/volctl
 fi
 
 sudo python3 ./setup.py install

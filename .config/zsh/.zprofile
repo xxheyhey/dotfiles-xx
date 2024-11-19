@@ -21,8 +21,8 @@ if [ -d "$HOME/personal/bin" ] ; then
 fi
 
 # set PATH so it includes alacritty if it exists
-if [ -d "$HOME/Git/alacritty/target/release" ] ; then
-    PATH="$HOME/Git/alacritty/target/release:$PATH"
+if [ -d "$HOME/Git/web/alacritty/target/release" ] ; then
+    PATH="$HOME/Git/web/alacritty/target/release:$PATH"
 fi
 
 # set PATH so it includes ncbi-blast if it exists
@@ -48,8 +48,8 @@ fi
 #]
 
 # set PATH so it includes aseprite if it exists
-if [ -d "$HOME/Git/aseprite/build/bin" ] ; then
-    PATH="$HOME/Git/aseprite/build/bin:$PATH"
+if [ -d "$HOME/Git/web/aseprite/build/bin" ] ; then
+    PATH="$HOME/Git/web/aseprite/build/bin:$PATH"
 fi
 
 # startx

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ -d ~/Git/alacritty ]; then
-    cd ~/Git/alacritty
+if [ -d ~/Git/web/alacritty ]; then
+    cd ~/Git/web/alacritty
     git pull
 else
-    git clone https://github.com/alacritty/alacritty.git ~/Git/alacritty
-    cd ~/Git/alacritty
+    git clone https://github.com/alacritty/alacritty.git ~/Git/web/alacritty
+    cd ~/Git/web/alacritty
 fi
 
 cargo build --release

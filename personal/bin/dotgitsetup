@@ -1,8 +1,8 @@
 #!/bin/bash
 
-alias dotgit='/usr/bin/git --git-dit=$HOME/Git/dotfiles-xx/ --work-tree=$HOME'
+alias dotgit='/usr/bin/git --git-dit=$HOME/Git/xxheyhey/dotfiles-xx/ --work-tree=$HOME'
 
-git clone git@github.com:xxheyhey/dotfiles-xx.git "$HOME"/Git/dotfiles-xx
+git clone git@github.com:xxheyhey/dotfiles-xx.git "$HOME"/Git/xxheyhey/dotfiles-xx
 
 rm -rf .profile .bashrc
 

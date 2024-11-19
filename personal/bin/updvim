@@ -2,12 +2,12 @@
 
 sudo echo -n
 
-if [ -d ~/Git/neovim ]; then
-    cd ~/Git/neovim
+if [ -d ~/Git/web/neovim ]; then
+    cd ~/Git/web/neovim
     git pull
 else
-    git clone https://github.com/neovim/neovim.git ~/Git/neovim
-    cd ~/Git/neovim
+    git clone https://github.com/neovim/neovim.git ~/Git/web/neovim
+    cd ~/Git/web/neovim
 fi
 
 sudo make distclean

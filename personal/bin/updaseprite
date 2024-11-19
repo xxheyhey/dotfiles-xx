@@ -1,15 +1,15 @@
 #!/bin/bash
 
-if [ -d ~/Git/aseprite ]; then
-    cd ~/Git/aseprite
+if [ -d ~/Git/web/aseprite ]; then
+    cd ~/Git/web/aseprite
     git pull
     git submodule update --init --recursive
     sudo rm -rf build
     mkdir build
     cd build
 else
-    git clone --recursive https://github.com/aseprite/aseprite.git ~/Git/aseprite
-    cd ~/Git/aseprite
+    git clone --recursive https://github.com/aseprite/aseprite.git ~/Git/web/aseprite
+    cd ~/Git/web/aseprite
     mkdir build
     cd build
 fi

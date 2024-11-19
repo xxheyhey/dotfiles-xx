@@ -2,12 +2,12 @@
 
 sudo echo -n
 
-if [ -d ~/Git/picom ]; then
-    cd ~/Git/picom
+if [ -d ~/Git/web/picom ]; then
+    cd ~/Git/web/picom
     git pull
 else
-    git clone https://github.com/yshui/picom.git ~/Git/picom
-    cd ~/Git/picom
+    git clone https://github.com/yshui/picom.git ~/Git/web/picom
+    cd ~/Git/web/picom
 fi
 
 sudo rm -r build
