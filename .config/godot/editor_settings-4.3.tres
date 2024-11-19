@@ -1,10 +1,46 @@
-[gd_resource type="EditorSettings" load_steps=2 format=3]
+[gd_resource type="EditorSettings" load_steps=10 format=3]
 
-[sub_resource type="InputEventKey" id="InputEventKey_mpnsv"]
+[sub_resource type="InputEventKey" id="InputEventKey_qykb8"]
 command_or_control_autoremap = true
 alt_pressed = true
 keycode = 75
 unicode = 75
+
+[sub_resource type="InputEventKey" id="InputEventKey_t584i"]
+alt_pressed = true
+keycode = 4194320
+
+[sub_resource type="InputEventKey" id="InputEventKey_k6kqe"]
+device = -1
+meta_pressed = true
+physical_keycode = 4194320
+
+[sub_resource type="InputEventKey" id="InputEventKey_v210s"]
+alt_pressed = true
+keycode = 4194322
+
+[sub_resource type="InputEventKey" id="InputEventKey_tssq8"]
+device = -1
+meta_pressed = true
+physical_keycode = 4194322
+
+[sub_resource type="InputEventKey" id="InputEventKey_ox4ji"]
+alt_pressed = true
+keycode = 4194319
+
+[sub_resource type="InputEventKey" id="InputEventKey_2y502"]
+device = -1
+meta_pressed = true
+physical_keycode = 4194319
+
+[sub_resource type="InputEventKey" id="InputEventKey_ietlt"]
+alt_pressed = true
+keycode = 4194321
+
+[sub_resource type="InputEventKey" id="InputEventKey_bar7h"]
+device = -1
+meta_pressed = true
+physical_keycode = 4194321
 
 [resource]
 interface/editor/display_scale = 3
@@ -160,7 +196,19 @@ editors/3d_gizmos/gizmo_colors/joint_body_b = Color(0.6, 0.9, 1, 1)
 editors/3d_gizmos/gizmo_colors/fog_volume = Color(0.5, 0.7, 1, 1)
 shortcuts = [{
 "name": "editor/clear_output",
-"shortcuts": [SubResource("InputEventKey_mpnsv")]
+"shortcuts": [SubResource("InputEventKey_qykb8")]
+}, {
+"name": "script_text_editor/move_up",
+"shortcuts": [SubResource("InputEventKey_t584i"), SubResource("InputEventKey_k6kqe")]
+}, {
+"name": "script_text_editor/move_down",
+"shortcuts": [SubResource("InputEventKey_v210s"), SubResource("InputEventKey_tssq8")]
+}, {
+"name": "sprite_frames/empty_before",
+"shortcuts": [SubResource("InputEventKey_ox4ji"), SubResource("InputEventKey_2y502")]
+}, {
+"name": "sprite_frames/empty_after",
+"shortcuts": [SubResource("InputEventKey_ietlt"), SubResource("InputEventKey_bar7h")]
 }]
 metadata/script_setup_templates_dictionary = {
 "CharacterBody2D": "0CharacterBody2DBasic Movement"
