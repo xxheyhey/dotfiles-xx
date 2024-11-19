@@ -1,4 +1,4 @@
-require("luasnip.session.snippet_collection").clear_snippets("haskell")
+require("luasnip.session.snippet_collection").clear_snippets("markdown")
 
 local ls = require("luasnip")
 
