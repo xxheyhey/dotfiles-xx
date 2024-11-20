@@ -1,11 +1,5 @@
 [gd_resource type="EditorSettings" load_steps=10 format=3]
 
-[sub_resource type="InputEventKey" id="InputEventKey_qykb8"]
-command_or_control_autoremap = true
-alt_pressed = true
-keycode = 75
-unicode = 75
-
 [sub_resource type="InputEventKey" id="InputEventKey_t584i"]
 alt_pressed = true
 keycode = 4194320
@@ -41,6 +35,12 @@ keycode = 4194321
 device = -1
 meta_pressed = true
 physical_keycode = 4194321
+
+[sub_resource type="InputEventKey" id="InputEventKey_gckcj"]
+command_or_control_autoremap = true
+alt_pressed = true
+keycode = 75
+unicode = 75
 
 [resource]
 interface/editor/display_scale = 3
@@ -195,9 +195,6 @@ editors/3d_gizmos/gizmo_colors/joint_body_a = Color(0.6, 0.8, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_b = Color(0.6, 0.9, 1, 1)
 editors/3d_gizmos/gizmo_colors/fog_volume = Color(0.5, 0.7, 1, 1)
 shortcuts = [{
-"name": "editor/clear_output",
-"shortcuts": [SubResource("InputEventKey_qykb8")]
-}, {
 "name": "script_text_editor/move_up",
 "shortcuts": [SubResource("InputEventKey_t584i"), SubResource("InputEventKey_k6kqe")]
 }, {
@@ -209,6 +206,9 @@ shortcuts = [{
 }, {
 "name": "sprite_frames/empty_after",
 "shortcuts": [SubResource("InputEventKey_ietlt"), SubResource("InputEventKey_bar7h")]
+}, {
+"name": "editor/clear_output",
+"shortcuts": [SubResource("InputEventKey_gckcj")]
 }]
 metadata/script_setup_templates_dictionary = {
 "CharacterBody2D": "0CharacterBody2DBasic Movement"

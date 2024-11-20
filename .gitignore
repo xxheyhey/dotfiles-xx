@@ -57,6 +57,6 @@
 .config/aseprite/palettes
 .config/aseprite/sessions
 .config/aseprite/Aseprite.log
-.config/aseprite/user.aseprite-brushes
+.config/aseprite/files
 .config/mpv/mpv_sub-delay.json
 .config/mpv/recent.json
