@@ -2,11 +2,16 @@
 <keyboard version="1">
     <commands>
         <key command="Stroke" shortcut="S" removed="true"/>
+        <key command="SetInkType" shortcut="D">
+            <param name="type" value="simple"/>
+        </key>
         <key command="SetInkType" shortcut="S">
             <param name="type" value="shading"/>
         </key>
     </commands>
-    <tools/>
+    <tools>
+        <key tool="contour" shortcut="D" removed="true"/>
+    </tools>
     <quicktools/>
     <actions/>
     <wheel/>

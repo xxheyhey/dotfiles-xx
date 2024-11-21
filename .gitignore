@@ -54,7 +54,6 @@
 .config/godot/feature_profiles
 .config/godot/script_templates
 .config/godot/text_editor_themes
-.config/aseprite/palettes
 .config/aseprite/sessions
 .config/aseprite/Aseprite.log
 .config/aseprite/files

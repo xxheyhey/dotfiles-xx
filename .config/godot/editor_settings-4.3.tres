@@ -46,7 +46,6 @@ unicode = 75
 interface/editor/display_scale = 3
 interface/editor/main_font_size = 15
 interface/editor/code_font_size = 15
-interface/editor/single_window_mode = true
 interface/theme/preset = "Gray"
 interface/theme/base_color = Color(0.24, 0.24, 0.24, 1)
 interface/theme/accent_color = Color(0.44, 0.73, 0.98, 1)
