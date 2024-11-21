@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo echo -n
+
 if [ -d ~/Git/web/alacritty ]; then
     cd ~/Git/web/alacritty
     git pull

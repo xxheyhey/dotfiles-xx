@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo echo -n
+
 if [ -d ~/Git/web/aseprite ]; then
     cd ~/Git/web/aseprite
     git pull
