@@ -26,7 +26,6 @@
 .config/onedrive/refresh_token
 .config/onedrive/items.sqlite3
 .config/qimgv
-.config/flameshot
 .config/zsh/.zsh_history
 .config/zsh/.zcompdump*
 .config/Code

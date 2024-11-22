@@ -15,6 +15,8 @@ application/octet-stream=nvim.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop
 image/bmp=qimgv.desktop
 video/x-matroska=mpv.desktop
+image/jpeg=qimgv.desktop;
+image/jpg=qimgv.desktop;
 
 [Added Associations]
 image/png=google-chrome.desktop;display-im6.q16.desktop;feh.desktop;qimgv.desktop;
@@ -24,6 +26,7 @@ audio/mp4=vlc.desktop;
 application/x-bat=org.gnome.gedit.desktop;
 text/plain=vim.desktop;google-chrome.desktop;nvim.desktop;
 image/jpeg=qimgv.desktop;
+image/jpg=qimgv.desktop;
 application/octet-stream=nvim.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
 image/bmp=qimgv.desktop;
