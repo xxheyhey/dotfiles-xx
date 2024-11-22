@@ -51,6 +51,7 @@ interface/theme/base_color = Color(0.24, 0.24, 0.24, 1)
 interface/theme/accent_color = Color(0.44, 0.73, 0.98, 1)
 interface/theme/contrast = 0.3
 filesystem/directories/default_project_path = "/home/vic/Git"
+filesystem/file_dialog/show_hidden_files = true
 text_editor/theme/highlighting/symbol_color = Color(0.67, 0.79, 1, 1)
 text_editor/theme/highlighting/keyword_color = Color(1, 0.44, 0.52, 1)
 text_editor/theme/highlighting/control_flow_keyword_color = Color(1, 0.55, 0.8, 1)
@@ -86,6 +87,7 @@ text_editor/appearance/caret/highlight_all_occurrences = false
 text_editor/behavior/indent/type = 1
 text_editor/behavior/files/auto_reload_scripts_on_external_change = true
 run/output/font_size = 15
+network/connection/network_mode = 1
 project_manager/directory_naming_convention = 2
 project_manager/default_renderer = "mobile"
 asset_library/available_urls = {
@@ -194,6 +196,8 @@ editors/3d_gizmos/gizmo_colors/lightprobe_lines = Color(0.5, 0.6, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_a = Color(0.6, 0.8, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_b = Color(0.6, 0.9, 1, 1)
 editors/3d_gizmos/gizmo_colors/fog_volume = Color(0.5, 0.7, 1, 1)
+global_plugins/assets = {}
+global_plugins/paths = ["~/.config/godot/plugins/toggle_external_editor/plugin.cfg"]
 shortcuts = [{
 "name": "script_text_editor/move_up",
 "shortcuts": [SubResource("InputEventKey_t584i"), SubResource("InputEventKey_k6kqe")]
