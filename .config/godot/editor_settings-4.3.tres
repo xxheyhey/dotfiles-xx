@@ -84,6 +84,7 @@ text_editor/theme/highlighting/search_result_color = Color(1, 1, 1, 0.07)
 text_editor/appearance/caret/caret_blink = false
 text_editor/appearance/caret/highlight_all_occurrences = false
 text_editor/behavior/indent/type = 1
+text_editor/behavior/files/auto_reload_scripts_on_external_change = true
 run/output/font_size = 15
 project_manager/directory_naming_convention = 2
 project_manager/default_renderer = "mobile"
