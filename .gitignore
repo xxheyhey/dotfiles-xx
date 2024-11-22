@@ -25,7 +25,7 @@
 .config/onedrive/.config.hash
 .config/onedrive/refresh_token
 .config/onedrive/items.sqlite3
-.config/qimgv
+.config/qimgv/savedState.conf
 .config/zsh/.zsh_history
 .config/zsh/.zcompdump*
 .config/Code
@@ -42,7 +42,6 @@
 .config/discord
 .config/onlyoffice
 .config/pavucontrol.ini
-.config/htop
 .config/ghc/ghci_history
 .config/cabal
 .config/spotify
