@@ -14,14 +14,14 @@ set $laptop eDP-1
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
+set $menu dmenu_path | wofi --show drun | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-output eDP-1 scale 2
+output eDP-1 scale 1
 output * bg /home/vic/personal/Pictures/wallpapers/dune_2_top_down.jpeg fill
 
 exec swaymsg focus output eDP-1
@@ -43,7 +43,8 @@ input "type:touchpad" {
 }
 
 input "type:pointer" {
-     pointer_accel -1
+    accel_profile "flat"
+    pointer_accel 0.1
 }
 
 input "type:keyboard" {
@@ -181,5 +182,9 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+### Other
+
+default_border none
 
 include /etc/sway/config.d/*

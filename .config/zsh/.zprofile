@@ -59,5 +59,7 @@ fi
 
 # sway
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty2 ]; then
+    export XDG_CURRENT_DESKTOP=sway
+    export QT_QPA_PLATFORM=wayland
     exec sway
 fi
