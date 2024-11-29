@@ -25,6 +25,7 @@ alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias cabalclean="rm -r dist-newstyle"
 alias exp="thunar"
 alias R="R --no-save --quiet"
+alias battery_perc="upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep percentage"
 # Monitor
 alias monitor="mons"
 # nvidia
