@@ -25,6 +25,7 @@ alias cabalclean="rm -r dist-newstyle"
 alias exp="thunar"
 alias R="R --no-save --quiet"
 alias battery_perc="upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep percentage"
+alias cleanmail="sudo rm -f /var/mail/vic"
 # Monitor
 alias monitors="mons"
 # nvidia
