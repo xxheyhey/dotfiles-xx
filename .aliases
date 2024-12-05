@@ -35,9 +35,9 @@ alias nvidiaoff="sudo envycontrol -s integrated"
 alias nvidiahybrid="sudo envycontrol -s hybrid"
 # Shutdown/reboot
 alias shutdown="sudo shutdown"
-alias poweroff="sudo shutdown now"
-alias off="shutdown now"
-alias reboot="reboot"
+alias poweroff="shutdown"
+alias off="poweroff"
+alias reboot="sudo reboot"
 alias suspend="systemctl suspend &"
 # syncing with Onedrive
 alias syncy="onedrive --sync"
