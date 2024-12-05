@@ -23,10 +23,10 @@ if [ -f ~/.aliases ]; then
 fi
 
 # opam
-# eval $(opam env)
+eval $(opam env)
 
 # cargo
-# . "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
 
 # Keybindings
 bindkey -s ^f "tmux-sessionizer\n"
