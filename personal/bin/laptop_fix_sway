@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 LAPTOP_OUTPUT="<LAPTOP>"
 LID_STATE_FILE="/proc/acpi/button/lid/LID0/state"

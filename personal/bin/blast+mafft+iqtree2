@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script for BLASTing, aligning and making a phylogenetic tree with a .fasta file that contains one or more Russula DNA sequences.
 # This script requires the following third-party packages:

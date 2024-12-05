@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 alias dotgit='git --git-dir=$HOME/Git/xxheyhey/dotfiles-xx/ --work-tree=$HOME'
 

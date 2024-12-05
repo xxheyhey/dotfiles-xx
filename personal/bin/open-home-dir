@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check if inside a tmux session
 if [ -n "$TMUX" ]; then

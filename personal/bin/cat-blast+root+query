@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 # Script for fixing the headers and getting rid of duplicates in a blast output file and concatenating that file with root and query sequences.

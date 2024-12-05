@@ -26,6 +26,7 @@ alias exp="thunar"
 alias R="R --no-save --quiet"
 alias battery_perc="upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep percentage"
 alias cleanmail="sudo rm -f /var/mail/vic"
+alias rebuild="sudo nixos-rebuild switch"
 # Monitor
 alias monitors="mons"
 # nvidia
@@ -35,8 +36,8 @@ alias nvidiahybrid="sudo envycontrol -s hybrid"
 # Shutdown/reboot
 alias shutdown="sudo shutdown"
 alias poweroff="sudo shutdown now"
-alias off="sudo shutdown now"
-alias reboot="sudo reboot"
+alias off="shutdown now"
+alias reboot="reboot"
 alias suspend="systemctl suspend &"
 # syncing with Onedrive
 alias syncy="onedrive --sync"

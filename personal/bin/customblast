@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script for remote BLASTing and outputting a .fasta file with BLAST output sequences, the user sequence(s) and the root sequence(s) (if given), all with correct headers.
 # This script requires the following third-party packages:
