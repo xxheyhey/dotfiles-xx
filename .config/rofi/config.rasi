@@ -1,8 +1,8 @@
-configuration {
-    modi: "drun";
-    font: "UbuntuMono-R 20";
-    icon-theme: "Papirus";
-}
 
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+//@theme "/nix/store/xcfia1n9h67jj4wks2kicw6xm1alj0q0-rofi-1.7.5+wayland3/share/rofi/themes/arthur.rasi"
+
+//@theme "/nix/store/xcfia1n9h67jj4wks2kicw6xm1alj0q0-rofi-1.7.5+wayland3/share/rofi/themes/gruvbox-dark.rasi"
+
+//@theme "/nix/store/xcfia1n9h67jj4wks2kicw6xm1alj0q0-rofi-1.7.5+wayland3/share/rofi/themes/fancy2.rasi"
+
+@theme "/nix/store/xcfia1n9h67jj4wks2kicw6xm1alj0q0-rofi-1.7.5+wayland3/share/rofi/themes/arthur.rasi"

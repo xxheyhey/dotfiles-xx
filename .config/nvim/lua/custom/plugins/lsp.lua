@@ -92,17 +92,13 @@ return {
 			--  define the property 'filetypes' to the map in question.
 			local servers = {
 				clangd = {},
-				gopls = {},
-				pyright = {
-					python = {
-						analysis = {
-							diagnosticSeverityOverrides = {
-								reportUnusedVariable = false, -- or anything
-							},
-						},
-					},
-				},
-				rust_analyzer = {},
+                -- python = {
+                --     analysis = {
+                --         diagnosticSeverityOverrides = {
+                --             reportUnusedVariable = false, -- or anything
+                --         },
+                --     },
+                -- },
 				ts_ls = {},
 				html = { filetypes = { "html", "twig", "hbs" } },
 				lua_ls = {
@@ -115,26 +111,26 @@ return {
 				},
 				marksman = {},
 				bashls = {},
-				ocamllsp = {
-					manual_install = true,
-					settings = {
-						codelens = { enable = true },
-					},
-
-					filetypes = {
-						"ocaml",
-						"ocaml.interface",
-						"ocaml.menhir",
-						"ocaml.cram",
-					},
-				},
-				hls = {
-					haskell = {
-						plugin = {
-							rename = { config = { crossModule = true } },
-						},
-					},
-				},
+				-- ocamllsp = {
+				-- 	manual_install = true,
+				-- 	settings = {
+				-- 		codelens = { enable = true },
+				-- 	},
+				--
+				-- 	filetypes = {
+				-- 		"ocaml",
+				-- 		"ocaml.interface",
+				-- 		"ocaml.menhir",
+				-- 		"ocaml.cram",
+				-- 	},
+				-- },
+				-- hls = {
+				-- 	haskell = {
+				-- 		plugin = {
+				-- 			rename = { config = { crossModule = true } },
+				-- 		},
+				-- 	},
+				-- },
 			}
 
 			-- Setup neovim lua configuration

@@ -15,4 +15,8 @@ export FZF_DEFAULT_OPTS="
     --layout=reverse
     --border"
 export R_LIBS_USER="/home/vic/.local/R"
-export ZSH="$HOME/.oh-my-zsh"
+if [ -d "$HOME/.oh-my-zsh" ] ; then
+    export ZSH="$HOME/.oh-my-zsh"
+else
+    export ZSH="/nix/store/0pn1878v285l3nrfcagbb93bkkkbm811-oh-my-zsh-2024-10-01/share/oh-my-zsh"
+fi

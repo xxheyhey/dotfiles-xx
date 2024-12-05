@@ -6,7 +6,7 @@ test -r /home/vic/.opam/opam-init/init.sh && . /home/vic/.opam/opam-init/init.sh
 [ -f "/home/vic/.ghcup/env" ] && . "/home/vic/.ghcup/env" # ghcup-env
 
 # Rust
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 #]
 
 #[ PATH
@@ -54,7 +54,7 @@ fi
 
 # startx
 if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
-    exec startx
+    exec Hyprland
 fi
 
 # sway
@@ -62,4 +62,8 @@ if [ -z $DISPLAY ] && [ $(tty) = /dev/tty2 ]; then
     export XDG_CURRENT_DESKTOP=sway
     export QT_QPA_PLATFORM=wayland
     exec sway
+fi
+
+if [ -z $DISPLAY ] && [ $(tty) = /dev/tty3 ]; then
+    exec startx
 fi
