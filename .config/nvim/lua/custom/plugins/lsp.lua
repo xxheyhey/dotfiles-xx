@@ -91,46 +91,45 @@ return {
 			--  If you want to override the default filetypes that your language server will attach to you can
 			--  define the property 'filetypes' to the map in question.
 			local servers = {
-				-- clangd = {},
-                -- python = {
-                --     analysis = {
-                --         diagnosticSeverityOverrides = {
-                --             reportUnusedVariable = false, -- or anything
-                --         },
-                --     },
-                -- },
-				-- ts_ls = {},
-				-- html = { filetypes = { "html", "twig", "hbs" } },
-				-- lua_ls = {
-				-- 	Lua = {
-				-- 		workspace = { checkThirdParty = false },
-				-- 		telemetry = { enable = false },
-				-- 		-- Ignore Lua_LS's noisy `missing-fields` warnings
-				-- 		diagnostics = { disable = { "missing-fields" } },
-				-- 	},
-				-- },
-				-- marksman = {},
-				-- bashls = {},
-				-- ocamllsp = {
-				-- 	manual_install = true,
-				-- 	settings = {
-				-- 		codelens = { enable = true },
-				-- 	},
-				--
-				-- 	filetypes = {
-				-- 		"ocaml",
-				-- 		"ocaml.interface",
-				-- 		"ocaml.menhir",
-				-- 		"ocaml.cram",
-				-- 	},
-				-- },
-				-- hls = {
-				-- 	haskell = {
-				-- 		plugin = {
-				-- 			rename = { config = { crossModule = true } },
-				-- 		},
-				-- 	},
-				-- },
+				clangd = {},
+                		python = {
+                		    analysis = {
+                		        diagnosticSeverityOverrides = {
+                			reportUnusedVariable = false,
+                		    	},
+                	            },
+                		},
+				ts_ls = {},
+				html = { filetypes = { "html", "twig", "hbs" } },
+				lua_ls = {
+					Lua = {
+						workspace = { checkThirdParty = false },
+						telemetry = { enable = false },
+						-- Ignore Lua_LS's noisy `missing-fields` warnings
+						diagnostics = { disable = { "missing-fields" } },
+					},
+				},
+				marksman = {},
+				bashls = {},
+				ocamllsp = {
+					manual_install = true,
+					settings = {
+						codelens = { enable = true },
+					},
+				 	filetypes = {
+						"ocaml",
+						"ocaml.interface",
+						"ocaml.menhir",
+						"ocaml.cram",
+					},
+				},
+				hls = {
+				    haskell = {
+					plugin = {
+					    rename = { config = { crossModule = true } },
+					},
+				    },
+				},
 			}
 
 			-- Setup neovim lua configuration
