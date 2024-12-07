@@ -9,5 +9,6 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 ls.add_snippets("rmd", {
 	s("cb", fmt("```{{r}}{}\n```{}", { i(1), i(0) })),
+	s("cbi", fmt("```\n{}\n```{{r}}{}", { i(1), i(0) })),
 })
 
