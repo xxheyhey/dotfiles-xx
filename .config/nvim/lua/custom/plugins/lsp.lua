@@ -92,13 +92,13 @@ return {
 			--  define the property 'filetypes' to the map in question.
 			local servers = {
 				clangd = {},
-                		python = {
-                		    analysis = {
-                		        diagnosticSeverityOverrides = {
-                			reportUnusedVariable = false,
-                		    	},
-                	            },
-                		},
+				pyright = {
+					analysis = {
+						diagnosticSeverityOverrides = {
+							reportUnusedVariable = false,
+						},
+					},
+				},
 				ts_ls = {},
 				html = { filetypes = { "html", "twig", "hbs" } },
 				lua_ls = {
@@ -116,7 +116,7 @@ return {
 					settings = {
 						codelens = { enable = true },
 					},
-				 	filetypes = {
+					filetypes = {
 						"ocaml",
 						"ocaml.interface",
 						"ocaml.menhir",
@@ -124,11 +124,11 @@ return {
 					},
 				},
 				hls = {
-				    haskell = {
-					plugin = {
-					    rename = { config = { crossModule = true } },
+					haskell = {
+						plugin = {
+							rename = { config = { crossModule = true } },
+						},
 					},
-				    },
 				},
 			}
 
